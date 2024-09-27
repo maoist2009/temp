@@ -13,7 +13,7 @@
 5.自建节点或自建节点订阅       
 6.注意事项        
  ```      
-[图文pdf教程参考资料点击此跳转](https://codeberg.org/ljggfvn217/go-to-world/src/branch/main/%E5%9B%BE%E6%96%87pdf%E6%95%99%E7%A8%8B) ,图文教程请结合下面的文字说明一起使用               
+- [图文pdf教程参考资料点击此跳转](https://gitea.com/gjcxn358/go-to-word/raw/branch/main/%E5%9B%BE%E6%96%87pdf%E6%95%99%E7%A8%8B/%E6%95%99%E7%A8%8B.pdf) ,图文教程请结合下面的文字说明一起使用                           
 
 ## 1.   
 - [点击上方README.md上面的安卓开源版文件夹内的的nb4a.apk/v2r/clash](https://codeberg.org/ljggfvn217/go-to-world/src/branch/main/%E5%AE%89%E5%8D%93%E5%BC%80%E6%BA%90%E7%89%88%E4%B8%8B%E8%BD%BD) ，  
