@@ -3,15 +3,16 @@
 #### 下列软件均可在上方文件区免代理下载（新版本更新请自行连接国际互联网后更新）         
 
 自由开源免费连接国际互联网教程   
-        
-    目录 ：    
-    1.nekbox/v2r/clash /sinbox   
-    1.2 非开源蓝灯和其他破解（仅风险较高）    
-    2.迷雾通         
-    3.protonvpn          
-    4.tor/ invizble      
-    5.自建节点或自建节点订阅    
-    6.注意事项        
+```
+目录 ：    
+1.nekbox/v2r/clash /sinbox   
+1.2 非开源蓝灯和其他破解（风险较高，仅用于其他手段都失效时临时使用）        
+2.迷雾通               
+3.protonvpn             
+4.tor/ invizible/orbot          
+5.自建节点或自建节点订阅       
+6.注意事项        
+ ```      
 [图文pdf教程参考资料点击此跳转](https://codeberg.org/ljggfvn217/go-to-world/src/branch/main/%E5%9B%BE%E6%96%87pdf%E6%95%99%E7%A8%8B) ,图文教程请结合下面的文字说明一起使用               
 
 ## 1.   
@@ -84,7 +85,8 @@ fdroid 官网：https://f-droid.org/，
 苹果版请看 https://protonvpn.com/download-ios                  
         
 ## 4 .  使用tor网络        
-- tor浏览器全平台客户端官网：https://www.torproject.org/zh-CN/download/               
+- tor浏览器全平台客户端官网：https://www.torproject.org/zh-CN/download/    
+- inzivible为安卓上的tor代理客户端，在fdroid下载，orbot可以在谷歌应用商店下载，但不如inzivible功能全面                    
 使用 tor网络连接国际互联网 （这种安全性最好 ），大陆使用需要借助网桥，不能直连（被大陆地区屏蔽），网桥申请需要先连接其他代理，方法如下：         
 
 1. 访问    `https://bridges.torproject.org/options/`      并按照说明操作，此方法可以获取obfs4网桥和web网桥         
