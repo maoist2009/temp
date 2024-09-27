@@ -65,11 +65,11 @@ https://search.pub.solar/search
 如果上述订阅都订阅不了，那就只能使用非开源的代理软件作为第一次连接国际互联网用，比如蓝灯等，蓝灯[apkpure商店内下载](https://apkpure.com/cn/search?q=%E8%93%9D%E7%81%AF&t= )      
 
 - 蓝灯和其他代理破解点击下载[破解代理代理-免代理下载](https://codeberg.org/ljggfvn217/go-to-world/src/branch/main/%E9%9D%9E%E5%BC%80%E6%BA%90%E5%8F%8A%E7%A0%B4%E8%A7%A3%E4%BB%A3%E7%90%86)   
- *非开源应用安全性低，破解应用更有风险（木马病毒风险），1.2只适用于绝对小白或其他方案无法使用的情况    
+ ==注意==：非开源应用安全性低，破解应用更有风险（木马病毒风险），1.2只适用于绝对小白或其他方案在当下环境均无法使用的情况 临时使用      
   
 ## 2.      
  按方法1连接好测试能连上国际互联网以后          
-安装 geph迷雾通（文件夹内版本不一定最新） ，并注册登陆  (迷雾通注册过程 需要用其他软件连国际互联网)       
+安装 geph迷雾通（文件夹内版本不一定最新，） ，并注册登陆  (迷雾通注册过程 可能需要用其他软件连国际互联网，如果可以不代理就能刷新验证码，则不需要先用方法1)              
 最新版官网  https://geph.io/zhs ，免代理镜像下载：https://waa.ai/xiazaimiwutong ,     
 此软件虽然免费版有限速 但比较稳定，安全性更高  ，不用每日跟换 订阅 ，只是 注册 时刷新验证码需要连上国际互联网 ，因此需要先用NEKBOX/v2r/clash 连上国际互联网以后才能使用            
 
@@ -83,16 +83,17 @@ https://search.pub.solar/search
 fdroid 官网：https://f-droid.org/，        
 苹果版请看 https://protonvpn.com/download-ios                  
         
-## 4 .                  
-使用 tor网络连接国际互联网 （这种安全性最好 ），大陆使用需要借助网桥，不能直连（被大陆地区屏蔽）               
-- fdroid内搜索 invizible  安装启动，快速设置 -网桥 ，获取私人网桥 -webtunnel-，然后请求网桥 -webturnnel-ok-输入验证码获取 （获取私人网桥时需要用其他软件比如上面的nek连接国际互联网）
-- 或者获取o4网桥，可以在
-1.tor browser官网申请网桥       
-2.谷歌邮件发送邮件给tor官方（）获取       
-3.电报获取-关注 @GetBridgesBot,发送  Bridges     获取      
-- 如果需要访问洋葱暗网，请在tor browser下载torbrowser浏览器（内置tor的浏览器）
+## 4 .  使用tor网络        
+- tor浏览器全平台客户端官网：https://www.torproject.org/zh-CN/download/               
+使用 tor网络连接国际互联网 （这种安全性最好 ），大陆使用需要借助网桥，不能直连（被大陆地区屏蔽），网桥申请需要先连接其他代理，方法如下：         
 
-- tor浏览器全平台客户端官网：https://www.torproject.org/zh-CN/download/          
+1. 访问    `https://bridges.torproject.org/options/`      并按照说明操作，此方法可以获取obfs4网桥和web网桥         
+2. 使用 Gmail 或 Riseup 的邮箱服务发送电子邮件至 ` bridges@torproject.org`,从 Tor 浏览器内请求网桥       
+3. 通过 Telegram 向 `@GetBridgesBot` 发送消息。在聊天中点击“开始”，或者输入/Start或/bridges。此方法只能获取obfs4网桥     
+4. 安卓手机fdroid自由开源应用商店内内搜索 `invizible`  安装启动，快速设置 -网桥 ，获取私人网桥 -，选择类似请求网桥 --输入验证码确认获取,此方可以获取所有类型网桥           
+**注意事项**：如果是获取web网桥，可以选择方法1或者方法4,如果是获取obfs网桥，则推荐方法3,其次方法2              
+
+        
 
 ## 5. 自建节点订阅-需要先连接其他嗲代理才能自建节点订阅                 
 有条件的也可以免费自建 自建节点或自建节点订阅,可以申请免费域名和免费vps  ,然后用方法1的软件连接对应节点使用     
