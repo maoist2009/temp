@@ -84,7 +84,8 @@ https://search.pub.solar/search
 fdroid 官网：https://f-droid.org/，        
 苹果版请看 https://protonvpn.com/download-ios                  
         
-## 4 .  使用tor网络        
+## 4 .  使用tor网络   
+==详细教程请看==---图文教程(https://gitea.com/gjcxn358/go-to-word/src/branch/main/%E5%9B%BE%E6%96%87pdf%E6%95%99%E7%A8%8B)             
 - tor浏览器全平台客户端官网：https://www.torproject.org/zh-CN/download/    
 - inzivible为安卓上的tor代理客户端，在fdroid下载，orbot可以在谷歌应用商店下载，但不如inzivible功能全面                    
 使用 tor网络连接国际互联网 （这种安全性最好 ），大陆使用需要借助网桥，不能直连（被大陆地区屏蔽），网桥申请需要先连接其他代理，方法如下：         
