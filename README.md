@@ -88,13 +88,13 @@ fdroid 官网：https://f-droid.org/，
 ==详细教程请看==---[图文教程](https://gitea.com/gjcxn358/go-to-word/src/branch/main/%E5%9B%BE%E6%96%87pdf%E6%95%99%E7%A8%8B)               
 - tor浏览器全平台客户端官网：https://www.torproject.org/zh-CN/download/    
 - inzivible为安卓上的tor代理客户端，在fdroid下载，orbot可以在谷歌应用商店下载，但不如inzivible功能全面                    
-使用 tor网络连接国际互联网 （这种安全性最好 ），大陆使用需要借助网桥，不能直连（被大陆地区屏蔽），网桥申请需要先连接其他代理，方法如下：         
+使用 tor网络连接国际互联网 （这种安全性最好 ），大陆使用需要借助网桥，不能直连（被大陆地区屏蔽），网桥申请需要先连接其他代理，方法如下：            
 
-1. 访问    `https://bridges.torproject.org/options/`      并按照说明操作，此方法可以获取obfs4网桥和web网桥         
-2. 使用 Gmail 或 Riseup 的邮箱服务发送邮件到 `frontdesk@torproject.org`，并且邮件主题需要包含`private bridge cn`  （受到回复邮箱可能需要半天）           
-3. 通过 Telegram 向 `@GetBridgesBot` 发送消息。在聊天中点击“开始”，或者输入/Start或/bridges。此方法只能获取obfs4网桥 ，但是秒回复，大陆地区也能用           
-4. 安卓手机fdroid自由开源应用商店内内搜索 `invizible`  安装启动，快速设置 -网桥 ，获取私人网桥 -，选择类似请求网桥 --输入验证码确认获取,此方可以获取所有类型网桥           
-**注意事项**：如果是获取web网桥，可以选择方法1或者方法4,如果是获取obfs网桥，则推荐方法3,其次方法2              
+1. 访问 https://bridges.torproject.org/options/ 并按照说明操作，此方法可以获取obfs4网桥和web网桥
+2. 使用 Gmail 或 Riseup 的邮箱服务发送邮件到 frontdesk@torproject.org，并且邮件主题需要包含private bridge cn （受到回复邮箱可能需要半天,会收到两个web网桥和obfs网桥）
+3. 通过 Telegram 向 @GetBridgesBot 发送消息。在聊天中点击“开始”，或者输入/Start或/bridges。此方法只能获取obfs4网桥 ，但是秒回复，大陆地区也能用
+4. 安卓手机fdroid自由开源应用商店内内搜索 invizible 安装启动，快速设置 -网桥 ，获取私人网桥 -，选择类似请求网桥 --输入验证码确认获取,此方可以获取所有类型网桥
+注意事项：如果是获取web网桥，可以选择方法124,如果是获取obfs网桥，则推荐方法3,其次方法2,obfs4网桥比web网桥快               
 
         
 
