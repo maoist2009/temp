@@ -82,13 +82,13 @@ https://search.pub.solar/search
                     
 
 ## 3.        
-&ensp;&ensp;第一种方式联机以后 ，也可以下载protonvpn        
+&ensp;&ensp;第一种方式联机以后 ，也可以下载瑞士的自由及开源vpn软件protonvpn            
  https://f-droid.org/packages/ch.protonvpn.android/   
 （fdroid自由软件商店内搜索下载）注册登陆使用不限速安全节点 （protonvpn注册需要连国际互联网 ）                
 fdroid 官网：https://f-droid.org/，        
-苹果版请看 https://protonvpn.com/download-ios 
-&ensp;&ensp;优点：支持图标伪装同时不限速，支持多种vpn协议包括自己的混淆协议，相比迷雾通，他是瑞士软件和瑞士开发者与中国完全无关联          
-缺点：是不能自由更换节点，免费版只能开全局模式，使用时注意不要在环境内放国产软件，如果是非国外开源类原生安卓系统，应该放在工作空间内使用（使用软件shelter开启-在fdroid应用商店下载），工作空间内只包含自由及开源软件。   
+苹果版请看 https://protonvpn.com/download-ios            
+&ensp;&ensp;优点：免费用户不限速，支持图标伪装同时不限速，支持多种vpn协议包括自己的混淆协议，相比迷雾通，他是瑞士软件和瑞士开发者与中国完全无关联          
+缺点：免费版用户节点较少，免费版不能使用他的tor服务，不能自由更换节点，免费版只能开全局模式，使用时注意不要在环境内放国产软件，如果是非国外开源类原生安卓系统，应该放在工作空间内使用（使用软件shelter开启-在fdroid应用商店下载），工作空间内只包含自由及开源软件。   
 proton公司的邮箱服务有因瑞士法律被迫向欧美提供瑞士境内用户数据的案例（官方提醒瑞士用户一定不要直连而是代理/vpn访问） ，protonvpn目前无泄漏用户隐私案例                             
         
 ## 4 .  使用tor洋葱网络     
