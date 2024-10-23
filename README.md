@@ -103,7 +103,7 @@ fdroid 官网：https://f-droid.org/，
 
 ## 5. 自建节点订阅-需要先连接其他嗲代理才能自建节点订阅                 
 &ensp;&ensp;有条件的也可以免费自建 自建节点或自建节点订阅,可以申请免费域名和免费vps  ,然后用方法1的软件连接对应节点使用 ，注意域名注册和cf注册时应使用匿名邮箱而不是实名或绑定实名电话号的邮箱     
--  通过clouldfire的pages服务，利用cf全球节点自建节点订阅教程：          
+一. 通过clouldfire的pages服务，利用cf全球节点自建节点订阅教程：              
 通过cloudflare免费自建个人专属vmess节点订阅（使用免费域名）并在v2r/clash/sinbox代理软件内使用，此方法安全性不如tor，但是比各种不知商业背景的商业公开节点（节点有别人部署不透明）和不知来源的免费节点安全,高速低延迟优于tor，可作为tor的备用（可用此节点来获取tor网桥和高速下载文件）                  
 [1.点击观看部署cf节点视频教程](https://m.youtube.com/watch?pp=ygUKY2xvdWRmbGFyZQ%3D%3D&v=cqQioz_Kdag)         
 [2.官方精简视频教程](https://m.youtube.com/watch?v=59THrmJhmAw)请结合教程1一起看            
@@ -112,7 +112,7 @@ fdroid 官网：https://f-droid.org/，
 - 这里是[免费域名申请网站示例](https://dynv6.com/)             
 - 问题故障解决：下面视频up主为此节点部署开源项目作者，在他的视频列表能找到所有相关教程-[Worker Vless免费节点 进阶教程 解除cfdn网站访问限制，更换订阅器和添加clash的MultiMode模式/全局模式代理规则等](https://m.youtube.com/watch?v=s91zjpw3-P8&t=1446s&pp=2AGmC5ACAQ%3D%3D)  
 
-- 付费租借vps和域名自建节点：    
+二. 付费租借vps和域名自建节点：    
 缺点：此方法自建节点被墙后更换ip可能要额外付费，使用频率高容易被检测，因为一般是固定代理ip,长期连接固定的ip而且高流量一眼看出来是代理节点，出问题解决也相对麻烦。购买vps以及域名付费如果用支付宝微信等有泄漏实名的风险。     
 优点：相比于clouldfire自建节点订阅，优点是一人一个ip,ip比较干净，vps可以跑完整的gnulinux系统，通过修改密码以及远程登陆拥有对节点的最高控制权   
 油管搜索相关租借vps自建节点教程，例子：    
