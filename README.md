@@ -41,7 +41,7 @@
 然后打开 下面 订阅网站网站（选一个能打开的 ）  ：       
 https://github.com/aiboboxx/v2rayfree                                   
 https://github.com/free18/v2ray              
-https://github.com/chengaopan/         AutoMergePublicNodes     
+https://github.com/chengaopan/    AutoMergePublicNodes     
 https://clashgithub.com/             
 https://wenode.cc/                   
 https://v2rayshare.com/                  
