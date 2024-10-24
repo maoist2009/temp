@@ -129,12 +129,10 @@ tor并非完全安全， 之前有过泄漏/跟踪案例以及使用暗网被抓
 缺点：此方法自建节点被墙后更换ip可能要额外付费，使用频率高容易被检测，因为一般是固定代理ip,长期连接固定的ip而且高流量一眼看出来是代理节点，出问题解决也相对麻烦。购买vps以及域名付费如果用支付宝微信等有泄漏实名的风险，因此最好使用可以匿名的加密虚拟货币，vps服务网站一般都是纯商业性质，承诺的隐私性不一定完全可靠        
 
 油管搜索相关租借vps自建节点教程，例子：  
-- [免费白嫖10年VPS服务器serv00 并且一键部署自己的专属自建Vless节点 ｜小白教程｜自动化批量保号｜](https://www.youtube.com/watch?v=QnlzpvDl_mo)     
-
-- [付费租用vps自建节点教程，3x-ui，套 cloudflare，完全搭建vless 、Trojan、vmess](https://m.youtube.com/watch?v=JC_25k_3Q70)        
-  
-- [付费最新自建机场节点喂饭级教程](https://m.youtube.com/watch?v=66V2J6lVv9E)           
-   
+- [免费白嫖10年VPS服务器serv00 并且一键部署自己的专属自建Vless节点 ｜小白教程｜自动化批量保号｜](https://www.youtube.com/watch?v=QnlzpvDl_mo)  
+-[【零基础】2024最新,10年免费vps,搭建vpn,一本通,保姆级纯小白节点搭建教程,人人都能学会,目前最简单、最安全、最稳定的专属节点搭建方法,手把手自建节点搭建教学,晚高峰高速稳定,科学上网教程](https://www.youtube.com/watch?v=295wid5YbWI)         
+- [付费租用vps自建节点教程，3x-ui，套 cloudflare，完全搭建vless 、Trojan、vmess](https://m.youtube.com/watch?v=JC_25k_3Q70)              
+- [付费最新自建机场节点喂饭级教程](https://m.youtube.com/watch?v=66V2J6lVv9E)              
 &ensp;&ensp;自建的节点订阅可以导入clash/v2r/sinbox内使用
                
 ## 6.    
