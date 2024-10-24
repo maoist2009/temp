@@ -124,14 +124,16 @@ tor并非完全安全， 之前有过泄漏/跟踪案例以及使用暗网被抓
 - 这里是[免费域名申请网站示例](https://dynv6.com/)             
 - 问题故障解决：下面视频up主为此节点部署开源项目作者，在他的视频列表能找到所有相关教程-[Worker Vless免费节点 进阶教程 解除cfdn网站访问限制，更换订阅器和添加clash的MultiMode模式/全局模式代理规则等](https://m.youtube.com/watch?v=s91zjpw3-P8&t=1446s&pp=2AGmC5ACAQ%3D%3D)  
 
-二. 付费租借vps和域名自建节点：    
+二. 免费/付费租借vps和域名自建节点：    
 优点：相比于clouldfire自建节点订阅，优点是一人一个ip,ip比较干净，vps可以跑完整的gnulinux系统，通过修改密码以及远程登陆拥有对节点的最高控制权，
 缺点：此方法自建节点被墙后更换ip可能要额外付费，使用频率高容易被检测，因为一般是固定代理ip,长期连接固定的ip而且高流量一眼看出来是代理节点，出问题解决也相对麻烦。购买vps以及域名付费如果用支付宝微信等有泄漏实名的风险，因此最好使用可以匿名的加密虚拟货币，vps服务网站一般都是纯商业性质，承诺的隐私性不一定完全可靠        
 
-油管搜索相关租借vps自建节点教程，例子：    
-- [租用vps自建节点教程，3x-ui，套 cloudflare，完全搭建vless 、Trojan、vmess](https://m.youtube.com/watch?v=JC_25k_3Q70)      
+油管搜索相关租借vps自建节点教程，例子：  
+- [免费白嫖10年VPS服务器serv00 并且一键部署自己的专属自建Vless节点 ｜小白教程｜自动化批量保号｜](https://www.youtube.com/watch?v=QnlzpvDl_mo)     
 
-- [最新自建机场节点喂饭级教程](https://m.youtube.com/watch?v=66V2J6lVv9E)        
+- [付费租用vps自建节点教程，3x-ui，套 cloudflare，完全搭建vless 、Trojan、vmess](https://m.youtube.com/watch?v=JC_25k_3Q70)        
+  
+- [付费最新自建机场节点喂饭级教程](https://m.youtube.com/watch?v=66V2J6lVv9E)           
    
 &ensp;&ensp;自建的节点订阅可以导入clash/v2r/sinbox内使用
                
