@@ -38,14 +38,14 @@
 - [苹果手机请换区后使用sinbox](https://apps.apple.com/us/app/sing-box/id6451272673?l=zh-cn&platform=iphone ) ，或者使用ios版v2r- OneClick    
 
 --- 
-然后打开 下面 订阅网站网站（选一个能打开的 ）  ：   
-https://clashgithub.com/     
-https://github.com/aiboboxx/v2rayfree                         
-https://github.com/free18/v2ray      
-https://github.com/chengaopan/AutoMergePublicNodes  
-https://wenode.cc/      
-https://v2rayshare.com/     
-https://onenode.cc/   
+然后打开 下面 订阅网站网站（选一个能打开的 ）  ：       
+https://github.com/aiboboxx/v2rayfree                                   
+https://github.com/free18/v2ray              
+https://github.com/chengaopan/         AutoMergePublicNodes     
+https://clashgithub.com/             
+https://wenode.cc/                   
+https://v2rayshare.com/                  
+https://onenode.cc/                 
 获取节点的一个电报群： https://t.me/zhibeii    （下载导入txt内的所有链接）          
 .......           
 - 选择最新日期的帖子  进去，找到订阅链接 —v2ray订阅链接:复制订阅链接        
