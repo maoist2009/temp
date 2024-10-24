@@ -127,7 +127,8 @@ fdroid 官网：https://f-droid.org/，
 ###### 其他方式-bpb面板（优选ip和各种设置比上面的方便）     
 - [cf使用bpb面板搭建节点](https://kjgx668.blogspot.com/2024/10/warpvpnmasqueioswindowsmac.html)      
 - [补充教程](https://www.youtube.com/watch?v=BCch2Z4kNbA)   
-- 项目地址：[GUI 面板提供 Worker 订阅、Fragment 设置和 Warp 配置，为使用（Sing-box、Clash 和 Xray 核心）的跨平台客户端提供配置 ](https://github.com/bia-pain-bache/BPB-Worker-Panel)       
+- 项目地址：[GUI 面板提供 Worker 订阅、Fragment 设置和 Warp 配置，为使用（Sing-box、Clash 和 Xray 核心）的跨平台客户端提供配置 ](https://github.com/bia-pain-bache/BPB-Worker-Panel)  
+&ensp;&ensp;注意：pbp面板一定要修改密码，同时修改uuid参数,避免订阅被互联网程序爬取            
 
 二. 免费/付费租借vps和域名自建节点：    
 &ensp;&ensp;优点：相比于clouldfire自建节点订阅，优点是一人一个ip,ip比较干净，vps可以跑完整的gnulinux系统，通过修改密码以及远程登陆拥有对节点的最高控制权，
