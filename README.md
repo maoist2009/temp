@@ -125,11 +125,12 @@ fdroid 官网：https://f-droid.org/，
 - [clouldfire国际官网](https://www.cloudflare.com/)      
 - 这里是[免费域名申请网站示例](https://dynv6.com/)             
 - 问题故障解决：下面视频up主为此节点部署开源项目作者，在他的视频列表能找到所有相关教程-[Worker Vless免费节点 进阶教程 解除cfdn网站访问限制，更换订阅器和添加clash的MultiMode模式/全局模式代理规则等](https://m.youtube.com/watch?v=s91zjpw3-P8&t=1446s&pp=2AGmC5ACAQ%3D%3D)  
-###### 其他方式-bpb面板（优选ip和各种设置比上面的方便）     
+#### 其他方式-bpb面板（优选ip和各种设置比上面的方便）     
 - [cf使用bpb面板搭建节点](https://kjgx668.blogspot.com/2024/10/warpvpnmasqueioswindowsmac.html)      
+- [图文教程](https://am.809098.xyz/bpb/)                
 - [补充教程](https://www.youtube.com/watch?v=BCch2Z4kNbA)   
-- 项目地址：[GUI 面板提供 Worker 订阅、Fragment 设置和 Warp 配置，为使用（Sing-box、Clash 和 Xray 核心）的跨平台客户端提供配置 ](https://github.com/bia-pain-bache/BPB-Worker-Panel)  
-&ensp;&ensp;注意：pbp面板一定要修改密码，同时修改uuid参数,避免订阅被互联网程序爬取               
+- bpb面板开源项目地址：[GUI 面板提供 Worker 订阅、Fragment 设置和 Warp 配置，为使用（Sing-box、Clash 和 Xray 核心）的跨平台客户端提供配置 ](https://github.com/bia-pain-bache/BPB-Worker-Panel)  
+&ensp;&ensp;注意：pbp面板一定要修改密码，同时修改uuid参数,避免订阅被互联网程序爬取                    
 - cf自建节点dns泄漏修复方案     
 &ensp;&ensp;dns域名解析网站如果包括中国或者香港的，在把访问网址解析为目标ip时，可能会将你的真实访问域名和ip记录并标记上报给政府      
 dns和ip泄漏测试网站：    
