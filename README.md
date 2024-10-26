@@ -125,7 +125,8 @@ fdroid 官网：https://f-droid.org/，
 - [clouldfire国际官网](https://www.cloudflare.com/)      
 - 这里是[免费域名申请网站示例](https://dynv6.com/)             
 - 问题故障解决：下面视频up主为此节点部署开源项目作者，在他的视频列表能找到所有相关教程-[Worker Vless免费节点 进阶教程 解除cfdn网站访问限制，更换订阅器和添加clash的MultiMode模式/全局模式代理规则等](https://m.youtube.com/watch?v=s91zjpw3-P8&t=1446s&pp=2AGmC5ACAQ%3D%3D)  
-#### 其他方式-bpb面板（优选ip和各种设置比上面的方便）     
+#### 其他方式-bpb面板（优选ip和各种设置比上面的方便）-这个方式貌似不支持v2raya使用，v2rayn和v2rayng
+使用NORMAL SUB 订阅没问题，使用FULL NORMAL SUB 有问题，clash/sinbox支持FULL NORMAL SUB订阅       
 - [cf使用bpb面板搭建节点](https://kjgx668.blogspot.com/2024/10/warpvpnmasqueioswindowsmac.html)      
 - [图文教程](https://am.809098.xyz/bpb/)                
 - [补充教程](https://www.youtube.com/watch?v=BCch2Z4kNbA)   
