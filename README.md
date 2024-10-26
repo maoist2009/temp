@@ -131,7 +131,7 @@ fdroid 官网：https://f-droid.org/，
 - 项目地址：[GUI 面板提供 Worker 订阅、Fragment 设置和 Warp 配置，为使用（Sing-box、Clash 和 Xray 核心）的跨平台客户端提供配置 ](https://github.com/bia-pain-bache/BPB-Worker-Panel)  
 &ensp;&ensp;注意：pbp面板一定要修改密码，同时修改uuid参数,避免订阅被互联网程序爬取               
 - cf自建节点dns泄漏修复方案     
-&ensp;&ensp;dns域名解析网站如果包括中国或者香港的，在把访问网址解析为目标ip时，可能会将你的真实访问域名和ip记录并标记上报给政府   
+&ensp;&ensp;dns域名解析网站如果包括中国或者香港的，在把访问网址解析为目标ip时，可能会将你的真实访问域名和ip记录并标记上报给政府      
 dns和ip泄漏测试网站：    
 https://browserleaks.com/dns   
 webrtc泄漏测试网站：  
@@ -142,8 +142,12 @@ https://ipleak.net/
 &ensp;&ensp;这种dns泄漏需要修复  ，修复方法为 clouldfire部署bpb面板节点，部署完成后登陆后台bpb面板修改远程dnsb和本地dns,这里修改为adgruard的dns       
 远程dns   ：   https://dns.adguard-dns.com/dns-query          
 本地dns改为cf的  ：   1.1.1.1            
-proxyip为甲骨文的：用于解锁cf网站的代理访问以及网站带有cf验证（cf节点自己不能访问cf自己）     
-ProxyIP.Oracle.fxxk.dedyn.io                        
+proxyip改为美国甲骨文的：用于解锁cf网站的代理访问以及网站带有cf验证（cf节点自己不能访问cf自己）     
+ProxyIP.Oracle.fxxk.dedyn.io         
+&ensp;&ensp;这个proxyip是由 edgetunnel节点部署项目作者提供 ，如果要自己改其他 可以访问          
+[proxyip即时获取地址1](https://www.nslookup.io/domains/cdn-all.xn--b6gac.eu.org/dns-records/)      
+  [proxyip获取地址2](https://www.nslookup.io/domains/cdn.xn--b6gac.eu.org/dns-records/)           
+注意看 选择的proxyip不要是阿里云服务器的香港节点         
 &ensp;&ensp;改完以后保存并在代理软件内刷新节点    ，对于edgetunnel项目部署的节点要解决dns泄漏问题，因为不懂其源代码，可可行的方法为在v2r/clash内修改dns设置，开启强制dns覆盖，将本地和远程的dns都修改为clouldfire的   1.1.1.1                
 上面方法对于linux电脑并不会生效，因为linux电脑不会强制系统所有程序全局代理  ，即使开启了全局系统代理，解决-方法1.不使用代理协议软件而是使用协议软件，方法2.对于浏览器上网，在火狐浏览器设置-隐私安全-dns-勾选最大安全clouldfire（默认）          ，brave浏览器也有内置安全dns功能， 方法3：如果要给其他程序强制安全dns代理，在虚拟机内使用whonix系统，他的网关虚拟机和工作虚拟机是隔离的 网关连tor,工作虚拟机全局局域网连网关虚拟机上网，工作虚拟机和互联网不是直连，中间有网关虚拟机代理，可以有效避免操作环境的泄漏                         
 
