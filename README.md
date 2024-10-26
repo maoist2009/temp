@@ -131,7 +131,15 @@ fdroid 官网：https://f-droid.org/，
 - 项目地址：[GUI 面板提供 Worker 订阅、Fragment 设置和 Warp 配置，为使用（Sing-box、Clash 和 Xray 核心）的跨平台客户端提供配置 ](https://github.com/bia-pain-bache/BPB-Worker-Panel)  
 &ensp;&ensp;注意：pbp面板一定要修改密码，同时修改uuid参数,避免订阅被互联网程序爬取               
 - cf自建节点dns泄漏修复方案     
-&ensp;&ensp;dns域名解析如果保护中国或者香港可能会将你的真实访问域名和ip记录并标记，这种dns泄漏需要修复  ，修复方法为 clouldfire部署bpb面板节点，部署完成后登陆后台bpb面板修改远程dnsb和本地dns,这里修改为adgruard的dns       
+&ensp;&ensp;dns域名解析网站如果包括中国或者香港的，在把访问网址解析为目标ip时，可能会将你的真实访问域名和ip记录并标记上报给政府   
+dns和ip泄漏测试网站：    
+https://browserleaks.com/dns   
+webrtc泄漏测试网站：  
+https://browserleaks.com/webrtc  
+综合测试：
+https://ipleak.net/    
+    
+&ensp;&ensp;这种dns泄漏需要修复  ，修复方法为 clouldfire部署bpb面板节点，部署完成后登陆后台bpb面板修改远程dnsb和本地dns,这里修改为adgruard的dns       
 远程dns   ：   https://dns.adguard-dns.com/dns-query          
 本地dns改为cf的  ：   1.1.1.1            
 proxyip为甲骨文的：用于解锁cf网站的代理访问以及网站带有cf验证（cf节点自己不能访问cf自己）     
