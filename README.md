@@ -162,11 +162,13 @@ proxyip改为美国甲骨文的：用于解锁cf网站的代理访问以及网�
 &ensp;&ensp;缺点：此方法自建节点被墙后更换ip可能要额外付费，使用频率高容易被检测，因为一般是固定代理ip,长期连接固定的ip而且高流量一眼看出来是代理节点，出问题解决也相对麻烦。购买vps以及域名付费如果用支付宝微信等有泄漏实名的风险，因此最好使用可以匿名的加密虚拟货币，vps服务网站一般都是纯商业性质，承诺的隐私性不一定完全可靠        
 
 &ensp;&ensp;油管搜索相关租借vps自建节点教程，例子： （有效性请自行测试）    
- 
+免费vps：          
 - [免费白嫖10年VPS服务器serv00 并且一键部署自己的专属自建Vless节点 ｜小白教程｜自动化批量保号｜](https://www.youtube.com/watch?v=QnlzpvDl_mo)  
--[【零基础】2024最新,10年免费vps,搭建vpn,一本通,保姆级纯小白节点搭建教程,人人都能学会,目前最简单、最安全、最稳定的专属节点搭建方法,手把手自建节点搭建教学,晚高峰高速稳定,科学上网教程](https://www.youtube.com/watch?v=295wid5YbWI)       
+-[【零基础】2024最新,10年免费vps,搭建vpn,一本通,保姆级纯小白节点搭建教程,人人都能学会,目前最简单、最安全、最稳定的专属节点搭建方法,手把手自建节点搭建教学,晚高峰高速稳定,科学上网教程](https://www.youtube.com/watch?v=295wid5YbWI)  
+### 注意：上面两个视频主要是讲作用是怎么申请serv00和怎么用自己域名的，他们的保号教程也没必要学，过于复杂，用他们搭建的节点大概率被墙，所以需要用到下面的反代/换隧道的教程绕开墙               
+- [serv00自动化部署节点，vless+argo+vmess，批量保号+进程防杀+消息推送系列教程](https://www.youtube.com/playlist?list=PLaMnUIjE3d5zArqlLzTU2oMZ0h-5VP6C0)  重点看无视ip封锁，  sinbox,固定隧道这几期  ，托管到cf的域名目前限制较多，很多免费域名实测不能托管，建议使用付费域名，最低一年10块，[低价域名购买](www.namesilo.com/account/),里面是sbs等后缀域名是非常便宜的                        
 
-
+下面是其他付费vps方式：    
 - [付费租用vps自建节点教程，3x-ui，套 cloudflare，完全搭建vless 、Trojan、vmess](https://m.youtube.com/watch?v=JC_25k_3Q70)              
 - [付费最新自建机场节点喂饭级教程](https://m.youtube.com/watch?v=66V2J6lVv9E)          
 - [1分钟搭建Xray最新Reality协议|号称用不被封](https://m.youtube.com/watch?v=XB6W3c3dNQI&pp=ygUeY2xvdWxkZmlyZSDpg6jnvbJyZWFsaXR55Y2P6K6u)
