@@ -166,7 +166,7 @@ proxyip改为美国甲骨文的：用于解锁cf网站的代理访问以及网�
 - [免费白嫖10年VPS服务器serv00 并且一键部署自己的专属自建Vless节点 ｜小白教程｜自动化批量保号｜](https://www.youtube.com/watch?v=QnlzpvDl_mo)  
 -[【零基础】2024最新,10年免费vps,搭建vpn,一本通,保姆级纯小白节点搭建教程,人人都能学会,目前最简单、最安全、最稳定的专属节点搭建方法,手把手自建节点搭建教学,晚高峰高速稳定,科学上网教程](https://www.youtube.com/watch?v=295wid5YbWI)  
 ### 注意：上面两个视频主要是讲作用是怎么申请serv00和怎么用自己域名的，他们的保号教程也没必要学，过于复杂，用他们搭建的节点大概率被墙，所以需要用到下面的反代/换隧道的教程绕开墙               
-- [serv00自动化部署节点，vless+argo+vmess，批量保号+进程防杀+消息推送系列教程](https://www.youtube.com/playlist?list=PLaMnUIjE3d5zArqlLzTU2oMZ0h-5VP6C0)  重点看无视ip封锁，  sinbox,固定隧道这几期  ，托管到cf的域名目前限制较多，很多免费域名实测不能托管，建议使用付费域名，最低一年10块，[低价域名购买](www.namesilo.com/account/),里面是sbs等后缀域名是非常便宜的                        
+- [serv00自动化部署节点，vless+argo+vmess，批量保号+进程防杀+消息推送系列教程](https://www.youtube.com/playlist?list=PLaMnUIjE3d5zArqlLzTU2oMZ0h-5VP6C0)  重点看无视ip封锁，  sinbox,固定隧道这几期  ，托管到cf的域名目前限制较多，很多免费域名实测不能托管，建议使用付费域名，最低一年10块，[低价域名购买](www.namesilo.com/account/),里面是sbs等后缀域名是非常便宜的，serv00网站注册对ip要求比较高，不干净的ip难以通过（公共节点ip被多人使用注册），无法注册就需要换节点或软件                        
 
 下面是其他付费vps方式：    
 - [付费租用vps自建节点教程，3x-ui，套 cloudflare，完全搭建vless 、Trojan、vmess](https://m.youtube.com/watch?v=JC_25k_3Q70)              
