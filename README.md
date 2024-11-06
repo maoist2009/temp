@@ -163,14 +163,17 @@ proxyip改为美国甲骨文的：用于解锁cf网站的代理访问以及网�
 
 &ensp;&ensp;油管搜索相关租借vps自建节点教程，例子： （有效性请自行测试）    
 免费vps（freebsd系统的半vps，使用有限制）：                     
-              
+##### 免费匿名方案                 
 - 这种方式无无需自己的域名  
 [Serv00/CT8：一键部署Hysteria2代理，更有tuic5、vless-reality、vmess-ws、vmess-splithttp等多协议](https://www.youtube.com/watch?v=v6YOxCnekzM)
 
 - 这种方式需要能托管到clouldfire的域名    
 [serv00自动化部署节点，vless+argo+vmess，批量保号+进程防杀+消息推送系列教程](https://www.youtube.com/playlist?list=PLaMnUIjE3d5zArqlLzTU2oMZ0h-5VP6C0)  重点看无视ip封锁，  sinbox,固定隧道这几期  ，托管到cf的域名目前限制较多，很多免费域名实测不能托管，建议使用付费域名，最低一年10块，[低价域名购买](www.namesilo.com/account/),里面是sbs等后缀域名是非常便宜的，serv00网站注册对ip要求比较高，不干净的ip难以通过（公共节点ip被多人使用注册），无法注册就需要换节点或软件                            
-         
-下面是其他付费vps方式：        
+#####  使用甲骨文/微软/谷歌云的免费vps虚拟主机搭建
+- 甲骨文等虚拟主机免费版性能很一般，但是搭建节点完全够。只是这种方法虽然是免费，但是需要绑定虚拟银行卡，注册虚拟卡一般要100块左右。因此这种不能算严格意义的免费，能用虚拟货币开卡的尽量不要用国中国大陆支付宝等支付      
+
+##### 其他付费vps方式： 包括谷歌/甲骨文的付费vps 
+能用虚拟货币的尽量不要用中国大陆法币或者实名互联网货币                        
 - [付费租用vps自建节点教程，3x-ui，套 cloudflare，完全搭建vless 、Trojan、vmess](https://m.youtube.com/watch?v=JC_25k_3Q70)              
 - [付费最新自建机场节点喂饭级教程](https://m.youtube.com/watch?v=66V2J6lVv9E)          
 - [1分钟搭建Xray最新Reality协议|号称用不被封](https://m.youtube.com/watch?v=XB6W3c3dNQI&pp=ygUeY2xvdWxkZmlyZSDpg6jnvbJyZWFsaXR55Y2P6K6u)
