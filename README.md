@@ -1,5 +1,6 @@
-#### *所有教程都爬取自互联网开源项目，非原创，仅供学习测试使用,请勿用于任何非法用途，请勿分享到大陆商业网络平台，否则后果自负*                 
-&ensp;&ensp;所有软件和教程仅供测试用，请于24h删除,请勿用于违法犯罪目的        
+#### ==本网站/项目提供的任何资源教程搜集来自网络分享，非原创，仅用于教学测试和科学研究的目的，请在24小时内删除，切勿传播。假如你使用了本网站/项目提供的资源教程，请遵守所在国的法律法规，切勿用于涉及政治宗教色情犯罪等领域发布违法言论以及任何非法用途，同时请勿请勿分享到中国大陆商业网络平台，一切违法后果请自负。==
+               
+      
 #### &ensp;&ensp;下列软件均可在上方文件区免代理下载（仅方便不能初始代理的用户下载，版本更新不会快，最新版本安装请自行连接国际互联网后去推荐的官方网址下载或更新，有条件的最好验证签名或者哈希值确保下载过程中不被动手脚，有能力者最好自己从源代码拉取编译打包）                               
 
 自由开源免费连接国际互联网教程   
@@ -39,30 +40,54 @@
 
 --- 
 然后打开 下面 订阅网站网站（选一个能打开的 ）  ：       
-https://github.com/aiboboxx/v2rayfree                                   
-https://github.com/free18/v2ray              
-https://github.com/chengaopan/AutoMergePublicNodes     
+- 普通网站分享：  
 https://clashgithub.com/             
 https://wenode.cc/                   
 https://v2rayshare.com/                  
-https://onenode.cc/                 
-获取节点的一个电报群： https://t.me/zhibeii    （下载导入txt内的所有链接）          
+https://onenode.cc/        
+- github开源代码托管平台的项目：（比上面网站的稳定，使用稍微复杂一点）            
+    
+https://github.com/chengaopan/AutoMergePublicNodes          
+https://github.com/mahdibland/V2RayAggregator   
+https://github.com/aiboboxx/v2rayfree                                       
+https://github.com/free18/v2ray                            
+- 获取节点的电报群示例：     
+ https://t.me/zhibeii    （下载导入txt内的所有链接）          
 .......           
-- 选择最新日期的帖子  进去，找到订阅链接 —v2ray订阅链接:复制订阅链接        
+##### 使用教学：   
+- 以普通网站获取节点为例，选择最新日期的帖子  进去，找到订阅链接 —v2ray订阅链接:复制订阅链接        
 比如  ：https://node.wenode.cc/2023/05/20230501.txt      
-
-
 - 打开 nekbox  点击左侧三横 -分组  -添加分组- 分组类型-订阅（下方会刷新出来订阅设置）   ，再点击订阅链接 -粘贴上面的链接 ，分组名随意  ，然后勾选保存 
 - 返回首页  点击右侧 三点 -连接测试-url test 测试完成后可以在节点出看到ms延迟信息           
 - 点击 选择延迟较低的 节点   点击下方 的飞机图标即可连接   连接好以后 在飞机图标下方  点击测试连接  即可使用     
-
-- 这种节点需要每日进订阅网站订阅  更换订阅 地址               
+- 普通网站这种节点需要每日进订阅网站订阅  更换订阅 地址               
 更换方式为 点击  进入订阅网站 ，点击最新帖子  ，找到最新订阅地址 ，然后复制            
 - NEKBOX/v2r/clash软件内  再次打开分组  之前添加的分组 点击编辑图标，然后在订阅设置里面更换订阅 并保存  ，回到分组  点击 更新  即可刷新节点      
 
 - **此类免费订阅网站不少 ，可以打开       
 https://search.pub.solar/search         
 开源搜索 ，搜索 关键词    v2r 免费订阅   
+
+- 对于github上面的节点，很多都是可以自动更新的，只需要定时刷新订阅即可，有些原生订阅会被墙，这类如果提供了反代订阅/套cdn的转换订阅/加速订阅的，可以用来绕过墙，比如上面的项目  https://github.com/chengaopan/AutoMergePublicNodes       ,网站项目里面这段：        
+
+```
+添加 Base64 订阅：    
+    原始链接      
+    JsDelivr 反代（zzko.cn）            
+    JsDelivr Fastly CDN       
+    JsDelivr Cloudflare CDN       
+    JsDelivr GCore CDN      
+    KKGithub        
+    FastGit       
+以下加速链接可能无效：       
+    KGithub           
+    
+```
+原始链接下面套cdn的都可以绕墙  ，长按/右键复制其对应链接导入对应客户端,比如该项目提供的couldfire cdn加速的v2r订阅地址：                 
+`https://testingcf.jsdelivr.net/gh/chengaopan/AutoMergePublicNodes@master/list.txt    `     ，
+刷新节点连接使用（可以设置订阅刷新时间或者定时手动去刷新）
+- 也可以在github上搜索其他节点分享项目 ，关键词比如 `v2r免费订阅`   或者`clash免费订阅`                           
+     
 
 &ensp;&ensp; 注意：此类 公开节点来源不明（包括付费节点），不建议经常使用，最好只用于过渡使用，重点使用下面的方法  ，下面几种方法 使用可能都需要借助方法1临时连接国际互联网        
 &ensp;&ensp;注意开启全局模式（而不是规则模式或绕过局域网），避免真实ip泄漏，然后勾选不代理的应用避免非自由开源实名软件走代理自爆 ，有dns防护选项的应开启dns防护，使用浏览器上网比如火狐浏览器，应该下载disable   webrtc插件，来屏蔽媒体webrtc,避免代理后真实ip泄漏                      
