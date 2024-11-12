@@ -29,13 +29,18 @@
 此软件 [最新版官方下载地址](https://github.com/MatsuriDayo/NekoBoxForAndroid/releases)   -好像已经停止维护更新           
 同类      
 - [v2rayng](https://github.com/2dust/v2rayNG/releases)
-   -（安卓）下载地址  （更新维护比nekbox积极 ）                           
-- [clash-meta](https://github.com/MetaCubeX/ClashMetaForAndroid)  -安卓,clash使用的订阅为yaml而不是下面教程的txt）      
-- [flclash](https://github.com/chen08209/FlClash)-支持电脑安卓手机win和linux,或者在fdroid应用商店内下载               
-- [clash-verge-rev](https://github.com/clash-verge-rev/clash-verge-rev)  -电脑设备                  
-- [v2raya](https://v2raya.org/)-支持电脑设备，windows,linux等          
-- [v2rayn](https://github.com/2dust/v2rayN)-仅支持win,下载带core核心的64位）                
-- [sin-box](https://github.com/SagerNet/sing-box)-支持安卓和苹果             
+   - 支持安卓设备，更新维护比nekbox积极      
+
+- [v2raya](https://v2raya.org/)-支持电脑设备，包括windows,linux等             
+- [v2rayn](https://github.com/2dust/v2rayN)-仅支持win,下载带core核心的64位）
+                        
+- [clash-meta](https://github.com/MetaCubeX/ClashMetaForAndroid)  -安卓,clash使用的订阅为yaml而不是下面教程的txt）        
+- [clash-verge-rev](https://github.com/clash-verge-rev/clash-verge-rev)  -电脑设备     
+-  [Clash Nyanpasu](https://github.com/libnyanpasu/clash-nyanpasu)               -电脑设备     
+
+- [flclash](https://github.com/chen08209/FlClash)-支持电脑安卓手机和电脑设备,或者在fdroid应用商店内下载                                 
+- [sin-box](https://github.com/SagerNet/sing-box)-支持安卓和苹果以及各种电脑系统      
+- [hiddify](https://github.com/hiddify/hiddify-app)       ，支持安卓和苹果以及电脑系统    ，支持协议最多，订阅同时支持v2r/clash         
 - [苹果手机请换区后使用sinbox](https://apps.apple.com/us/app/sing-box/id6451272673?l=zh-cn&platform=iphone ) ，或者使用ios版v2r- OneClick    
 
 --- 
