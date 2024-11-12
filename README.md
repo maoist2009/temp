@@ -27,9 +27,8 @@
 &ensp;&ensp;这里以[nb4a安卓版为例（点击免代理下载）](https://codeberg.org/ljggfvn217/go-to-world/raw/branch/main/%E5%AE%89%E5%8D%93%E5%BC%80%E6%BA%90%E7%89%88%E4%B8%8B%E8%BD%BD/NB4A-1.3.1-arm64-v8a.apk)进行说明：  （clash/v
 2r/，sinbox使用方法类似）         
 此软件 [最新版官方下载地址](https://github.com/MatsuriDayo/NekoBoxForAndroid/releases)   -好像已经停止维护更新           
-同类      
-- [v2rayng](https://github.com/2dust/v2rayNG/releases)
-   - 支持安卓设备，更新维护比nekbox积极      
+同类：          
+- [v2rayng](https://github.com/2dust/v2rayNG/releases)  -支持安卓设备，更新维护比nekbox积极      
 
 - [v2raya](https://v2raya.org/)-支持电脑设备，包括windows,linux等             
 - [v2rayn](https://github.com/2dust/v2rayN)-仅支持win,下载带core核心的64位）
