@@ -206,14 +206,16 @@ proxyip改为美国甲骨文的：用于解锁cf网站的代理访问以及网�
 - [阿飞教程-零基础-2024最新,10年免费vps,搭建vpn,一本通,保姆级纯小白节点搭建教程,人人都能学会,目前最简单、最安全、最稳定的专属节点搭建方法,手把手自建节点搭建教学,晚高峰高速稳定,科学上网教程 ](https://afeinet.blogspot.com/2024/07/202410vpsvpn.html)  
 上面部署的可能被墙，可参考下面教程绕墙   
 - 需要自己的域名和clouldfire隧道        
-[serv00自动化部署节点，vless+argo+vmess，批量保号+进程防杀+消息推送系列教程](https://www.youtube.com/playlist?list=PLaMnUIjE3d5zArqlLzTU2oMZ0h-5VP6C0)  重点看无视ip封锁，  sinbox,固定隧道这几期  ，托管到cf的域名目前限制较多，很多免费域名实测不能托管，建议使用付费域名，最低一年10块，[低价域名购买](www.namesilo.com/account/),里面是sbs等后缀域名是非常便宜的，serv00网站注册对ip要求比较高，不干净的ip难以通过（公共节点ip被多人使用注册），无法注册就需要换节点或软件              
+[serv00自动化部署节点，vless+argo+vmess，批量保号+进程防杀+消息推送系列教程](https://www.youtube.com/playlist?list=PLaMnUIjE3d5zArqlLzTU2oMZ0h-5VP6C0)  重点看无视ip封锁，  sinbox,固定隧道这几期  ，vmess节点需要托管到自己的域名和clouldfire隧道，hy2节点不需要，
+托管到cf的域名目前限制较多，很多免费域名实测不能托管，建议使用付费域名，最低一年10块，[低价域名购买](www.namesilo.com/account/),里面是sbs等后缀域名是非常便宜的，serv00网站注册对ip要求比较高，不干净的ip难以通过（公共节点ip被多人使用注册），无法注册就需要换节点或软件                     
 
 - 无需域名和clouldfire隧道 防封     
   
 [Serv00/CT8：一键部署Hysteria2代理，更有tuic5、vless-reality、vmess-ws、vmess-splithttp等多协议](https://www.youtube.com/watch?v=v6YOxCnekzM)  
 
 ### 节点部署脚本推荐       
-- [老王多合一一键部署脚本开源项目](https://github.com/eooce/Sing-box)       
+- [老王多合一一键部署脚本开源项目](https://github.com/eooce/Sing-box)   
+- [serv00-play节点部署项目](https://github.com/frankiejun/serv00-play),vmess节点需要自己的域名和clouldfire隧道，hy2节点不需要          
 -         
 - [网页版ssh远程服务](https://ssh.hax.co.id/)   
 - shh软件linux内核系统可用 eaeyshh   
