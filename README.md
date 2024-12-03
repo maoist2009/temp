@@ -25,7 +25,7 @@
 - [电脑版免代理下载请点击此](https://codeberg.org/ljggfvn217/go-to-world/src/branch/main/%E7%94%B5%E8%84%91%E7%89%88)
 - 然后点击下载按钮下载并安装 ，苹果用户看后文                
    
-&ensp;&ensp;这里以[nb4a安卓版为例（点击免代理下载）](https://codeberg.org/ljggfvn217/go-to-world/raw/branch/main/%E5%AE%89%E5%8D%93%E5%BC%80%E6%BA%90%E7%89%88%E4%B8%8B%E8%BD%BD/NB4A-1.3.1-arm64-v8a.apk)进行说明：  （clash/v
+&ensp;&ensp;这里以nekbox-[NB4A安卓版为例（点击免代理下载）](https://gitea.com/gjcxn358/go-to-word/src/branch/main/%E5%AE%89%E5%8D%93%E5%BC%80%E6%BA%90%E7%89%88%E4%B8%8B%E8%BD%BD)进行说明：  （clash/v
 2r/，sinbox使用方法类似）         
 此软件 [最新版官方下载地址](https://github.com/MatsuriDayo/NekoBoxForAndroid/releases)             
 同类：          
