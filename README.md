@@ -161,7 +161,7 @@ fdroid 官网：https://f-droid.org/，
 - [clouldfire国际官网](https://www.cloudflare.com/)      
 - 这里是[免费域名申请网站示例](https://dynv6.com/)             
 - 问题故障解决：下面视频up主为此节点部署开源项目作者，在他的视频列表能找到所有相关教程-[Worker Vless免费节点 进阶教程 解除cfdn网站访问限制，更换订阅器和添加clash的MultiMode模式/全局模式代理规则等](https://m.youtube.com/watch?v=s91zjpw3-P8&t=1446s&pp=2AGmC5ACAQ%3D%3D)  
-- 部署后建议添加自定义域以开启TLS加密，同时添加clouldfire项目的这几个变量和值然后重新上传代码部署更新，输入值参考github项目里面的说明     
+- 部署后建议添加自定义域以开启TLS加密，同时添加clouldfire项目的这几个变量和值然后重新上传代码部署更新，输入值参考github项目里面的说明:     
 
 ' 
 UUID（可以浏览器搜索UUID在线生成，生成一个可用UUID值）     
@@ -171,7 +171,7 @@ SUB（优选IP订阅地址）
 DLS（测速筛选用）        
 ADDCSV（测速用）             
 PROXYIP（解锁clouldfire服务托管的网页登陆，为了安全性建议使用作者电报里分享美国ip订阅而不是项目介绍里给到香港阿里云部署的ip,值为：ProxyIP.Oracle.fxxk.dedyn.io）          
-URL（订阅主页伪装网页用，填入任意可访问的自定义网址格式比如：https://www.xxx.com/） 
+URL（  订阅主页伪装网页用，填入任意可访问的自定义网址格式比如：https://www.xxx.com/      ） 
 '        
              
 -  Cloudflare Workers & Pages 报错 Error 1101 详解，edgetunnel实用技巧，修复报错522 #科学上网 #优选ip #免费vpn #翻墙软件     
