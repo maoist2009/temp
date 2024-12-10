@@ -163,13 +163,19 @@ fdroid 官网：https://f-droid.org/，
 - 问题故障解决：下面视频up主为此节点部署开源项目作者，在他的视频列表能找到所有相关教程-[Worker Vless免费节点 进阶教程 解除cfdn网站访问限制，更换订阅器和添加clash的MultiMode模式/全局模式代理规则等](https://m.youtube.com/watch?v=s91zjpw3-P8&t=1446s&pp=2AGmC5ACAQ%3D%3D)  
 - 部署后建议添加自定义域以开启TLS加密，同时添加clouldfire项目的这几个变量和值然后重新上传代码部署更新，输入值参考github项目里面的说明
 ‘
-SUBCONFIG（）    
-SUBAPI（）    
-SUB（优选IP订阅地址）      
-DLS（测速用）      
-ADDCSV（测速用）      
-PROXYIP（解锁clouldfire服务托管的网页登陆）      
-URL（伪装网页用，填入任意可访问的自定义网址）       
+UUID（可以浏览器搜索UUID在线生成，生成一个可用UUID值）     
+SUBAPI（clash、singbox等订阅转换后端）         
+SUBCONFIG（clash、singbox等 订阅转换配置文件）         
+SUB（优选IP订阅地址）        
+DLS（测速筛选用）        
+ADDCSV（测速用）             
+PROXYIP（解锁clouldfire服务托管的网页登陆，为了安全性建议使用作者电报里分享美国ip订阅而不是项目介绍里给到香港阿里云部署的ip,值为：ProxyIP.Oracle.fxxk.dedyn.io）          
+URL（订阅主页伪装网页用，填入任意可访问的自定义网址格式比如：https://www.xxx.com/）                         
+-  Cloudflare Workers & Pages 报错 Error 1101 详解，edgetunnel实用技巧，修复报错522 #科学上网 #优选ip #免费vpn #翻墙软件     
+https://m.youtube.com/watch?v=r4uVTEJptdE
+
+更多翻墙教程请看
+群公告的网站        
 ’     
 - 
 #### 其他方式-bpb面板（优选ip和各种设置比上面的方便）      
@@ -212,7 +218,8 @@ proxyip改为美国甲骨文的：用于解锁cf网站的代理访问以及网�
 免费vps（freebsd系统的半vps，使用有限制）：    
 
 ##### 免费匿名方案  
-
+serv00需要去官网看是否还有注册名额（数量根据它的服务器多少会变更）      
+https://serv00.com/     
 - [serv00《一》关于免费10年VPS-serv00的注册与自动化保号-搭建vless节点](https://yixiu.icu/2024/07/12/serv00-re/)   
 - [阿飞教程-零基础-2024最新,10年免费vps,搭建vpn,一本通,保姆级纯小白节点搭建教程,人人都能学会,目前最简单、最安全、最稳定的专属节点搭建方法,手把手自建节点搭建教学,晚高峰高速稳定,科学上网教程 ](https://afeinet.blogspot.com/2024/07/202410vpsvpn.html)  
 上面部署的可能被墙，可参考下面教程绕墙   
