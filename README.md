@@ -180,9 +180,18 @@ URL（  订阅主页伪装网页用，填入任意可访问的自定义网址格
 -  Cloudflare Workers & Pages 报错 Error 1101 详解，edgetunnel实用技巧，修复报错522 #科学上网 #优选ip #免费vpn #翻墙软件     
 https://m.youtube.com/watch?v=r4uVTEJptdE
 
-更多翻墙教程请看
-群公告的网站        
-’     
+       
+’  
+
+
+#### 勇哥脚本（开启tls加密无需自定义域名，部署步骤最简单）
+- [CF-workers/pages代理脚本【Vless与Trojan】，Serv00三合一脚本【Vless-reality、Vmess-ws(Argo)、Hysteria2】支持一键自建proxyip与CF反代IP，CF优选官方IP三地区应用脚本，自动输出美、亚、欧最佳优选IP](https://github.com/yonggekkk/Cloudflare_vless_trojan)   视频教程参考项目介绍里的youtube链接    
+
+- cloulfire worker部署最简单，项目进入文件夹：       ”Vless_workers_pages“   https://github.com/yonggekkk/Cloudflare_vless_trojan/tree/main/Vless_workers_pages                        
+复制_workers.js中的加密代码部署，添加设置变量uuid,值填uuid生成网站生成的值，其他变量可以都不管，生成的cf域名/uuid值 进入自己的订阅网站，复制对应订阅到对应客户端即可。      
+
+- pages部署（支持绑定免费域名），下载_workers.js，下载好的文件后缀如果是_workers.txt就改为_workers.js，zip格式压缩此文件，pages服务上传此压缩包，添加变量uuid，点击再次部署重新上传压缩包覆盖，生成的cf域名/uuid值   进入自己的订阅网站，复制对应订阅到对应客户端即可。   
+
 - 
 #### 其他方式-bpb面板（优选ip和各种设置比上面的方便）      
 这个方式貌似不支持v2raya使用，v2rayn和v2rayng
