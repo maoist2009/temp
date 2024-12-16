@@ -6,7 +6,7 @@
 自由开源免费连接国际互联网教程   
 ```
 目录 ：    
-1.nekbox/v2r/clash /sinbox等自由及开源程序加机场  
+1.nekbox/v2r/clash /singbox等自由及开源程序加机场  
 1.2 临时使用非开源程序（风险较高，仅用于其他手段全部都失效时临时使用且不能用于任何敏感用途）          
 2.开源程序迷雾通                  
 3.开源程序protonvpn                 
@@ -21,12 +21,12 @@
           
 &ensp;&ensp; 优点：软件自由开源，可以使用别人搭建的节点也可以自己搭建节点  ，只要是正常tls加密，节点一般不能破解用户加密流量只可能记录真实ip和真实访问地址        
 &ensp;&ensp; 缺点：非自建的机场节点不一定可靠（可能记录日志并泄漏ip），非自建节点（不管是付费还是免费）都可能存在高峰期拥堵网速慢不稳定的情况，购买的付费机场可能随时跑路或者本身搭建技术不过关挑选的vps有问题所以有风险，别人搭建的免费节点也好不到哪里去，自建节点请看标题5   ，同时避免使用中国包括香港和澳门的节点               
-- [点击上方README.md上面的安卓开源版文件夹内的的nb4a.apk/v2r/clash](https://codeberg.org/ljggfvn217/go-to-world/src/branch/main/%E5%AE%89%E5%8D%93%E5%BC%80%E6%BA%90%E7%89%88%E4%B8%8B%E8%BD%BD) ，  
+- [点击上方README.md上面的安卓开源版文件夹内的的nb4a.apk/v2r/clash/singbox/迷雾通/protonvpn](https://codeberg.org/ljggfvn217/go-to-world/src/branch/main/%E5%AE%89%E5%8D%93%E5%BC%80%E6%BA%90%E7%89%88%E4%B8%8B%E8%BD%BD) ，  
 - [电脑版免代理下载请点击此](https://codeberg.org/ljggfvn217/go-to-world/src/branch/main/%E7%94%B5%E8%84%91%E7%89%88)
 - 然后点击下载按钮下载并安装 ，苹果用户看后文                
    
 &ensp;&ensp;这里以nekbox-[NB4A安卓版为例（点击免代理下载）](https://gitea.com/gjcxn358/go-to-word/src/branch/main/%E5%AE%89%E5%8D%93%E5%BC%80%E6%BA%90%E7%89%88%E4%B8%8B%E8%BD%BD)进行说明：  （clash/v
-2r/，sinbox使用方法类似）         
+2r/singbox使用方法类似）         
 此软件 [最新版官方下载地址](https://github.com/MatsuriDayo/NekoBoxForAndroid/releases)             
 同类：          
 - [v2rayng](https://github.com/2dust/v2rayNG/releases)  -支持安卓设备，更新维护比nekbox积极      
@@ -39,8 +39,8 @@
 -  [Clash Nyanpasu](https://github.com/libnyanpasu/clash-nyanpasu)               -电脑设备     
 
 - [flclash](https://github.com/chen08209/FlClash)-支持电脑安卓手机和电脑设备,或者在fdroid应用商店内下载                                 
-- [sin-box](https://github.com/SagerNet/sing-box)-支持安卓和苹果以及各种电脑系统      
-- [hiddify](https://github.com/hiddify/hiddify-app)       ，支持安卓和苹果以及电脑系统包括linux（电脑上支持vpn模式-需要root权限）    ，支持协议最多，订阅同时支持v2r/clash         
+- [sing-box](https://github.com/SagerNet/sing-box)-支持安卓和苹果以及各种电脑系统      
+- [hiddify](https://github.com/hiddify/hiddify-app)       推荐，支持安卓和苹果以及电脑系统包括linux（电脑上支持vpn模式-需要root权限）    ，支持协议最多，订阅同时支持v2r/clash         
 - [karing](https://github.com/KaringX/karing)-疑似非开源支持苹果/安卓/windows,支持v2r/clash/singbox订阅，支持ip/dns泄露检测/dns加密（doh）   /tls/https3等         
 - [苹果手机请换区后使用sinbox](https://apps.apple.com/us/app/sing-box/id6451272673?l=zh-cn&platform=iphone ) ，或者使用ios版v2r- OneClick ，    
 苹果手机其他客户端比如： Karing、Hiddify Proxy & VPN、Shadowrocket(小火箭)、Streisand、v2box           
