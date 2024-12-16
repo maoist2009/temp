@@ -41,6 +41,7 @@
 - [flclash](https://github.com/chen08209/FlClash)-支持电脑安卓手机和电脑设备,或者在fdroid应用商店内下载                                 
 - [sin-box](https://github.com/SagerNet/sing-box)-支持安卓和苹果以及各种电脑系统      
 - [hiddify](https://github.com/hiddify/hiddify-app)       ，支持安卓和苹果以及电脑系统    ，支持协议最多，订阅同时支持v2r/clash         
+- [karing](https://github.com/KaringX/karing)-*推荐，支持苹果/安卓/windows,支持v2r/clash/singbox订阅，支持ip/dns泄露检测/dns加密（doh）        
 - [苹果手机请换区后使用sinbox](https://apps.apple.com/us/app/sing-box/id6451272673?l=zh-cn&platform=iphone ) ，或者使用ios版v2r- OneClick ，    
 苹果手机其他客户端比如： Karing、Hiddify Proxy & VPN、Shadowrocket(小火箭)、Streisand、v2box           
 
