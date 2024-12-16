@@ -40,8 +40,8 @@
 
 - [flclash](https://github.com/chen08209/FlClash)-支持电脑安卓手机和电脑设备,或者在fdroid应用商店内下载                                 
 - [sin-box](https://github.com/SagerNet/sing-box)-支持安卓和苹果以及各种电脑系统      
-- [hiddify](https://github.com/hiddify/hiddify-app)       ，支持安卓和苹果以及电脑系统    ，支持协议最多，订阅同时支持v2r/clash         
-- [karing](https://github.com/KaringX/karing)-*推荐，支持苹果/安卓/windows,支持v2r/clash/singbox订阅，支持ip/dns泄露检测/dns加密（doh）   /tls/https3等      
+- [hiddify](https://github.com/hiddify/hiddify-app)       ，支持安卓和苹果以及电脑系统包括linux（电脑上支持vpn模式-需要root权限）    ，支持协议最多，订阅同时支持v2r/clash         
+- [karing](https://github.com/KaringX/karing)-疑似非开源支持苹果/安卓/windows,支持v2r/clash/singbox订阅，支持ip/dns泄露检测/dns加密（doh）   /tls/https3等         
 - [苹果手机请换区后使用sinbox](https://apps.apple.com/us/app/sing-box/id6451272673?l=zh-cn&platform=iphone ) ，或者使用ios版v2r- OneClick ，    
 苹果手机其他客户端比如： Karing、Hiddify Proxy & VPN、Shadowrocket(小火箭)、Streisand、v2box           
 
@@ -67,7 +67,9 @@ https://github.com/free18/v2ray
 - 特别注意：正式使用前请在代理软件设置内勾选分应用代理，选择需要代理的应用或者绕过不需要代理的应用，避免实名服务使用代理自爆翻墙           
 - 以普通网站获取节点为例，选择最新日期的帖子  进去，找到订阅链接 —v2ray订阅链接:复制订阅链接        
 比如  ：https://node.wenode.cc/2023/05/20230501.txt      
-- 打开 nekbox  点击左侧三横 -分组  -添加分组- 分组类型-订阅（下方会刷新出来订阅设置）   ，再点击订阅链接 -粘贴上面的链接 ，分组名随意  ，然后勾选保存 
+- 打开 nekbox  点击左上侧三横 -分组  -添加分组- 分组类型-订阅（下方会刷新出来订阅设置）   ，再点击订阅链接 -粘贴上面的链接 ，分组名随意  ，然后勾选保存
+- 点击左上侧三横-路由-关闭中国域名绕过和中国ip绕过规则，点击设置-关闭绕过局域网-开启分应用代理-点击不代理的应用，勾选无需代理的所有应用，如果是国产系统，应选择仅代理勾选应用模式并勾选需要代理的应用    
+- dns设置-远程dns改为cloudfire加密域名解析“ https://1.1.1.1/dns-query ”或谷歌加密域名解析 ”https://dns.google/dns-query”    
 - 返回首页  点击右侧 三点 -连接测试-url test 测试完成后可以在节点出看到ms延迟信息           
 - 点击 选择延迟较低的 节点   点击下方 的飞机图标即可连接   连接好以后 在飞机图标下方  点击测试连接  即可使用     
 - 普通网站这种节点需要每日进订阅网站订阅  更换订阅 地址               
