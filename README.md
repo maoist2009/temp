@@ -263,10 +263,11 @@ ssh登陆vps：服务器三选一，端口：22
 cache服务器号.serv00.com      
 web服务器号.serv00.com       
 s服务器号.serv00.com     
- ssh连接serve服务器端口可为22，用户名和密码为serve注册的，连接地址有三种地址比如服务器6的      
+ ssh连接serve服务器端口可为22，用户名和密码为serve注册的，如果ssh挂代理登陆不上去可以直连，连接地址有三种地址比如服务器6的       
 `web6.serv00.com`      
 `s6.serv00.com`       
-`cache6.serv00.com`           
+`cache6.serv00.com`             
+哪个可以用哪个         
 
 根据油管up勇哥的说明：可以用下面这个代理网站访问注册，不行多换几个国家就行   https://www.lumiproxy.com/zh-hans/online-proxy/proxysite/    注册价格填写free      
 serv00 这个对ip干净的度要求特别严格，如果注册不了，闲鱼上面有代注册和买注册好的账户的，只需几块钱，买来后修改密码使用，发货可以注册一个临时邮箱或匿名邮箱绑定火狐马甲邮箱让对面发到你假邮箱上 
