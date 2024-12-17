@@ -251,14 +251,29 @@ https://serv00.com/
 
 ### 节点部署脚本推荐       
 - [老王多合一一键部署脚本开源项目](https://github.com/eooce/Sing-box)   
-- [serv00-play节点部署项目](https://github.com/frankiejun/serv00-play),vmess节点需要自己的域名和clouldfire隧道，hy2节点不需要          
+-推荐 [serv00-play节点部署项目](https://github.com/frankiejun/serv00-play),vmess节点需要自己的域名和clouldfire隧道，hy2节点不需要  
+项目内可以设置保活，更换ip等操作        
 -         
 - [网页版ssh远程服务](https://ssh.hax.co.id/)   
-- shh软件linux内核系统可用 eaeyshh   
-- ssh连接serve服务器端口可为22，用户名和密码为serve注册的，连接地址有三种地址比如服务器6的   
+- shh软件linux内核系统可用 eaeyshh   ，安卓可以用   
+cooneectbot       
+- serv00 vps网站登陆 " https://panel服务器号.serv00.com/ ",比如服务器10
+“https://panel10.serv00.com/“    
+ssh登陆vps：服务器三选一，端口：22
+cache服务器号.serv00.com
+web服务器号.serv00.com
+s服务器号.serv00.com
+ ssh连接serve服务器端口可为22，用户名和密码为serve注册的，连接地址有三种地址比如服务器6的   
 `web6.serv00.com`      
 `s6.serv00.com`       
 `cache6.serv00.com`       
+
+根据油管up勇哥的说明：可以用下面这个代理网站访问注册，不行多换几个国家就行   https://www.lumiproxy.com/zh-hans/online-proxy/proxysite/    注册价格填写free      
+serv00 这个对ip干净的度要求特别严格，如果注册不了，闲鱼上面有代注册和买注册好的账户的，只需几块钱，买来后修改密码使用，发货可以注册一个临时邮箱或匿名邮箱绑定火狐马甲邮箱让对面发到你假邮箱上 
+##### 提醒：serv00需要每隔三个月内登陆一次，不然会被回收账户            
+
+
+
 #####  使用甲骨文/微软/谷歌云的免费vps虚拟主机搭建 
 - 甲骨文等虚拟主机免费版性能很一般，但是搭建节点完全够。只是这种方法虽然是免费，但是需要绑定虚拟银行卡，注册虚拟卡一般要100块左右。因此这种不能算严格意义的免费，能用虚拟货币开卡的尽量不要用国中国大陆支付宝等支付      
 
