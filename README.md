@@ -258,15 +258,15 @@ https://serv00.com/
 - shh软件linux内核系统可用 eaeyshh   ，安卓可以用   
 cooneectbot       
 - serv00 vps网站登陆 " https://panel服务器号.serv00.com/ ",比如服务器10
-“https://panel10.serv00.com/“    
-ssh登陆vps：服务器三选一，端口：22
-cache服务器号.serv00.com
-web服务器号.serv00.com
-s服务器号.serv00.com
- ssh连接serve服务器端口可为22，用户名和密码为serve注册的，连接地址有三种地址比如服务器6的   
+“https://panel10.serv00.com/“      
+ssh登陆vps：服务器三选一，端口：22       
+cache服务器号.serv00.com      
+web服务器号.serv00.com       
+s服务器号.serv00.com     
+ ssh连接serve服务器端口可为22，用户名和密码为serve注册的，连接地址有三种地址比如服务器6的      
 `web6.serv00.com`      
 `s6.serv00.com`       
-`cache6.serv00.com`       
+`cache6.serv00.com`           
 
 根据油管up勇哥的说明：可以用下面这个代理网站访问注册，不行多换几个国家就行   https://www.lumiproxy.com/zh-hans/online-proxy/proxysite/    注册价格填写free      
 serv00 这个对ip干净的度要求特别严格，如果注册不了，闲鱼上面有代注册和买注册好的账户的，只需几块钱，买来后修改密码使用，发货可以注册一个临时邮箱或匿名邮箱绑定火狐马甲邮箱让对面发到你假邮箱上 
