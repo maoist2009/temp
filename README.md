@@ -196,7 +196,7 @@ https://m.youtube.com/watch?v=r4uVTEJptdE
 - pages部署（支持绑定免费域名），下载_workers.js，下载好的文件后缀如果是_workers.txt就改文件名为_workers.js，zip格式压缩此文件，pages服务上传此压缩包，添加变量uuid，点击再次部署重新上传压缩包覆盖，生成的cf域名/uuid值   进入自己的订阅网站，复制对应订阅到对应客户端即可。   
 
 - 
-#### 其他方式-bpb面板（优选ip和各种设置比上面的方便）      
+#### 其他方式-bpb面板项目（容易被封，目前不是很推荐）         
 这个方式貌似不支持v2raya使用，v2rayn和v2rayng
 使用NORMAL SUB 订阅没问题，使用FULL NORMAL SUB 有问题，clash/sinbox支持FULL NORMAL SUB订阅  被     
          
