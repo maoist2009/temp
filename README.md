@@ -283,7 +283,8 @@ serv00 这个对ip干净的度要求特别严格，如果注册不了，闲鱼�
 #####  serv00简要部署文字教程       
 
 0. 如果免费注册失败，可以闲鱼搜索“serv00”，几块钱买一个成品账户，最好搞一个马甲邮箱或者临时邮箱叫他发货到你境外匿名邮箱            
-1. 先登陆服务器网站 ，修改密码，然后
+1. 先登陆服务器网站 `https://panel服务器号.serv00.com` 比如服务器6 `https://panel6.serv00.com`              
+，修改密码，然后
 在网站主页的的 Additional  services选项       
 打开        
 Run your own   applications          
@@ -300,7 +301,8 @@ ConnectBot (SSH 和本地 shell 客户端)
  https://f-droid.org/packages/org.connectbot/            
 3. 打开软件，点击加号，添加主机账户
 输入       
-`用户名@s服务器号.serv00.com:22`       
+`用户名@s服务器号.serv00.com:22`   ,比如服务器6,  `用户名@s6.serv00.com:22`         
+如果登陆失败，把@后面地址换成       `cache服务号.serv00.com`或`web服务号.serv00.com` ，都登陆不上可以换代理或者关闭代理       
 保存        
 点击连接         
 确定连接，输入密码登陆         
