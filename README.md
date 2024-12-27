@@ -16,7 +16,9 @@
  ```      
 - [图文pdf教程参考资料点击此跳转](https://gitea.com/gjcxn358/go-to-word/src/branch/main/%E5%9B%BE%E6%96%87pdf%E6%95%99%E7%A8%8B) ,图文教程请结合下面的文字说明一起使用，pdf图文教程更新速度比简版文字教程慢，因为不能实时编辑，pdf教程和这里的文字教程有冲突的地方以这里为准   
                           
----     
+---   
+
+
 ## 1. nekbox/v2r/clash /sinbox等自由及开源代理程序加机场    
           
 &ensp;&ensp; 优点：软件自由开源，可以使用别人搭建的节点也可以自己搭建节点  ，只要是正常tls加密，节点一般不能破解用户加密流量只可能记录真实ip和真实访问地址        
@@ -124,6 +126,8 @@ https://search.pub.solar/search
 &ensp;&ensp;几种方式可以配合使用，避免一种故障完全断联，注意勾选允许代理和应用或者不允许代理的应用，不让非自由开源实名软件走代理自爆             
                     
 --- 
+
+
 ## 3.  protonvpn  
 提醒：此应用免费版只能全局vpn,不能让部分应用绕过，因此如果设备是非纯国外系统以及登陆了实名账户（国产改版安卓比比如oppo/vivo/小米手机默认系统不算国外纯国外系统），不是很建议使用，国外系统如果安装了国产非自由开源应用，应使用shelter开启工作空间进行和其他应用的环境隔离               
 &ensp;&ensp;第一种方式联机以后 ，也可以下载瑞士的自由及开源vpn软件protonvpn            
@@ -133,8 +137,10 @@ fdroid 官网：https://f-droid.org/，
 苹果版请看 https://protonvpn.com/download-ios            
 &ensp;&ensp;优点：免费用户不限速，支持图标伪装同时不限速，支持多种vpn协议包括自己的混淆协议，相比迷雾通，他是瑞士软件和瑞士开发者与中国完全无关联          
 &ensp;&ensp;缺点：免费版用户节点较少，免费版不能使用他的tor服务，不能自由更换节点，免费版只能开全局模式，使用时注意不要在环境内放国产软件，如果是非国外开源类原生安卓系统，应该放在工作空间内使用（使用软件shelter开启-在fdroid应用商店下载），工作空间内只包含自由及开源软件。   
-&ensp;&ensp;proton公司的邮箱服务有因瑞士法律被迫向欧美提供瑞士境内用户数据的案例（官方提醒瑞士用户一定不要直连而是代理/vpn访问） ，protonvpn目前无泄漏用户隐私案例                             
-        
+&ensp;&ensp;proton公司的邮箱服务有因瑞士法律被迫向欧美提供瑞士境内用户数据的案例（官方提醒瑞士用户一定不要直连而是代理/vpn访问） ，protonvpn目前无泄漏用户隐私案例                               
+ ---   
+
+
 ## 4 .  使用tor洋葱网络     
 &ensp;&ensp;优点：可以用于访问暗网，自由及开源，相比其他方案，tor的三次节点随机跳转确保追踪真实ip和加密数据比其他方式都困难，一个节点是钓鱼节点也无法完全同时掌握来源和去处，节点是公开的且任何人都可以部署分享给他人使用 ，tor浏览器可以让使用tor网络的人看起来指纹一样难以区分                         
 
@@ -182,10 +188,6 @@ URL（  订阅主页伪装网页用，填入任意可访问的自定义网址格
              
 -  Cloudflare Workers & Pages 报错 Error 1101 详解，edgetunnel实用技巧，修复报错522 #科学上网 #优选ip #免费vpn #翻墙软件     
 https://m.youtube.com/watch?v=r4uVTEJptdE
-
-       
-’  
-
 
 #### 勇哥脚本（开启tls加密无需自定义域名，部署步骤最简单）
 - [CF-workers/pages代理脚本【Vless与Trojan】，Serv00三合一脚本【Vless-reality、Vmess-ws(Argo)、Hysteria2】支持一键自建proxyip与CF反代IP，CF优选官方IP三地区应用脚本，自动输出美、亚、欧最佳优选IP](https://github.com/yonggekkk/Cloudflare_vless_trojan)   视频教程参考项目介绍里的youtube链接    
@@ -271,7 +273,8 @@ s服务器号.serv00.com
 
 根据油管up勇哥的说明：可以用下面这个代理网站访问注册，不行多换几个国家就行   https://www.lumiproxy.com/zh-hans/online-proxy/proxysite/    注册价格填写free      
 serv00 这个对ip干净的度要求特别严格，如果注册不了，闲鱼上面有代注册和买注册好的账户的，只需几块钱，买来后修改密码使用，发货可以注册一个临时邮箱或匿名邮箱绑定火狐马甲邮箱让对面发到你假邮箱上 
-##### 提醒：serv00需要每隔三个月内登陆一次，不然会被回收账户            
+##### 提醒：serv00需要每隔三个月内登陆一次，不然会被回收账户 
+
 ##### serv00简要部署文字教程   
 
 0. 如果免费注册失败，可以闲鱼搜索“serv00”，几块钱买一个成品账户，最好搞一个马甲邮箱或者临时邮箱叫他发货到你境外匿名邮箱            
@@ -292,18 +295,18 @@ ConnectBot (SSH 和本地 shell 客户端)
  https://f-droid.org/packages/org.connectbot/            
 3. 打开软件，点击加号，添加主机账户
 输入       
-'用户名@s服务器号.serv00.com:22   '   
+`用户名@s服务器号.serv00.com:22`       
 保存        
 点击连接         
 确定连接，输入密码登陆         
 4. 打开浏览器 访问项目     
   https://github.com/frankiejun/serv00-play  
   找到安装说明，复制指令        
-  'bash <(curl -Ls https://raw.githubusercontent.com/frankiejun/serv00-play/main/start.sh)'       
+  `bash <(curl -Ls https://raw.githubusercontent.com/frankiejun/serv00-play/main/start.sh)`       
   回到ConnectBot，粘贴指令确认，等待下载完成弹出操作列表列表.      
 5. 选择1安装/更新项目，安装完成输入0退出项目              
    然后输入         
-  'bash <(curl -Ls https://raw.githubusercontent.com/frankiejun/serv00-play/main/start.sh)'      
+  `bash <(curl -Ls https://raw.githubusercontent.com/frankiejun/serv00-play/main/start.sh)`           
   再次进入项目,选择配置sinbox项目,选择hy2,选择自动分配端口y（是）,自动uuid选择选择n（否）            
   在浏览器搜索uuid生成，生成一个uuid复制到connect 的uuid输入中              
   配置完成              
