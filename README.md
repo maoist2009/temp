@@ -272,7 +272,50 @@ s服务器号.serv00.com
 根据油管up勇哥的说明：可以用下面这个代理网站访问注册，不行多换几个国家就行   https://www.lumiproxy.com/zh-hans/online-proxy/proxysite/    注册价格填写free      
 serv00 这个对ip干净的度要求特别严格，如果注册不了，闲鱼上面有代注册和买注册好的账户的，只需几块钱，买来后修改密码使用，发货可以注册一个临时邮箱或匿名邮箱绑定火狐马甲邮箱让对面发到你假邮箱上 
 ##### 提醒：serv00需要每隔三个月内登陆一次，不然会被回收账户            
+##### serv00简要部署文字教程   
 
+0. 如果免费注册失败，可以闲鱼搜索“serv00”，几块钱买一个成品账户，最好搞一个马甲邮箱或者临时邮箱叫他发货到你境外匿名邮箱            
+1. 先登陆服务器网站 ，修改密码，然后
+在网站主页的的 Additional  services选项       
+打开        
+Run your own   applications          
+点击        
+enable         
+允许serv00跑自己的程序           
+然后添加端口，在网页主页点击            
+port reservation            
+Add port            
+点击random（任意随机）           
+Port type选择udp,然后点击add保存          
+
+
+
+
+2. 安卓可以在fdroid下载ssh远程软件来登陆serv00服务器           
+ConnectBot (SSH 和本地 shell 客户端)     
+ https://f-droid.org/packages/org.connectbot/            
+3. 打开软件，点击加号，添加主机账户
+输入       
+'用户名@s服务器号.serv00.com:22   '   
+保存        
+点击连接         
+确定连接，输入密码登陆         
+4. 打开浏览器 访问项目     
+  https://github.com/frankiejun/serv00-play  
+  找到安装说明，复制指令        
+  'bash <(curl -Ls https://raw.githubusercontent.com/frankiejun/serv00-play/main/start.sh)'       
+  回到ConnectBot，粘贴指令确认，等待下载完成弹出操作列表列表.      
+  5. 选择1安装/更新项目，安装完成输入0退出项目              
+   然后输入         
+  'bash <(curl -Ls https://raw.githubusercontent.com/frankiejun/serv00-play/main/start.sh)'      
+  再次进入项目,选择配置sinbox项目,选择hy2,选择自动分配端口y（是）,自动uuid选择选择n（否）            
+  在浏览器搜索uuid生成，生成一个uuid复制到connect 的uuid输入中              
+  配置完成              
+
+6. 选择设置保活的项目,选择singbox,选择hy2,保活时间直接点确认使用默认时间    ，配置推送输入n （否）            
+7. 选择运行项目         
+全选复制到笔记软件，复制其中的节点，节点信息导入hiddify（全平台）或安卓v2rayng使用,注意节点信息内无空格或空行，不要使用在线订阅转换器转换为clash/singbox节点订阅导入clash/singbox内使用，因为这个在线转换会泄漏节点信息导致被其他人盗用    
+8. 如果节点被封，可以重新上面步骤部署或者选择项目的更换项目服务器ip功能        
 
 
 #####  使用甲骨文/微软/谷歌云的免费vps虚拟主机搭建 
