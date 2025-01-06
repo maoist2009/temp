@@ -263,7 +263,7 @@ https://serv00.com/
 -         
 - [网页版ssh远程服务](https://ssh.hax.co.id/)   
 - shh软件linux内核系统可用 eaeyshh   ，安卓可以用   
-cooneectbot       
+connectbot       
 - serv00 vps网站登陆 " https://panel服务器号.serv00.com/ ",比如服务器10
 “https://panel10.serv00.com/“      
 ssh登陆vps：服务器三选一，端口：22       
