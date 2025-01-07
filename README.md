@@ -34,7 +34,7 @@
 - [v2rayng](https://github.com/2dust/v2rayNG/releases)  -支持安卓设备，更新维护比nekbox积极      
 
 - [v2raya](https://v2raya.org/)-支持电脑设备，包括windows,linux等             
-- [v2rayn](https://github.com/2dust/v2rayN)-仅支持win,下载带core核心的64位）
+- [v2rayn](https://github.com/2dust/v2rayN)-支持win/mac/linux,win下载带core核心的64位，linux下载zip压缩包赋予运行权后运行，参考他的说明   
                         
 - [clash-meta](https://github.com/MetaCubeX/ClashMetaForAndroid)  -安卓,clash使用的订阅为yaml而不是下面教程的txt）        
 - [clash-verge-rev](https://github.com/clash-verge-rev/clash-verge-rev)  -电脑设备     
