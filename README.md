@@ -61,7 +61,8 @@ https://onenode.cc/
 https://github.com/chengaopan/AutoMergePublicNodes          
 https://github.com/mahdibland/V2RayAggregator   
 https://github.com/aiboboxx/v2rayfree                                       
-https://github.com/free18/v2ray                            
+https://github.com/free18/v2ray      
+也可以在github搜索关键词 free v2r 按时间排序，找到其他人分享的公开节点                                  
 - 获取节点的电报群示例：     
  https://t.me/zhibeii    （下载导入txt内的所有链接）          
 .......           
@@ -71,7 +72,7 @@ https://github.com/free18/v2ray
 比如  ：https://node.wenode.cc/2023/05/20230501.txt      
 - 打开 nekbox  点击左上侧三横 -分组  -添加分组- 分组类型-订阅（下方会刷新出来订阅设置）   ，再点击订阅链接 -粘贴上面的链接 ，分组名随意  ，然后勾选保存
 - 点击左上侧三横-路由-关闭中国域名绕过和中国ip绕过规则，点击设置-关闭绕过局域网-开启分应用代理-点击不代理的应用，勾选无需代理的所有应用，如果是国产系统，应选择仅代理勾选应用模式并勾选需要代理的应用    
-- dns设置-远程和本地dns改为cloudfire加密域名解析“ https://1.1.1.1/dns-query ”或谷歌加密域名解析 ”https://dns.google/dns-query”  
+- dns设置-远程和本地dns改为cloudfire加密域名解析“ https://1.1.1.1/dns-query ”或谷歌加密域名解析 ”https://dns.google/dns-query”    ，
 - 关闭dns路由,开启fakedns  
 - 返回首页  点击右侧 三点 -连接测试-url test 测试完成后可以在节点出看到ms延迟信息           
 - 点击 选择延迟较低的 节点   点击下方 的飞机图标即可连接   连接好以后 在飞机图标下方  点击测试连接 ，打开浏览器，输入网址访访问国外的ip测试网站：        https://ipleak.net/    测试ip地址和dns地址是否全为国外       ，如果都为国外，就可以正常使用           
@@ -130,7 +131,7 @@ https://search.pub.solar/search
 --- 
 
 
-## 三. protonvpn        
+## 三. protonvpn    （免费版目前较难连接上）             
 ---              
 &ensp;&ensp;提醒：此应用免费版只能全局vpn,不能让部分应用绕过，因此如果设备是非纯国外系统以及登陆了实名账户（国产改版安卓比比如oppo/vivo/小米手机默认系统不算纯国外系统），不是很建议使用，国外系统如果安装了国产非自由开源应用，应使用shelter开启工作空间进行和其他应用的环境隔离                 
 &ensp;&ensp;第一种方式联机以后 ，也可以下载瑞士的自由及开源vpn软件protonvpn            
@@ -244,28 +245,14 @@ proxyip改为美国甲骨文的：用于解锁cf网站的代理访问以及网�
 &ensp;&ensp;油管搜索相关租借vps自建节点教程，例子： （有效性请自行测试）    
 免费vps（freebsd系统的半vps，使用有限制）：    
 
-### a. 免费匿名方案         
-serv00需要去官网看是否还有注册名额（数量根据它的服务器多少会变更）      
-https://serv00.com/     
-- [serv00《一》关于免费10年VPS-serv00的注册与自动化保号-搭建vless节点](https://yixiu.icu/2024/07/12/serv00-re/)   
-- [阿飞教程-零基础-2024最新,10年免费vps,搭建vpn,一本通,保姆级纯小白节点搭建教程,人人都能学会,目前最简单、最安全、最稳定的专属节点搭建方法,手把手自建节点搭建教学,晚高峰高速稳定,科学上网教程 ](https://afeinet.blogspot.com/2024/07/202410vpsvpn.html)  
-上面部署的可能被墙，可参考下面教程绕墙   
-- 需要自己的域名和clouldfire隧道        
-[serv00自动化部署节点，vless+argo+vmess，批量保号+进程防杀+消息推送系列教程](https://www.youtube.com/playlist?list=PLaMnUIjE3d5zArqlLzTU2oMZ0h-5VP6C0)  重点看无视ip封锁，  sinbox,固定隧道这几期  ，vmess节点需要托管到自己的域名和clouldfire隧道，hy2节点不需要，
-托管到cf的域名目前限制较多，很多免费域名实测不能托管，建议使用付费域名，最低一年10块，[低价域名购买](www.namesilo.com/account/),里面是sbs等后缀域名是非常便宜的，serv00网站注册对ip要求比较高，不干净的ip难以通过（公共节点ip被多人使用注册），无法注册就需要换节点或软件                     
+### a. 免费匿名方案                             
 
-- 无需域名和clouldfire隧道 防封     
-  
-[Serv00/CT8：一键部署Hysteria2代理，更有tuic5、vless-reality、vmess-ws、vmess-splithttp等多协议](https://www.youtube.com/watch?v=v6YOxCnekzM)  
+ 
 
 #### 节点部署脚本推荐       
-- [老王多合一一键部署脚本开源项目](https://github.com/eooce/Sing-box)   
--推荐 [serv00-play节点部署项目](https://github.com/frankiejun/serv00-play),vmess节点需要自己的域名和clouldfire隧道，hy2节点不需要  
-项目内可以设置保活，更换ip等操作        
+      
 -         
-- [网页版ssh远程服务](https://ssh.hax.co.id/)   
-- shh软件linux内核系统可用 eaeyshh   ，安卓可以用   
-connectbot       
+
 - serv00 vps网站登陆 " https://panel服务器号.serv00.com/ ",比如服务器10
 “https://panel10.serv00.com/“      
 ssh登陆vps：服务器三选一，端口：22       
@@ -278,64 +265,33 @@ s服务器号.serv00.com
 `cache6.serv00.com`             
 哪个可以用哪个         
 
-根据油管up勇哥的说明：可以用下面这个代理网站访问注册，不行多换几个国家就行   https://www.lumiproxy.com/zh-hans/online-proxy/proxysite/    注册价格填写free      
-serv00 这个对ip干净的度要求特别严格，如果注册不了，闲鱼上面有代注册和买注册好的账户的，只需几块钱，买来后修改密码使用，发货可以注册一个临时邮箱或匿名邮箱绑定火狐马甲邮箱让对面发到你假邮箱上 
-##### 提醒：serv00需要每隔三个月内登陆一次，不然会被回收账户 
+ 
 
-#####  serv00简要部署文字教程       
-
-0. 如果免费注册失败，可以闲鱼搜索“serv00”，几块钱买一个成品账户，最好搞一个马甲邮箱或者临时邮箱叫他发货到你境外匿名邮箱            
-1. 先登陆服务器网站 `https://panel服务器号.serv00.com` 比如服务器6 `https://panel6.serv00.com`              
-，修改密码，然后
-在网站主页的的 Additional  services选项       
-打开        
-Run your own   applications          
-点击        
-enable         
-允许serv00跑自己的程序           
-然后添加端口，在网页主页点击            
-port reservation            
-Add port            
-点击random（任意随机）           
-Port type选择udp,然后点击add保存          
-2. 安卓可以在fdroid下载ssh远程软件来登陆serv00服务器           
-ConnectBot (SSH 和本地 shell 客户端)     
- https://f-droid.org/packages/org.connectbot/            
-3. 打开软件，点击加号，添加主机账户
-输入       
-`用户名@s服务器号.serv00.com:22`   ,比如服务器6,  `用户名@s6.serv00.com:22`         
-如果登陆失败，把@后面地址换成       `cache服务号.serv00.com`或`web服务号.serv00.com` ，都登陆不上可以换代理或者关闭代理       
-保存        
-点击连接         
-确定连接，输入密码登陆         
-4. 打开浏览器 访问项目     
-  https://github.com/frankiejun/serv00-play  
-  找到安装说明，复制指令        
-  `bash <(curl -Ls https://raw.githubusercontent.com/frankiejun/serv00-play/main/start.sh)`       
-  回到ConnectBot，粘贴指令确认，等待下载完成弹出操作列表列表.      
-5. 选择1安装/更新项目，安装完成输入0退出项目              
-   然后输入         
-  `bash <(curl -Ls https://raw.githubusercontent.com/frankiejun/serv00-play/main/start.sh)`           
-  再次进入项目,选择配置sinbox项目,选择hy2,选择自动分配端口y（是）,自动uuid选择选择n（否）            
-  在浏览器搜索uuid生成，生成一个uuid复制到connect 的uuid输入中              
-  配置完成              
-
-6. 选择设置保活的项目,选择singbox,选择hy2,保活时间直接点确认使用默认时间    ，配置推送输入n （否）            
-7. 选择运行项目         
-全选复制到笔记软件，复制其中的节点，节点信息导入hiddify（全平台）或安卓v2rayng使用,注意节点信息内无空格或空行，不要使用在线订阅转换器转换为clash/singbox节点订阅导入clash/singbox内使用，因为这个在线转换会泄漏节点信息导致被其他人盗用    
-8. 如果节点被封，可以重新上面步骤部署或者选择项目的更换项目服务器ip功能        
+#####  serv00 免费vps            
+   serv00 目前更新了禁止代理服务的条款，很容易份封号，故不再做建议，仅作为备用,如有需要，去 youtube 搜索教程，项目可以参考 - [老王多合一一键部署脚本开源项目](https://github.com/eooce/Sing-box)   
+-推荐 [serv00-play节点部署项目](https://github.com/frankiejun/serv00-play),vmess节点需要自己的域名和clouldfire隧道，hy2节点不需要  
+项目内可以设置保活，更换ip等操作                
 
 ---
-####  b. 使用甲骨文/微软/谷歌云的免费vps虚拟主机搭建     
-- 甲骨文等虚拟主机免费版性能很一般，但是搭建节点完全够。只是这种方法虽然是免费，但是需要绑定虚拟银行卡，注册虚拟卡一般要100块左右。因此这种不能算严格意义的免费，能用虚拟货币开卡的尽量不要用国中国大陆支付宝等支付      
+####  b. 使用其他 vps虚拟主机搭建     
+- 甲骨文等虚拟主机免费版性能很一般，但是搭建节点完全够。只是这种方法虽然是免费，但是需要绑定国际信用卡，注册虚拟卡一般要100块左右。有学生教育邮箱地址可以免信用卡免费使用微软vps,因此这种不能算严免费，能用虚拟货币的尽量不要用中国大陆法币或者实名互联网
 
-#### c. 其他付费vps方式： 包括谷歌/甲骨文的付费vps    
-能用虚拟货币的尽量不要用中国大陆法币或者实名互联网货币                        
-- [付费租用vps自建节点教程，3x-ui，套 cloudflare，完全搭建vless 、Trojan、vmess](https://m.youtube.com/watch?v=JC_25k_3Q70)              
+- 网上搜索性价比高的国外vps厂商进行购买，最低大约 70-80左右一年，甲骨文微软谷歌等大厂较贵，有些支持支付宝微信支付（等于半匿名），最好使用匿名加密货币   
+
+
+- 购买好vps以后使用ssh远程连接软件登陆vps进行命令行部署        
+- [网页版ssh远程登陆vps服务](https://ssh.hax.co.id/)   
+- shh软件linux内核系统可用 eaeyshh   ，安卓可以用   
+connectbot    
+- linux桌面发行版如果使用终端登陆ssh，终端登陆ssh指令一般为   ssh 用户名@地址:端口号                   
+
+- 推荐使用github开源项目老王一键部署脚本，[vPS一键四协议安装脚本](https://github.com/eooce/Sing-box)            
+全过程教程参考                         
+- [付费租用vps自建节点教程， 、Trojan、vmess](https://m.youtube.com/watch?v=JC_25k_3Q70)              
 - [付费最新自建机场节点喂饭级教程](https://m.youtube.com/watch?v=66V2J6lVv9E)          
 - [1分钟搭建Xray最新Reality协议|号称用不被封](https://m.youtube.com/watch?v=XB6W3c3dNQI&pp=ygUeY2xvdWxkZmlyZSDpg6jnvbJyZWFsaXR55Y2P6K6u)
 为了应对 TLS in TLS 和指纹识别等阻断或封禁的风险，Xray-core 团队推出了 Vision 和 Reality 两种新颖的技术方案。它们能够有效地隐藏和保护流量的特征，提高安全性和稳定性。             
-&ensp;&ensp;自建的节点订阅可以导入clash/v2r/sinbox内使用
+&ensp;&ensp;自建的节点订阅可以导入clash/v2r/sinbox/singbox内使用    
 
 ---    
                
