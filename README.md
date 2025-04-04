@@ -262,19 +262,20 @@ proxyip改为美国甲骨文的：用于解锁cf网站的代理访问以及网�
 - 网上搜索性价比高的国外vps厂商进行购买，最低大约 70-80左右一年，甲骨文微软谷歌等大厂较贵，有些支持支付宝微信支付（等于半匿名），最好使用匿名加密货币   
 
 
-- 购买好vps以后使用ssh远程连接软件登陆vps进行命令行部署        
+- 购买vps时系统选择linux发行版，完成购买收到账户密码后，使用ssh远程连接软件登陆vps进行命令行部署              
 - [网页版ssh远程登陆vps服务](https://ssh.hax.co.id/)   
 - shh软件linux内核系统可用 eaeyshh   ，安卓可以用   
 connectbot    
-- linux桌面发行版如果使用终端登陆ssh，终端登陆ssh指令一般为   ssh 用户名@地址:端口号                   
+- linux桌面发行版如果使用终端登陆ssh，终端登陆ssh指令一般为   ssh 用户名@地址:端口号   ，然后根据提示输入密码完成登陆                   
 
-- 推荐使用github开源项目老王一键部署脚本，[vPS一键四协议安装脚本](https://github.com/eooce/Sing-box)            
+- 推荐使用github开源项目老王一键部署脚本，[vPS一键四协议安装脚本](https://github.com/eooce/Sing-box)   
+- 如果按上面推荐的脚本，密码登陆ssh后输入  bash <(curl -Ls https://raw.githubusercontent.com/eooce/sing-box/main/sing-box.sh)   ，根据提示完成安装并复制出节点信息             
 全过程教程参考                         
 - [付费租用vps自建节点教程， 、Trojan、vmess](https://m.youtube.com/watch?v=JC_25k_3Q70)              
 - [付费最新自建机场节点喂饭级教程](https://m.youtube.com/watch?v=66V2J6lVv9E)          
 - [1分钟搭建Xray最新Reality协议|号称用不被封](https://m.youtube.com/watch?v=XB6W3c3dNQI&pp=ygUeY2xvdWxkZmlyZSDpg6jnvbJyZWFsaXR55Y2P6K6u)
-为了应对 TLS in TLS 和指纹识别等阻断或封禁的风险，Xray-core 团队推出了 Vision 和 Reality 两种新颖的技术方案。它们能够有效地隐藏和保护流量的特征，提高安全性和稳定性。             
-&ensp;&ensp;自建的节点订阅可以导入clash/v2r/sinbox/singbox内使用    
+为了应对 TLS in TLS 和指纹识别等阻断或封禁的风险，Xray-core 团队推出了 Vision 和 Reality 两种新颖的技术方案。它们能够有效地隐藏和保护流量的特征，提高安全性和稳定性。 代理协议推荐less+reality和歇斯底里2（hy2），这两种目前特性少                                           
+&ensp;&ensp;自建的节点订阅可以导入clash/v2r/sinbox/singbox内使用                  
 
 ---    
                
