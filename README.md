@@ -251,7 +251,7 @@ proxyip改为美国甲骨文的：用于解锁cf网站的代理访问以及网�
 免费vps（freebsd系统的半vps，使用有限制）：    
 
 ### a. 免费匿名方案                             
-免费vps不稳定而且容易💡，目前暂时无固定方法和教程，请自行探索
+免费vps不稳定而且容易凉，目前暂时无固定方法和教程，请自行探索
                 
 
 ---
@@ -268,7 +268,7 @@ connectbot
 - linux桌面发行版如果使用终端登陆ssh，终端登陆ssh指令一般为   ssh 用户名@地址:端口号   ，然后根据提示输入密码完成登陆      
 ---                         
 (1).如果想零基础自动搭建，可以使用github上面的一键部署部署脚本                            
-- 可以使用github开源项目老王一键部署脚本，[vPS一键四协议安装脚本](https://github.com/eooce/Sing-box)   ,如果按上面推荐的脚本，密码登陆ssh后输入  bash <(curl -Ls https://raw.githubusercontent.com/eooce/sing-box/main/sing-box.sh)   ，根据提示完成安装并复制出节点信息。   或者使用此项目   [VPS一键脚本工具箱](https://github.com/eooce/ssh_tool)    。也可以在github搜索其他一键部署项目。                                     
+- 可以使用github开源项目老王一键部署脚本，[vPS一键四协议安装脚本](https://github.com/eooce/Sing-box)   ,根据项目的使用介绍，密码登陆ssh后可以输入`bash <(curl -Ls https://raw.githubusercontent.com/eooce/sing-box/main/sing-box.sh) `  ，根据提示完成安装并复制出节点信息。   或者使用此项目   [VPS一键脚本工具箱](https://github.com/eooce/ssh_tool)    。也可以在github搜索其他一键部署项目。                                                
 (2).如果有代码使用基础，最好是自行使用开源协议代码完全手动搭建，杜绝任何后门，比如要部署hy2协议节点，就去[hy2
 项目的官方网站](https://v2.hysteria.network/zh/)查看手动部署完整教程                                                                                                     
 全过程教程可以参考                                                 
