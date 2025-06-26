@@ -60,6 +60,7 @@ https://onenode.cc/
 - github开源代码托管平台的项目：（比上面网站的稳定，使用稍微复杂一点）            
     
 https://github.com/chengaopan/AutoMergePublicNodes          
+https://github.com/Barabama/FreeNodes         （这个是爬虫github其他人分享节点项目的项目）     
 https://github.com/mahdibland/V2RayAggregator   
 https://github.com/aiboboxx/v2rayfree                                       
 https://github.com/free18/v2ray      
