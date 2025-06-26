@@ -51,13 +51,15 @@
 - 软路由Openwrt：homeproxy    
 
 --- 
-然后打开 下面 订阅网站网站（选一个能打开的 ）  ：       
-- 普通网站分享：  
-https://clashgithub.com/             
+然后打开 下面 订阅网站网站（选一个能打开的 ）  ： 
+==特别提醒==： 下载分享的节点订阅网站的节点均为互联网公开分享的，相比自建节点，安全性一般，也无法审查是否为钓鱼节点，因此连接以后不要访问http前缀的网站（目标网站不带加密，内容对于节点服务器来说是完全透明的，包括账户密码，比如http：//bing.com），应只访问带加密的https前缀的网站(目标网站内容自带tls加密，节点服务器解密代理协议后也无法查看真实内容，只知道你的ip，比如https：//bing.com)，可以在火狐浏览器安全设置中开启仅访问https网站                           
+- 普通节点分享网站：  
+           
 https://wenode.cc/                   
 https://v2rayshare.com/                  
-https://onenode.cc/        
-- github开源代码托管平台的项目：（比上面网站的稳定，使用稍微复杂一点）            
+https://onenode.cc/    
+https://clashgithub.com/                  
+- github开源代码托管平台的项目：（比上面网站的稳定靠谱，使用稍微复杂一点）                      
     
 https://github.com/chengaopan/AutoMergePublicNodes          
 https://github.com/Barabama/FreeNodes         （这个是爬虫github其他人分享节点项目的项目）     
