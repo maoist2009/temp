@@ -251,14 +251,8 @@ proxyip改为美国甲骨文的：用于解锁cf网站的代理访问以及网�
 免费vps（freebsd系统的半vps，使用有限制）：    
 
 ### a. 免费匿名方案                             
-
- 
-
-#### 节点部署脚本推荐       
-       serv00 免费vps              
-   serv00 目前更新了禁止代理服务的条款，很容易份封号，故不再做建议，仅作为备用,如有需要，去 youtube 搜索教程，项目可以参考 - [老王多合一一键部署脚本开源项目](https://github.com/eooce/Sing-box)   
--推荐 [serv00-play节点部署项目](https://github.com/frankiejun/serv00-play),vmess节点需要自己的域名和clouldfire隧道，hy2节点不需要  
-项目内可以设置保活，更换ip等操作                   
+免费vps不稳定而且容易💡，目前暂时无固定方法和教程，请自行探索
+                
 
 ---
 ###  b. 使用其他 vps虚拟主机搭建       
@@ -269,9 +263,9 @@ proxyip改为美国甲骨文的：用于解锁cf网站的代理访问以及网�
 
 - 购买vps时系统选择linux发行版，完成购买收到账户密码后，使用ssh远程连接软件登陆vps进行命令行部署              
 - [网页版ssh远程登陆vps服务](https://ssh.hax.co.id/)   
-- shh软件linux内核系统可用 eaeyshh   ，安卓可以用   
-connectbot    
-- linux桌面发行版如果使用终端登陆ssh，终端登陆ssh指令一般为   ssh 用户名@地址:端口号   ，然后根据提示输入密码完成登陆                   
+- shh软件linux内核系统可用 eaeyshh或者 系统自带终端app  ，安卓可以用   
+connectbot              
+- linux桌面发行版如果使用终端登陆ssh，终端登陆ssh指令一般为   ssh 用户名@地址:端口号   ，然后根据提示输入密码完成登陆                       
 
 - 推荐使用github开源项目老王一键部署脚本，[vPS一键四协议安装脚本](https://github.com/eooce/Sing-box)   
 - 如果按上面推荐的脚本，密码登陆ssh后输入  bash <(curl -Ls https://raw.githubusercontent.com/eooce/sing-box/main/sing-box.sh)   ，根据提示完成安装并复制出节点信息             
