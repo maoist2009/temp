@@ -24,8 +24,9 @@
           
 &ensp;&ensp; 优点：软件自由开源，可以使用别人搭建的节点也可以自己搭建节点  ，只要是正常tls加密，节点一般不能破解用户加密流量只可能记录真实ip和真实访问地址        
 &ensp;&ensp; 缺点：非自建的机场节点不一定可靠（可能记录日志并泄漏ip），非自建节点（不管是付费还是免费）都可能存在高峰期拥堵网速慢不稳定的情况，购买的付费机场可能随时跑路或者本身搭建技术不过关挑选的vps有问题所以有风险，别人搭建的免费节点也好不到哪里去，自建节点请看标题5   ，同时避免使用中国包括香港和澳门的节点               
-- [点击上方README.md上面的安卓开源版文件夹内的的nekobox.apk/v2r/clash/singbox/迷雾通/protonvpn](https://gitea.com/gjcxn358/go-to-word/src/branch/main/%E5%AE%89%E5%8D%93%E5%BC%80%E6%BA%90%E7%89%88%E4%B8%8B%E8%BD%BD) ，  
-- [电脑版免代理下载请点击此](https://codeberg.org/ljggfvn217/go-to-world/src/branch/main/%E7%94%B5%E8%84%91%E7%89%88)
+- [点击上方README.md上面的安卓开源版文件夹内的的nekobox.apk/v2r/clash/singbox/迷雾通/protonvpn](https://gitea.com/gjcxn358/go-to-word/src/branch/main/%E5%AE%89%E5%8D%93%E5%BC%80%E6%BA%90%E7%89%88%E4%B8%8B%E8%BD%BD)  
+---   
+- [电脑版免代理下载请点击此](https://gitea.com/gjcxn358/go-to-word/src/branch/main/%E7%94%B5%E8%84%91%E7%89%88)  
 - 然后点击下载按钮下载并安装 ，苹果用户看后文                
    
 &ensp;&ensp;这里以nekbox-[NB4A安卓版为例（点击免代理下载）](https://gitea.com/gjcxn358/go-to-word/src/branch/main/%E5%AE%89%E5%8D%93%E5%BC%80%E6%BA%90%E7%89%88%E4%B8%8B%E8%BD%BD)进行说明：  （clash/v
