@@ -140,14 +140,15 @@ https://search.pub.solar/search
 --- 
 
 
-## 三. protonvpn    （免费版目前较难连接上）             
----              
-&ensp;&ensp;提醒：此应用免费版只能全局vpn,不能让部分应用绕过，因此如果设备是非纯国外系统以及登陆了实名账户（国产改版安卓比比如oppo/vivo/小米手机默认系统不算纯国外系统），不是很建议使用，国外系统如果安装了国产非自由开源应用，应使用shelter开启工作空间进行和其他应用的环境隔离                 
-&ensp;&ensp;               
- https://f-droid.org/packages/ch.protonvpn.android/   
-（fdroid自由软件商店内搜索下载）注册登陆使用不限速安全节点 （protonvpn注册需要连国际互联网 ）                  
-fdroid 官网：https://f-droid.org/ , 因为目前免费版较难连上，故不做详细说明。           
-                             
+## 三. protonvpn    
+   ---                     
+&ensp;&ensp;提醒：此应用免费版只能全局vpn,不能让部分应用绕过，因此如果设备是非纯国外系统以及登陆了实名账户（国产改版安卓比比如oppo/vivo/小米手机默认系统不算纯国外系统），不是很建议使用，国外系统如果安装了国产非自由开源应用，应使用shelter开启工作空间进行和其他应用的环境隔离                                             
+https://f-droid.org/packages/ch.protonvpn.android/           
+fdroid自由软件商店内搜索下载）注册登陆使用不限速安全节点 （protonvpn注册需要连国际互联网 ）                          fdroid 官网：https://f-droid.org/    
+下载安装后注册proton账户登陆使用，此过程需要先连上其他代理。    
+软件设置-应用图标-改为天气/便签/计算器 进行应用伪装           
+自动模式连接优先为wireguard协议，此协议加密型高但是无流量混淆特征很明显，容容易被墙，优点是速度快，为了更加安全和稳定可以在设置协议手动切换到自研的steath协议 。                                        
+                                                         
  ---   
 
 
