@@ -146,7 +146,8 @@ https://search.pub.solar/search
 https://f-droid.org/packages/ch.protonvpn.android/           
 fdroid自由软件商店内搜索下载）注册登陆使用不限速安全节点 （protonvpn注册需要连国际互联网 ）                          fdroid 官网：https://f-droid.org/    
 下载安装后注册proton账户登陆使用，此过程需要先连上其他代理。    
-软件设置-应用图标-改为天气/便签/计算器 进行应用伪装           
+软件设置-应用图标-改为天气/便签/计算器 进行应用伪装 
+和我们一起对抗审查-关闭数据收集和上传                 
 自动模式连接优先为wireguard协议，此协议加密型高但是无流量混淆特征很明显，容容易被墙，优点是速度快，为了更加安全和稳定可以在设置协议手动切换到自研的steath协议 。                                        
                                                          
  ---   
