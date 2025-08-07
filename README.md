@@ -251,17 +251,20 @@ proxyip改为美国甲骨文的：用于解锁cf网站的代理访问以及网�
 &ensp;&ensp;缺点：此方法自建节点被墙后更换ip可能要额外付费，一般可以免费换ip，使用频率高容易被检测，因为一般是固定代理ip,长期连接固定的ip而且高流量一眼看出来是代理节点，出问题解决也相对麻烦。购买vps以及域名付费如果用支付宝微信等有泄漏实名的风险，因此最好使用可以匿名的加密虚拟货币，vps服务网站一般都是纯商业性质，承诺的隐私性不一定完全可靠             
 
 &ensp;&ensp;油管搜索相关租借vps自建节点教程，例子： （有效性请自行测试）    
-免费vps（freebsd系统的半vps，使用有限制）：    
+  
 
 ### a. 免费匿名方案                             
-免费vps不稳定而且容易凉，目前暂时无固定方法和教程，请自行探索
-                
+免费vps不稳定而且容易凉，目前暂时无固定方法和教程，请自行探索。
+教程参考— 
+
+-  [永久白嫖谷歌云服务器 | 3个月试用过后依然有效 | 全网最详细小白教程 | Google Cloud Platform | 四个回车搭建Hysteria 2高速代理节点](https://www.youtube.com/watch?v=NN5JzsvJJuk)        
+
+- [真正永久免费VPS全攻略！抢注/续期注意要点 高速多节点VPN搭建 Warp部署提升ip纯净度|Hax/Woiden Free VPS | Cloudflare Warp](https://www.youtube.com/watch?v=-Z0MbGJKX9c)     
 
 ---
-###  b. 使用其他 vps虚拟主机搭建       
-- 甲骨文等虚拟主机免费版性能很一般，但是搭建节点完全够。只是这种方法虽然是免费，但是需要绑定国际信用卡，注册虚拟卡一般要100块左右。有学生教育邮箱地址可以免信用卡免费使用微软vps,因此这种不能算严免费，能用虚拟货币的尽量不要用中国大陆法币或者实名互联网
+###  b. 使用付费 vps虚拟主机搭建，一般比免费的更稳定              
 
-- 网上搜索性价比高的国外vps厂商进行购买，最低大约 70-80左右一年，甲骨文微软谷歌等大厂较贵，有些支持支付宝微信支付（等于半匿名），最好使用匿名加密货币   
+- 网上搜索性价比高的国外vps厂商进行购买，最低大约 70-80左右一年，甲骨文微软谷歌等大厂较贵，有些支持支付宝微信支付（等于半匿名），最好使用匿名加密货币           
 
 
 - 购买vps时系统选择linux发行版，完成购买收到账户密码后，使用ssh远程连接软件登陆vps进行命令行部署              
@@ -274,12 +277,19 @@ connectbot
 - 可以使用github开源项目老王一键部署脚本，[vPS一键四协议安装脚本](https://github.com/eooce/Sing-box)   ,根据项目的使用介绍，密码登陆ssh后可以输入`bash <(curl -Ls https://raw.githubusercontent.com/eooce/sing-box/main/sing-box.sh) `  ，根据提示完成安装并复制出节点信息。   或者使用此项目   [VPS一键脚本工具箱](https://github.com/eooce/ssh_tool)    。也可以在github搜索其他一键部署项目。                                                
 (2).如果有代码使用基础，最好是自行使用开源协议代码完全手动搭建，杜绝任何后门，比如要部署hy2协议节点，就去[hy2
 项目的官方网站](https://v2.hysteria.network/zh/)查看手动部署完整教程                                                                                                     
-全过程教程可以参考                                                 
+全过程教程可以参考             
+-    [真正永久免费VPS全攻略！抢注/续期注意要点 高速多节点VPN搭建 Warp部署提升ip纯净度|Hax/Woiden Free VPS | Cloudflare Warp](https://www.youtube.com/watch?v=-Z0MbGJKX9c)                                       
 - [付费租用vps自建节点教程， 、Trojan、vmess](https://m.youtube.com/watch?v=JC_25k_3Q70)              
 - [付费最新自建机场节点喂饭级教程](https://m.youtube.com/watch?v=66V2J6lVv9E)          
 - [1分钟搭建Xray最新Reality协议|号称用不被封](https://m.youtube.com/watch?v=XB6W3c3dNQI&pp=ygUeY2xvdWxkZmlyZSDpg6jnvbJyZWFsaXR55Y2P6K6u)
 为了应对 TLS in TLS 和指纹识别等阻断或封禁的风险，Xray-core 团队推出了 Vision 和 Reality 两种新颖的技术方案。它们能够有效地隐藏和保护流量的特征，提高安全性和稳定性。 代理协议推荐less+reality和歇斯底里2（hy2），这两种目前特性少                                                 
-&ensp;&ensp;自建的节点订阅可以导入clash/v2r/sinbox/singbox内使用                  
+&ensp;&ensp;自建的节点订阅可以导入clash/v2r/sinbox/singbox内使用         
+
+##### vps部署脚本：
+1. vPS一键四协议安装脚本： https://github.com/eooce/Sing-box        
+2. ArgoSB一键无交互小钢炮脚本:    https://github.com/yonggekkk/ArgoSB       
+3.  使用cloudfire的warp提高vps部署节点ip纯净度，warp多功能一键脚本，支持warp-go与wgcf切换 :  https://github.com/yonggekkk/warp-yg                            
+4. ...          
 
 ---    
                
