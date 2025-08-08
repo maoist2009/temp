@@ -288,8 +288,8 @@ connectbot
 ##### vps部署脚本：
 1. vPS一键四协议安装脚本： https://github.com/eooce/Sing-box        
 2. ArgoSB一键无交互小钢炮脚本:    https://github.com/yonggekkk/ArgoSB       
-3.  使用cloudfire的warp提高vps部署节点ip纯净度，warp多功能一键脚本，支持warp-go与wgcf切换 :  https://github.com/yonggekkk/warp-yg                            
-4. ...          
+3.  使用cloudfire的warp提高vps部署节点ip纯净度，warp多功能一键脚本，支持warp-go与wgcf切换 :  https://github.com/yonggekkk/warp-yg     (非开源)                          
+4. 【WGCF】连接CF WARP为服务器添加IPv4/IPv6网络 ]:   https://gitlab.com/ProjectWARP/warp-script    
 
 ---    
                
