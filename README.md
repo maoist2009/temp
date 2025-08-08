@@ -289,9 +289,9 @@ connectbot
 1. vPS一键四协议安装脚本： https://github.com/eooce/Sing-box        
 2. ArgoSB一键无交互小钢炮脚本:    https://github.com/yonggekkk/ArgoSB       
 #### 使用clouldfire的warp进行中转提高ip纯净度，对访问网站隐藏原始（vps）代理地址，可以将仅  ipv6的ps中转为ipv4+ipv6双栈                                               
-4. 【WGCF】连接CF WARP为服务器添加IPv4/IPv6网络 ]:   https://gitlab.com/ProjectWARP/warp-script  
-4. - CloudFlare WARP 一键管理脚本 :    https://gitlab.com/ProjectWARP/warp-script    
-5.  使用cloudfire的warp提高vps部署节点ip纯净度，warp多功能一键脚本，支持warp-go与wgcf切换 :  https://github.com/yonggekkk/warp-yg     (非开源)            
+3. 【WGCF】连接CF WARP为服务器添加IPv4/IPv6网络 ]:   https://gitlab.com/ProjectWARP/warp-script  
+4. -CloudFlare WARP 一键管理脚本 :   https://gitlab.com/Misaka-blog/warp-script/     
+5.  使用cloudfire的warp提高vps部署节点ip纯净度，warp多功能一键脚本，支持warp-go与wgcf切换 :  https://github.com/yonggekkk/warp-yg     (非开源)                    
 
 ---    
                
