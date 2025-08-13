@@ -302,7 +302,11 @@ connectbot
 下载脚本：                     
 `curl -O https://raw.githubusercontent.com/bin456789/reinstall/main/reinstall.sh || wget -O reinstall.sh $_
 `       ，        
-下载完成后输入`bash reinstall.sh ...`可查看可安装系统，以安装debian13 为例 指令为 ： `bash reinstall.sh debian 13`           ，输入新的密码（同ssh登陆密码） 并再次输入确认  ，最后输入`reboot`重启vps，断开ssh连接重新连接，这里密钥已经发生改变，需要删除原来的本地密钥所在目录（rm -R .ssh的目录）后再连接     ，然后就可以开始部署节点了。         
+下载完成后输入`bash reinstall.sh ...`可查看可安装系统，以安装debian13 为例 指令为 ： `bash reinstall.sh debian 13`           ，输入新的密码（同ssh登陆密码） 并再次输入确认  ，最后输入`reboot`重启vps，断开ssh连接重新连接，这里密钥已经发生改变，需要删除原来的本地密钥所在目录（rm -R .ssh的目录）后再连接     ，然后就可以开始部署节点了。     
+
+### 删除vps的系统和节点连接的日志保护隐私   
+- 删除vps的系统日志和 输入命令的历史记录参考：  https://codeberg.org/p23tyjujukk/linux-privacy-security/    
+- 删除 部署节点的连接日志——不同协议的方法不同，可网上或者ai查询 比如关键词： Vless协议禁用日志       
 
 
 
