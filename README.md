@@ -296,7 +296,7 @@ connectbot
 5.  yonggekkk-使用cloudfire的warp提高vps部署节点ip纯净度，warp多功能一键脚本，支持warp-go与wgcf切换 :  https://github.com/yonggekkk/warp-yg     (项目内有sh脚本源码，无开源申明)    
 
 
-#### 重装vps的linux系统为开源可靠的纯官方版本            
+### 重装vps的linux系统为开源可靠的纯官方版本            
 - 注意：部分Vps厂商提供的linux系统是修改版或内置监控程序，特别是腾讯/阿里等国产厂商的海外云服务器，为了安全，最好重装Vps为可靠的开源版本，参考此开源项目：一键DD/重装脚本(One-click reinstall OS on VPS) ： https://github.com/bin456789/reinstall                                     
 
 下载脚本：                     
