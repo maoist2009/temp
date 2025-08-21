@@ -384,8 +384,9 @@ git config --global --unset https.proxy
 ##### 这类部署的开源项目和教程比较多：比如：   
 
 
-#### 1. 甬哥脚本（部署步骤最简单，无需域名绑定）
-- [CF-workers/pages代理脚本【Vless与Trojan】，Serv00三合一脚本【Vless-reality、Vmess-ws(Argo)、Hysteria2】支持一键自建proxyip与CF反代IP，CF优选官方IP三地区应用脚本，自动输出美、亚、欧最佳优选IP](https://github.com/yonggekkk/Cloudflare_vless_trojan)   视频教程参考项目介绍里的youtube链接  
+#### 1. 甬哥脚本（部署步骤最简单，无需域名绑定）  
+- 首先需要使用其他代理/vpn连上外网 
+- 访问[CF-workers/pages代理脚本【Vless与Trojan】，Serv00三合一脚本【Vless-reality、Vmess-ws(Argo)、Hysteria2】支持一键自建proxyip与CF反代IP，CF优选官方IP三地区应用脚本，自动输出美、亚、欧最佳优选IP](https://github.com/yonggekkk/Cloudflare_vless_trojan)   ，视频教程参考项目介绍里的youtube链接  
 实测可行文字教程：  
 - 点击进入文件夹Cloudflare-vless-trojan ，下载`vless无需proxyip的nat64套壳版 (推荐使用).js` ,修改文件名为`_worker.js`     ，zip格式压缩此文件，压缩后文件名为`_worker.zip`      
 - 进入cloudlfire官网完成注册，如果不是中文简体就可以在注册页面切换到中文，注册邮箱地址应选择海外匿名邮箱地址而不是国内油箱地址，如gmail，protonmail，tutamail等
