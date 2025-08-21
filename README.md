@@ -37,7 +37,7 @@
 
 
 ---    
-#### [图文pdf教程参考资料点击此跳转](https://gitea.com/gjcxn358/go-to-word/src/branch/main/%E5%9B%BE%E6%96%87pdf%E6%95%99%E7%A8%8B)       图文教程请结合下面的文字说明一起使用，pdf图文教程更新速度比简版文字教程慢，因为不能实时编辑，pdf教程和这里的文字教程有冲突的地方以这里为准   
+#### [旧版图文pdf精简教程参考资料可点击此跳转](https://gitea.com/gjcxn358/go-to-word/src/branch/main/%E5%9B%BE%E6%96%87pdf%E6%95%99%E7%A8%8B) ，冲突部分以下文的新版为准                     
 #### 教程软件免代理下载，安卓版[点击此跳转](https://gitea.com/gjcxn358/go-to-word/src/branch/main/%E5%AE%89%E5%8D%93%E5%BC%80%E6%BA%90%E7%89%88%E4%B8%8B%E8%BD%BD)，电脑版[点击此跳转](https://gitea.com/gjcxn358/go-to-word/src/branch/main/%E7%94%B5%E8%84%91%E7%89%88)              
                           
 ---   
@@ -311,9 +311,49 @@ xmpp软件中gajim支持代理设置，安卓端口monocles chat支持tor 9050�
 
 
 #### tor 浏览器使用教程
-- [教程参考此pdf](https://codeberg.org/p23tyjujukk/firefox-use/src/branch/main/%E8%87%AA%E7%94%B1%E5%8F%8A%E5%BC%80%E6%BA%90%E6%B5%8F%E8%A7%88%E5%99%A8firefox&tor&brave&fennec&mull%E6%95%99%E7%A8%8B%EF%BC%88a908%EF%BC%89.pdf)中关于tor浏览器那一节           
+在tor浏览器中使用tor访问网络比在invizible代理下使用火狐访问外网更安全，因为tor浏览器对隐私保护作了特别安全优化，默认无痕模式，随时可以切换节点ip和重置浏览器身份，
+操作图：  
+<p>           
+<img src="./photos/tor/tor1.png" width="150"/>    
+<img src="./photos/tor/tor2.png" width="150"/>   
+<img src="./photos/tor/tor3.png" width="150"/>
+<img src="./photos/tor/tor4.png" width="150"/>                    
 
 
+-在各种网桥均无法使用的情况下 ，可以使用其他代理和vpn作前置节点让tor流量优先走其他节点进行转发再头tor，绕过防火墙封锁，只需要在其他代理软件/vpn软件启用vpn模式连接后，再打开tor浏览器通网桥或不走网桥 连上tor    
+- tor浏览器连接后会在本地生成一个socks5代理转发端口，ip为 `127.0.0.1`,端口为`9150`,因此其他软件也可以通过代理设置从此端口访问tor网络实现代理翻墙     
+firefox火狐浏览器及其分支如fennec可以下载插件[foxyproxy](https://addons.mozilla.org/zh-CN/firefox/addon/foxyproxy-standard/)，点击此插件设置-选项设置-proxies-模式选择socks5,ip（hostname）填写`127.0.0.1`，端口填写`9150`，然后保存，再次点击浏览器插件的foxyproxy按钮-点击添加的代理切换到tor代理 即可让火狐浏览器全局走tor代理模式
+xmpp软件中gajim支持代理设置，安卓端口monocles chat只支持tor 9050端口的tor代理tor浏览器的9150端口无法修改所以无法使用代理模式，电报第三方客户端nekogram支持代理设置 ，fdroid应用商店支持代理设置， 安卓/linux系统都支持系统全局的代理模式，安卓在wifi设里，不过一般情况下最好不要启用，因为设置了手机所有软件都会强制走代理。 
+     
+
+            
+</p>        
+
+- tor电脑版和手机版操作差不多，不过电脑支持前置代理设置，可以使用v2rayn电脑版的代理作前置代理让他哦热流量先走其他代理再通过其他代理转发走tor网络，绕过防火墙对tor的封锁          
+操作图：     
+<p>           
+<img src="./photos/tor/torb0.png" width="150"/>    
+<img src="./photos/tor/torb1.png" width="150"/>    
+<img src="./photos/tor/torb2.png" width="150"/>   
+
+            
+</p>   
+
+linux电脑上因没有invizible这种tor代理软件，只能使用tor浏览器，要想系统全局走tor代理，只需在kde/gnome 桌面系统设在-网络-代理-设置socks5代理, 地址`127.0.0.1`,端口`9150`的系统代理端口即可 ，但是在这里设置后是管不了终端操作下的代理的，特别是使用git的时候（从github下载软件），这时需要使用终端指令启用代理          
+linux终端输入下面内容并回车
+``` 
+export ALL_PROXY=socks5://127.0.0.1:9150           
+git config --global http.proxy 'socks5://127.0.0.1:9150'
+git config --global https.proxy 'socks5://127.0.0.1:9150'         
+```
+第一行为系统全局tor代理，第二和第三行为git走tor代理             
+关闭tor系统代理和git代理的指令为：
+``` 
+unset all_proxy       
+git config --global --unset http.proxy      
+git config --global --unset https.proxy    
+
+```  
    
 
 </details>     
