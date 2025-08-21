@@ -379,27 +379,28 @@ git config --global --unset https.proxy
 节点搭建也比较简单，无需linux指令和部署远程操作系统，cf网站虽然是美国的商业性质公司运营，但部署节点的代码是完全开源的可以自定义的                                                
 &ensp;&ensp;缺点：此方法直接使用安全性不如tor，但是可以作为tor的前置代理，绕开防火墙对tor。提高连接稳定性，降低延迟，部分节点ip很可能不干净（触发私有网站的监测），商业性质承诺的安全不一定完全可靠（只是节点部署可选开源代码） ，注意避免使用中国大陆/香港/澳门的节点，     cloudlfire香港服务是和中国阿里云合作的 
 - [clouldfire国际官网](https://www.cloudflare.com/)      
-- 这里是[免费域名申请网站示例](https://dynv6.com/)  （cloudlfire官方给的给的项目域名一般是被墙的，需要开启代理软件分片功能才能连接使用，导入订阅时很可能也需要开启其他代理才能加载成功，如果给cf pages项目绑定自己的域名，就可以绕开防火墙限制，不使用分片功能也能直接使用） ，
-- 所有的部署项目项目都支持clouldifre pages和workers部署，但是最好使用clouldfire pages 部署而不是clouldifre workers ，前者绑定的域名可以不是托管到cloudlfire的域名（dynv6注册的免费无限制域名不能托管给cloudfire，cloudns的免费域名可以托管给cloudlfire） ，wokers添加自定义域名还可能需要双向解析，设置稍微麻烦。               
+- 这里是[免费域名申请网站示例](https://dynv6.com/)  （cloudlfire官方给的给的项目域名一般是被墙的，需要开启代理软件分片功能才能连接使用，导入订阅时很可能也需要开启其他代理才能加载成功，如果给cf pages项目绑定自己的域名，就可以绕开防火墙限制，不使用分片功能也能直接使用）          
+- 所有的部署项目项目都支持clouldifre pages和workers部署，但是最好使用clouldfire pages 部署而不是clouldifre workers ，前者绑定的域名可以不是托管到cloudlfire的域名（dynv6注册的免费无限制域名不能托管给cloudfire，cloudns的免费域名可以托管给cloudlfire） ，wokers添加自定义域名还可能需要双向解析，设置稍微麻烦。                     
 ##### 这类部署的开源项目和教程比较多：比如：   
 
-####1.  
+
+#### 1. 甬哥脚本（部署步骤最简单，无需域名绑定）
+- [CF-workers/pages代理脚本【Vless与Trojan】，Serv00三合一脚本【Vless-reality、Vmess-ws(Argo)、Hysteria2】支持一键自建proxyip与CF反代IP，CF优选官方IP三地区应用脚本，自动输出美、亚、欧最佳优选IP](https://github.com/yonggekkk/Cloudflare_vless_trojan)   视频教程参考项目介绍里的youtube链接  
+实测可行文字教程：  
+- 点击进入文件夹Cloudflare-vless-trojan ，下载`vless无需proxyip的nat64套壳版 (推荐使用).js` ,修改文件名为`_worker.js`     ，zip格式压缩此文件，压缩后文件名为`_worker.zip`      
+- 进入cloudlfire官网完成注册，如果不是中文简体就可以在注册页面切换到中文，注册邮箱地址应选择海外匿名邮箱地址而不是国内油箱地址，如gmail，protonmail，tutamail等
+- 登陆cloiudfire ，进入到管理面板，如果不是中文简体，可以在网页右上角语言设置点击切换，点击左侧 计算（wokers）-pages和workers-创建-pages，点击使用直接上传-开始使用，项目名称随便填写，比如`abcdg123`,不要用拼音或涉及代理/项目作者等词汇，然后点击创建项目，点击从计算机选择，上传选择压缩包，选择上传压缩包，上传上面的步骤的_worker.zip，上传完成后点击部署站点，继续处理项目   
+- 刚刚创建的项目-设置-变量和机密 -添加，变量名称填写`uuid` ,数值需要在uuid生成网站生成复制进去（保存一份到本地记事本或者办公软件中） ，uuid生成网站比如 https://www.uuidgenerator.net/version4 ，填写进去后保存      
+- 在此项目内点击创建部署，再次上传 前面的压缩文件  ，完成后即可    
+-  点击改项目的部署  -看到生产-域，点击这个网址跳转 ，点击地址栏 在复制跳转的网址后面占输入`/` 然后粘贴刚刚复制的uuid值 然后回车进入你的节点订阅网站     
+- 在订阅网站找到  2：聚合通用-聚合通用分享链接 (可直接导入客户端)，复制粘贴到 v2rayn/r2ayng/nekobox/karing中即可连接使用，如果都无法连通，开启代理软件的(Fragment)分片功能，nekobxo目前不支持分片       
+- 代理软件使用教程及要求参卡 教程 大标题三          
+-.如果要在clash或者singbox中使用，在订阅网站下滑找到` 2：聚合通用、Clash-meta、Sing-box订阅链接如下：` Clash-meta订阅链接： Sing-box订阅链接： 复制对应的地址到对应的客户端即可使用
+-.复制 订阅网站 ，自己保存起来方便以后导入新设备                  
+ 
 
 
-#### 2. 甬哥脚本（开启tls加密无需自定义域名，部署步骤最简单）
-- [CF-workers/pages代理脚本【Vless与Trojan】，Serv00三合一脚本【Vless-reality、Vmess-ws(Argo)、Hysteria2】支持一键自建proxyip与CF反代IP，CF优选官方IP三地区应用脚本，自动输出美、亚、欧最佳优选IP](https://github.com/yonggekkk/Cloudflare_vless_trojan)   视频教程参考项目介绍里的youtube链接    
-- 推荐pages部署，下载_workers.js，下载好的文件后缀如果是_workers.txt就改文件名为_workers.js，zip格式压缩此文件，pages服务上传此压缩包，添加变量uuid，点击再次部署重新上传压缩包覆盖，生成的cf域名/uuid值   进入自己的订阅网站，复制对应订阅到对应客户端即可。   
-- proxyip 设置    -一般情况下使用和clouldifrei worksers/pagse部署的节点无法自己访问自己，也就是说无法访问clouldifre上面部署或者托管的网站或者套了clouldifre网站人机验证服务的网站，这类网站在外网占比比较大，因此需要使用非coiuldifre的节点来访问cloudfire服务的网站，这就是praoxyip。proxyip参数可以改为cm维护的美国甲骨文proxyip的：用于解锁cf网站的代理访问以及网站带有cf验证（cf节点自己不能访问cf自己）     
-`ProxyIP.Oracle.fxxk.dedyn.io`                    
-&ensp;&ensp;，如果要自己改其他 可以访问          
-[proxyip即时获取地址1](https://www.nslookup.io/domains/cdn-all.xn--b6gac.eu.org/dns-records/)      
- [proxyip获取地址2](https://www.nslookup.io/domains/cdn.xn--b6gac.eu.org/dns-records/)               
-注意看 选择的proxyip不要是阿里云服务器的香港节点  
-
-
-- 无需proxip的方法部署： https://www.youtube.com/watch?v=yR-JpVV6SHs 
-
-#### 3. cmliu 的部署教程和开源项目-相对复杂         
+#### 2. cmliu 的部署教程和开源项目-相对复杂         
 [1.点击观看部署cf节点视频教程](https://m.youtube.com/watch?pp=ygUKY2xvdWRmbGFyZQ%3D%3D&v=cqQioz_Kdag)         
 [2.官方精简视频教程](https://m.youtube.com/watch?v=59THrmJhmAw)请结合教程1一起看            
 [3.教程所需github源项目网站及文字教程说明](https://github.com/cmliu/edgetunnel.git)   
