@@ -25,12 +25,11 @@
 
 <details>    
 
-<summary><code><strong><font color="red"><font size="4">一. 开源迷雾通 (点击此展开内容)</font></font></strong></code></summary>  
+<summary><code><strong><font color="red"><font size="6">一. 开源迷雾通 (点击此展开内容)</font></font></strong></code></summary>  
      
 ##  一. 开源迷雾通       
   
- 
- 注意：开启连接前请勾选需要绕开连接的应用或运行的应用避免实名服务使用vpn连接自爆翻墙     
+&ensp;&ensp;注意：开启连接前请勾选需要绕开连接的应用或运行的应用避免实名服务使用vpn连接自爆翻墙     
 &ensp;&ensp;按方法1连接好测试能连上国际互联网以后       
 安装开源的vpn软件geph迷雾通（文件夹内版本不一定最新，） ，并注册登陆  (迷雾通下载以及注册过程可能需要用其他软件连国际互联网，如果可以不代理就能下载和注册刷新验证码，则不需要先用方法1)              
 最新版官网  https://geph.io/zhs ，免代理镜像下载：https://waa.ai/xiazaimiwutong ,     
@@ -68,15 +67,15 @@ fdroid自由软件商店内搜索下载）注册登陆使用不限速安全节�
 自动模式连接优先为wireguard协议，此协议加密型高但是无流量混淆特征很明显，容容易被墙，优点是速度快，为了更加安全和稳定可以在设置协议手动切换到自研的steath协议 。    
 
 
-</details>       
+</details>          
                                                          
  ---   
-##       
+     
 <details>    
 
 <summary><code><strong><font color="red"><font size="4">三. nekbox/v2r/clash /sinbox等自由及开源代理程序加机场 </font></font></strong></code></summary>
 
-三. nekbox/v2r/clash /sinbox等自由及开源代理程序加机场    
+## 三. nekbox/v2r/clash /sinbox等自由及开源代理程序加机场    
           
 &ensp;&ensp; 优点：软件自由开源，可以使用别人搭建的节点也可以自己搭建节点  ，只要是正常tls加密，节点一般不能破解用户加密流量只可能记录真实ip和真实访问地址        
 &ensp;&ensp; 缺点：非自建的机场节点不一定可靠（可能记录日志并泄漏ip），非自建节点（不管是付费还是免费）都可能存在高峰期拥堵网速慢不稳定的情况，购买的付费机场可能随时跑路或者本身搭建技术不过关挑选的vps有问题所以有风险，别人搭建的免费节点也好不到哪里去，自建节点请看标题5   ，同时避免使用中国包括香港和澳门的节点               
@@ -170,7 +169,7 @@ https://search.pub.solar/search
 &ensp;&ensp; 注意：此类 公开节点来源不明（包括付费节点），不建议经常使用，最好只用于过渡使用，重点使用下面的方法  ，下面几种方法 使用可能都需要借助方法1临时连接国际互联网        
 &ensp;&ensp;注意开启全局模式（而不是规则模式或绕过局域网），避免真实ip泄漏，然后勾选不代理的应用避免非自由开源实名软件走代理自爆 ，有dns防护选项的应开启dns防护，使用浏览器上网比如火狐浏览器，应该下载disable   webrtc插件，来屏蔽媒体webrtc,避免代理后真实ip泄漏                      
 
-## 1.2      
+### 1.2      
 &ensp;&ensp;如果上述订阅都订阅不了，且下面的方法2在无代理的情况下无法注册使用时，那就只能使用非开源的代理软件作为第一次连接国际互联网用，比如蓝灯等，蓝灯[apkpure商店内下载](https://apkpure.com/cn/search?q=%E8%93%9D%E7%81%AF&t= )      
 
 - 蓝灯和其他代理破解点击下载[破解代理-免代理下载](https://codeberg.org/ljggfvn217/go-to-world/src/branch/main/%E9%9D%9E%E5%BC%80%E6%BA%90%E5%8F%8A%E7%A0%B4%E8%A7%A3%E4%BB%A3%E7%90%86)  
