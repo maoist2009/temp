@@ -286,17 +286,20 @@ xmpp软件中gajim支持代理设置，安卓端口monocles chat支持tor 9050�
 - 回到软件首页 勾选使用tor隐藏ip和使用dns防护，然后点击start进行连接   
 - 可选的功能启用 -快速设置-防止dns泄露开关启用（可能导致连接失败），中间人攻击拦截，伪造sni-可自定义设置伪造网址,dns/doh手动修改    ，局域网共享tor网络等等，根据个人需要启动对应的功能.......            
        
-操作图展示：    
-
+操作图展示：      
+        
 <p>           
-<img src="./photos/invi/invi1.png" width="150"/>          
-<img src="./photos/invi/invi2.png" width="150"/>       
-<img src="./photos/invi/invi3.png" width="150"/>       
-<img src="./photos/invi/invi4.png" width="150"/>     
-<img src="./photos/invi/invi5.png" width="150"/>      
-<img src="./photos/invi/invi6.png" width="150"/>     
-<img src="./photos/invi/invi7.png" width="150"/>        
-</p>   
+<img src="./photos/invitor/invi1.png" width="150"/>          
+<img src="./photos/invitor/invi2.png" width="150"/>       
+<img src="./photos/invitor/invi3.png" width="150"/>      
+<img src="./photos/invitor/invi4.png" width="150"/>      
+<img src="./photos/invitor/invi5.png" width="150"/>      
+<img src="./photos/invitor/invi6.png" width="150"/>      
+<img src="./photos/invitor/invi7.png" width="150"/>      
+     
+</p>    
+
+
 
  
 - invizible vpn模式启用后，会在本地生成与一个代理转发端口， ip为`127.0.0.1`，端口为`9050`(端口号也可在软件内修改，但最好使用默认的9050),模式为`scoks5`，支持代理设置的软件启用socks5代理访问tor网络比单纯的vpn模式更安全 ，使用vpn模式下访问软件/网站，如果invizible软件bug意外断开连接，系统杀后台，关闭软件/网站前关闭tor软件，网站/云服务会切换到直连，读取到用户真实ip导致ip泄露，在代理端口模式下，tor软件断开连接，本地代理端口不通，软件/网站就直接断网显示错误,就不会出现ip泄露。    
