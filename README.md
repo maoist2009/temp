@@ -272,15 +272,21 @@ xmpp软件中gajim支持代理设置，安卓端口monocles chat支持tor 9050�
 - tor浏览器全平台客户端官网：https://www.torproject.org/zh-CN/download/    
 - inzivible为安卓上的tor网络代理客户端，[在fdroid下载,点击此跳转](https://f-droid.org/en/packages/pan.alexander.tordnscrypt.stable/)，orbot（另一个tor代理工具）可以在谷歌应用商店下载，但不如inzivible功能全面。     
  免代理下载 使用教材开头的[合集链接安卓版](https://gitea.com/gjcxn358/go-to-word/src/branch/main/%E5%AE%89%E5%8D%93%E5%BC%80%E6%BA%90%E7%89%88%E4%B8%8B%E8%BD%BD)                         
-&ensp;&ensp;使用 tor网络连接国际互联网 （这种安全性最好 ），大陆使用需要借助网桥，不能直连（被大陆地区屏蔽），网桥申请需要先连接其他代理，方法如下：            
+#### 网桥获取            
+ 使用 tor网络连接国际互联网 （这种安全性最好 ），大陆使用需要借助网桥，不能直连（被大陆地区屏蔽），网桥申请需要先连接其他代理，方法如下：                  
 
 1. 访问 https://bridges.torproject.org/options/ 并按照说明操作，此方法可以获取obfs4网桥和web网桥
 2. 使用 Gmail 或 Riseup 的邮箱服务发送邮件到 frontdesk@torproject.org，并且邮件主题需要包含private bridge cn （受到回复邮箱可能需要半天,会收到两个web网桥和obfs网桥）
 3. 通过 Telegram 向 @GetBridgesBot 发送消息。在聊天中点击“开始”，或者输入/Start或/bridges。此方法只能获取obfs4网桥 ，但是秒回复，大陆地区也能用
-4. 安卓手机fdroid自由开源应用商店内内搜索 invizible 安装启动，快速设置 -网桥 ，获取私人网桥 -，选择类似请求网桥 --输入验证码确认获取,此方可以获取所有类型网桥
-&ensp;&ensp;注意事项：如果是获取web网桥，可以选择方法124,如果是获取obfs网桥，则推荐方法3,其次方法2,obfs4网桥比web网桥快 ，
-&ensp;&ensp;如果使用invizible和orbot应用（带有vpn模式），勾选无需代理的应用跳过代理，避免实名服务自爆翻墙，invizible注意开启dns防护    
-#### 移动端invizible 教程：    
+4. 安卓手机fdroid自由开源应用商店内内搜索 invizible 安装启动，快速设置 -网桥 ，获取私人网桥 -，选择类似请求网桥 --输入验证码确认获取,此方法可以获取所有类型网桥 
+
+其他获取网桥的方法：
+1. 从github的开源项目中获取最新可用网桥列表，比如  
+https://github.com/scriptzteam/Tor-Bridges-Collector   ，打开此网站项目，点击作者上传文件夹内你需要的网桥类型文件，即可跳转查看网桥列表，复制一部分出来使用即可        
+2. 其他项目                         
+&ensp;&ensp;如果使用invizible和orbot应用（带有vpn模式），勾选无需代理的应用跳过代理，避免实名服务自爆翻墙，invizible注意开启dns防护       
+
+#### tor代理工具移动端invizible 教程：          
 -打开invizible，点击左上角设置-快速设置-关闭通过tor路由哪些流量-选择应用（使用tor的应用列表） - 分应用模式设置哪些应用走代理-定位到需要走代理的应用-点击通向tor的路线 保存返回
 - 快速设置-网桥-使用私有网桥-选择obfs4或者webtunnel（根据上面教程获取网桥的类型进行选择）-添加网桥-复制粘贴网桥地质-一一点击网桥列表执行启用
 - 回到软件首页 勾选使用tor隐藏ip和使用dns防护，然后点击start进行连接   
