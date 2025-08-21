@@ -337,9 +337,9 @@ firefox火狐浏览器及其分支如fennec可以下载插件[foxyproxy](https:/
 - tor电脑版和手机版操作差不多，不过电脑支持前置代理设置，可以使用v2rayn电脑版的代理作前置代理让他哦热流量先走其他代理再通过其他代理转发走tor网络，绕过防火墙对tor的封锁          
 操作图：     
 <p>           
-<img src="./photos/tor/torb0.png" width="150"/>    
-<img src="./photos/tor/torb1.png" width="150"/>    
-<img src="./photos/tor/torb2.png" width="150"/>   
+<img src="./photos/tor/torb0.png" width="300"/>      
+<img src="./photos/tor/torb1.png" width="300"/>      
+<img src="./photos/tor/torb2.png" width="300"/>        
 
             
 </p>   
