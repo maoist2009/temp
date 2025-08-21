@@ -67,7 +67,7 @@
 - 迷雾通 vpn模式启用后，会在本地生成与两个代理转发端口， 其中一个端口 ip为`localhost`或也可以是`127.0.0.1`，端口为`9909`,模式为`scoks5`，，一个http端口，ip：`localhost`，端口`9910`,可在软件设置在内找到，如上面图二底部调试一栏          
 支持代理设置的软件启用socks5/hppt代理访问tor网络比单纯的vpn模式更安全 ，使用vpn模式下访问软件/网站，如果invizible软件bug意外断开连接，系统杀后台，关闭软件/网站前关闭tor软件，网站/云服务会切换到直连，读取到用户真实ip导致ip泄露，在代理端口模式下，tor软件断开连接，本地代理端口不通，软件/网站就直接断网显示错误,就不会出现ip泄露。    
 支持代理设置的软件目前并不多，firefox火狐浏览器及其分支如fennec可以下载插件[foxyproxy](https://addons.mozilla.org/zh-CN/firefox/addon/foxyproxy-standard/)，点击此插件设置-选项设置-proxies-模式选择socks5,ip（hostname）填写`localhost`，端口填写`9909`，然后保存，再次点击浏览器插件的foxyproxy按钮-点击添加的代理切换到迷雾通的代理 即可让火狐浏览器全局走代理模式而不是使用有断连后ip泄露风险的vpn模式 。     
-xmpp软件中gajim支持代理设置，安卓端口monocles chat支持tor 9050端口的tor代理启用但迷雾通不支持端口修改所以无法使用代理模式，电报第三方客户端nekogram支持代理设置 ，fdroid应用商店支持代理设置， 安卓/linux系统都支持系统全局的代理模式，安卓在wifi设里，不过一般情况下最好不要启用，因为设置了手机所有软件都会强制走代理。   
+&ensp;&ensp;xmpp软件中gajim支持代理设置，安卓端口monocles chat支持tor 9050端口的tor代理启用但迷雾通不支持端口修改所以无法使用代理模式，电报第三方客户端nekogram支持代理设置 ，fdroid应用商店支持代理设置， 安卓/linux系统都支持系统全局的代理模式，安卓在wifi设里，不过一般情况下最好不要启用，因为设置了手机所有软件都会强制走代理。   
 
 - 教程最后编辑时间迷雾通分流分应用设置不支持只允许勾选应用访问代理的模式，排除勾选应用代理的方法难以找到所有国内软件，特别是国产系统内置的服务软件，因此最好启用分流隧道的排除中国大陆流量按钮，但是需要注意的是排除中国大陆流量有个缺陷，比如当你要使用匿名qq号代理的方式登陆qq隐藏ip时，启用此排除大陆流量后登陆的ip为真实ip，如果访问网页是大陆网页内容镶嵌有国外服务托管的中国内容或者国外服务，这样国内网页内容真实ip，内嵌的国外内容显示用户的是代理ip，就会产生身份关联暴露实名，或者一个浏览器同时打开国内网站和国外网站，国内网站带有跨站跟踪的监控服务会检测到国外网站信息产生关联（跨站cooike跟踪）            
 &ensp;&ensp; 为解决这些隐患，只有一台手机的情况下，最好通过开源软件shelter/或炼妖壶，启用独立的工作空间，或者启用安卓自带的多用户/隐私空间，在里面使用代理软件和需要走代理的服务/软件，不开启排除大陆流量使用，这种方式可以将日常实名软件和文件与隐私使用的做隔离，当实名访问国内服务时用普通用户，匿名访问时用后者   ，国产安卓手机内置的系统监控程序通过多用户隔离的方式不一定靠谱，只是比不使用多用户隔离好一点，这时退出手机系统云账户，关闭ai助手/识屏服务/智慧助手/语音服务，不给软件不需要的权限，有条件的应准备第二台设备和日常设备隔离，第二台设备如果是电脑，最好安装的是国外开源linux系统，如果是平板/手机，对于安卓系统最好是能解bl锁刷机为国外开源类原生系统比如lineage/石墨烯/crdroid等，如果是苹果最好外版苹果机并登陆外区苹果账户，国内的苹果的数据都要经过大陆官方审核（云上贵州）      
@@ -76,10 +76,10 @@ xmpp软件中gajim支持代理设置，安卓端口monocles chat支持tor 9050�
 - 不应该只学习一种翻墙方式，因为有可能会失效，至少学两三种做备用                
 
 &ensp;&ensp; 优缺点分析     
-优点：免费稳定，使用简单，缺点：免费版限速，文字图片浏览勉强还行，据其他人反馈，有在校园网（校园网有专门的服务器监控学生上网服务并识别常见梯子）使用迷雾通被喝茶的案例                                              
+&ensp;&ensp;优点：免费稳定，使用简单，缺点：免费版限速，文字图片浏览勉强还行，据其他人反馈，有在校园网（校园网有专门的服务器监控学生上网服务并识别常见梯子）使用迷雾通被喝茶的案例                                              
 ##### 迷雾通linux版本安装:
 - [官网下载](https://geph.io/zhs)后缀为`.flatpak`的迷雾通安装包linux版，次过程需要使用代理，如果电脑没有，那就在手机上下载好以后导入到电脑里，也可以[免代理下载上面文件夹里面的旧版](https://gitea.com/gjcxn358/go-to-word/src/branch/main/%E7%94%B5%E8%84%91%E7%89%88)                                
-确保linux电脑里有flatpak软件，在下载目录鼠标右键从此处打开终端，将终端app界面最大化防止后面的id遮挡，然后输入`flatpak install ./迷雾通包名（含后缀）`。然后输入`flatpak list `罗列所有flatpak软件。找到迷雾通`GephGui`那一行旁边的应用程序id并复制，然后输入`flatpak run 迷雾通的应用完整ID`启动软件，注册后即可使用，在其设置内开启vpn模式可以让系统全局走代理。如果系统桌面为kde或者gnome,应该会在开始菜单自动生成启动快捷方式，通过查看迷雾通设置里面的代理本地ip和端口号可以也实现系统代理或者应用代理（支持设置代理的应用）                
+&ensp;&ensp;确保linux电脑里有flatpak软件，在下载目录鼠标右键从此处打开终端，将终端app界面最大化防止后面的id遮挡，然后输入`flatpak install ./迷雾通包名（含后缀）`。然后输入`flatpak list `罗列所有flatpak软件。找到迷雾通`GephGui`那一行旁边的应用程序id并复制，然后输入`flatpak run 迷雾通的应用完整ID`启动软件，注册后即可使用，在其设置内开启vpn模式可以让系统全局走代理。如果系统桌面为kde或者gnome,应该会在开始菜单自动生成启动快捷方式，通过查看迷雾通设置里面的代理本地ip和端口号可以也实现系统代理或者应用代理（支持设置代理的应用）                
 - 如果linux电脑里面没有flatpak,就需要手动安装，[安装教程参考此](https://cn.linux-console.net/?p=20741)                                   
 
              
@@ -102,9 +102,9 @@ xmpp软件中gajim支持代理设置，安卓端口monocles chat支持tor 9050�
    
    ---                     
 &ensp;&ensp;提醒：此应用免费版只能全局vpn,不能让部分应用绕过，因此如果设备是非纯国外系统以及登陆了实名账户（国产改版安卓比如oppo/vivo/小米手机默认系统不算纯国外系统），不是很建议使用，国外系统如果安装了国产非自由开源应用，应使用shelter/炼妖壶开启工作空间进行和其他应用的环境隔离，或者使用自带的多应用/隐私空间隔离，将pn软件和需要使用vpn的软件装进去使用                                                                        
-https://f-droid.org/packages/ch.protonvpn.android/           
-fdroid自由软件商店内搜索下载）注册登陆使用不限速安全节点 （protonvpn注册需要连国际互联网 ）                          fdroid 官网：https://f-droid.org/    
-下载安装后注册proton账户登陆使用，此过程需要先连上其他代理。    
+https://f-droid.org/packages/ch.protonvpn.android/                  
+&ensp;&ensp;注册登陆使用不限速安全节点 （protonvpn注册需要连国际互联网 ）       ，fdroid 官网：https://f-droid.org/   ，在其中搜索proton vpn也可找到      
+&ensp;&ensp;下载安装后注册proton账户登陆使用，此过程需要先连上其他代理。    
 软件设置-应用图标-改为天气/便签/计算器 进行应用伪装 
 和我们一起对抗审查-关闭数据收集和上传                     
 自动模式连接优先为wireguard协议，此协议加密型高但是无流量混淆特征很明显，容容易被墙，优点是速度快，为了更加安全和稳定可以在设置协议手动切换到自研的steath协议 。      
@@ -197,7 +197,7 @@ https://github.com/free18/v2ray
 <img src="./photos/nek/nek7.png" width="150"/>            
        
 </p>    
-clash/rayng/v2rayn的操作和nekobbox比较接近，不做单单独介绍，不同的是clash一般只能倒入clash订阅，不能倒入v2ray订阅，模式需要选择全局模式 ，电脑v2rayn需要选择全局模式，clash只能导入节点订阅或将节点文件，v2rayn/v2rayng/nekobox/hiddify/karing 既可以直接导入支持的订阅，有可以直接导入单/多节点链接。             
+&ensp;&ensp;clash/rayng/v2rayn的操作和nekobbox比较接近，不做单单独介绍，不同的是clash一般只能倒入clash订阅，不能倒入v2ray订阅，模式需要选择全局模式 ，电脑v2rayn需要选择全局模式，clash只能导入节点订阅或将节点文件，v2rayn/v2rayng/nekobox/hiddify/karing 既可以直接导入支持的订阅，有可以直接导入单/多节点链接。             
 nekobox操作文字说明：           
 - 打开 nekbox  点击左上侧三横 -分组  -添加分组- 分组类型-订阅（下方会刷新出来订阅设置）   ，再点击订阅链接 -粘贴上面的链接 ，分组名随意  ，然后勾选保存
 - 点击左上侧三横-路由-关闭中国域名绕过和中国ip绕过规则，点击设置-关闭绕过局域网-开启分应用代理-点击不代理的应用，勾选无需代理的所有应用，如果是国产系统，应选择仅代理勾选应用模式并勾选需要代理的应用    
@@ -229,9 +229,9 @@ https://search.pub.solar/search
     KGithub           
     
 ```
-原始链接下面套cdn的都可以绕墙  ，长按/右键复制其对应链接导入对应客户端,比如该项目提供的couldfire cdn加速的v2r订阅地址：                 
+&ensp;&ensp;原始链接下面套cdn的都可以绕墙  ，长按/右键复制其对应链接导入对应客户端,比如该项目提供的couldfire cdn加速的v2r订阅地址：                 
 `https://testingcf.jsdelivr.net/gh/chengaopan/AutoMergePublicNodes@master/list.txt    `     ，
-刷新节点连接使用（可以设置订阅刷新时间或者定时手动去刷新）
+&ensp;&ensp;刷新节点连接使用（可以设置订阅刷新时间或者定时手动去刷新）
 - 也可以在github上搜索其他节点分享项目 ，关键词比如 `v2r免费订阅`   或者`clash免费订阅`  
 
 
@@ -242,8 +242,7 @@ https://search.pub.solar/search
 &ensp;&ensp;注意开启全局模式（而不是规则模式或绕过局域网），避免真实ip泄漏，然后勾选不代理的应用避免非自由开源实名软件走代理自爆 ，有dns防护选项的应开启dns防护，使用浏览器上网比如火狐浏览器，应该下载disable   webrtc插件，来屏蔽媒体webrtc,避免代理后真实ip泄漏               
 - v2rayng/clash mate/nekobox等vpn模式启用后，会在本地生成与一个代理转发端口， ip为`127.0.0.1`，nekobox默认端口为`2090` (端口号也可在软件内修改，不同软件默认代理端口不同，可以在软件设在里面找到，v2r系列一般默认socks5端口是10808,clash一般是7890或8090等),模式为`scoks5`，也可以手动启用http模式端口，支持代理设置的软件启用socks5代理访问tor网络比单纯的vpn模式更安全 ，使用vpn模式下访问软件/网站，如果invizible软件bug意外断开连接，系统杀后台，关闭软件/网站前关闭tor软件，网站/云服务会切换到直连，读取到用户真实ip导致ip泄露，在代理端口模式下，tor软件断开连接，本地代理端口不通，软件/网站就直接断网显示错误,就不会出现ip泄露。          
 支持代理设置的软件目前并不多，firefox火狐浏览器及其分支如fennec可以下载插件[foxyproxy](https://addons.mozilla.org/zh-CN/firefox/addon/foxyproxy-standard/)，点击此插件设置-选项设置-proxies-模式选择socks5,ip（hostname）填写`127.0.0.1`，端口填写`2090`，然后保存，再次点击浏览器插件的foxyproxy按钮=点击添加的代理切换到nek代理 即可让火狐浏览器全局走代理模式而不是有ip泄露风险的vpn模式 。         
-xmpp软件中gajim支持代理设置，安卓端口monocles chat支持tor 9050端口的tor代理启用，v2rayng将socks5端口手动改为9050，monocles chat启用tor代理，即可让这个软件v2ryng的代理端口模式      
-，电报第三方客户端nekogram支持代理设置 ，fdroid应用商店支持代理设置， 安卓/linux系统都支持系统全局的代理模式，安卓在wifi设里（类型为http而不是socks5），不过一般情况下最好不要启用，因为设置了手机所有软件都会强制走代理。          
+&ensp;&ensp;xmpp软件中gajim支持代理设置，安卓端口monocles chat支持tor 9050端口的tor代理启用，v2rayng将socks5端口手动改为9050，monocles chat启用tor代理，即可让这个软件v2ryng的代理端口模式      ，电报第三方客户端nekogram支持代理设置 ，fdroid应用商店支持代理设置， 安卓/linux系统都支持系统全局的代理模式，安卓在wifi设里（类型为http而不是socks5），不过一般情况下最好不要启用，因为设置了手机所有软件都会强制走代理。          
 ### 1.2  非常不推荐       
 &ensp;&ensp;如果上述订阅都订阅不了，且其他方法都无效的情况，那就只能使用非开源的代理软件作为第一次连接国际互联网用，比如蓝灯等，蓝灯[apkpure商店内下载](https://apkpure.com/cn/search?q=%E8%93%9D%E7%81%AF&t= )      
 
@@ -273,7 +272,7 @@ xmpp软件中gajim支持代理设置，安卓端口monocles chat支持tor 9050�
 - inzivible为安卓上的tor网络代理客户端，[在fdroid下载,点击此跳转](https://f-droid.org/en/packages/pan.alexander.tordnscrypt.stable/)，orbot（另一个tor代理工具）可以在谷歌应用商店下载，但不如inzivible功能全面。     
  免代理下载 使用教材开头的[合集链接安卓版](https://gitea.com/gjcxn358/go-to-word/src/branch/main/%E5%AE%89%E5%8D%93%E5%BC%80%E6%BA%90%E7%89%88%E4%B8%8B%E8%BD%BD)                         
 #### 网桥获取            
- 使用 tor网络连接国际互联网 （这种安全性最好 ），大陆使用需要借助网桥，不能直连（被大陆地区屏蔽），网桥申请需要先连接其他代理，方法如下：                  
+&ensp;&ensp;使用 tor网络连接国际互联网 （这种安全性最好 ），大陆使用需要借助网桥，不能直连（被大陆地区屏蔽），网桥申请需要先连接其他代理，方法如下：                  
 
 1. 访问 https://bridges.torproject.org/options/ 并按照说明操作，此方法可以获取obfs4网桥和web网桥
 2. 使用 Gmail 或 Riseup 的邮箱服务发送邮件到 frontdesk@torproject.org，并且邮件主题需要包含private bridge cn （受到回复邮箱可能需要半天,会收到两个web网桥和obfs网桥）
@@ -310,14 +309,14 @@ https://github.com/scriptzteam/Tor-Bridges-Collector   ，打开此网站项目�
  
 - invizible vpn模式启用后，会在本地生成与一个代理转发端口， ip为`127.0.0.1`，端口为`9050`(端口号也可在软件内修改，但最好使用默认的9050),模式为`scoks5`，支持代理设置的软件启用socks5代理访问tor网络比单纯的vpn模式更安全 ，使用vpn模式下访问软件/网站，如果invizible软件bug意外断开连接，系统杀后台，关闭软件/网站前关闭tor软件，网站/云服务会切换到直连，读取到用户真实ip导致ip泄露，在代理端口模式下，tor软件断开连接，本地代理端口不通，软件/网站就直接断网显示错误,就不会出现ip泄露。    
 支持代理设置的软件目前并不多，firefox火狐浏览器及其分支如fennec可以下载插件[foxyproxy](https://addons.mozilla.org/zh-CN/firefox/addon/foxyproxy-standard/)，点击此插件设置-选项设置-proxies-模式选择socks5,ip（hostname）填写`127.0.0.1`，端口填写`9050`，然后保存，再次点击浏览器插件的foxyproxy按钮=点击添加的代理切换到tor代理 即可让火狐浏览器全局走tor代理模式而不是有ip泄露风险的vpn模式 。     
-xmpp软件中gajim支持代理设置，安卓端口monocles chat支持tor 9050端口的tor代理启用但迷雾通不支持端口修改所以无法使用代理模式，电报第三方客户端nekogram支持代理设置 ，fdroid应用商店支持代理设置， 安卓/linux系统都支持系统全局的代理模式，安卓在wifi设里，不过一般情况下最好不要启用，因为设置了手机所有软件都会强制走代理。  
+&ensp;&ensp;xmpp软件中gajim支持代理设置，安卓端口monocles chat支持tor 9050端口的tor代理启用但迷雾通不支持端口修改所以无法使用代理模式，电报第三方客户端nekogram支持代理设置 ，fdroid应用商店支持代理设置， 安卓/linux系统都支持系统全局的代理模式，安卓在wifi设里，不过一般情况下最好不要启用，因为设置了手机所有软件都会强制走代理。  
 ####  如果使用各种网桥都无法连接，这时候就要考虑设置前置代理/vpn   
-  通过可用的代理/Vpn软件作前节点跳板，让代理/vpn转发tor连接，这样就可以绕开防火墙对tor服务的封锁。     
-操作方法以迷雾通/proton/rayng为例，启用他们的vpn连接成功后（如果手动修改过他们的本地socks5代理端口，确保不是9050，避免端口占用），在invizivle软件主页软件又上角切换模式为proxy模式（仅代理），然后点击连接（可走网桥也就可以不走），连接成功以后本地的socks5代理9050端口连通了tor网络，然后在需要走代理的软件内设置tor代理即可使用tor访问外网，如何在需要代理的软件设置socks5代理参考上文               
+&ensp;&ensp;通过可用的代理/Vpn软件作前节点跳板，让代理/vpn转发tor连接，这样就可以绕开防火墙对tor服务的封锁。     
+&ensp;&ensp;操作方法以迷雾通/proton/rayng为例，启用他们的vpn连接成功后（如果手动修改过他们的本地socks5代理端口，确保不是9050，避免端口占用），在invizivle软件主页软件又上角切换模式为proxy模式（仅代理），然后点击连接（可走网桥也就可以不走），连接成功以后本地的socks5代理9050端口连通了tor网络，然后在需要走代理的软件内设置tor代理即可使用tor访问外网，如何在需要代理的软件设置socks5代理参考上文               
 
 
 #### tor 浏览器使用教程
-在tor浏览器（火狐浏览器分支）中使用tor访问网络比在invizible代理下使用火狐访问外网更安全，因为tor浏览器对隐私保护作了特别安全优化，默认无痕模式，随时可以切换节点ip和重置浏览器身份 ，对身份/指纹识别也做了特别保护                           
+&ensp;&ensp;在tor浏览器（火狐浏览器分支）中使用tor访问网络比在invizible代理下使用火狐访问外网更安全，因为tor浏览器对隐私保护作了特别安全优化，默认无痕模式，随时可以切换节点ip和重置浏览器身份 ，对身份/指纹识别也做了特别保护                           
 操作图：  
 <p>           
 <img src="./photos/tor/tor1.png" width="150"/>    
@@ -329,7 +328,7 @@ xmpp软件中gajim支持代理设置，安卓端口monocles chat支持tor 9050�
 - 在各种网桥均无法使用的情况下 ，可以使用其他代理和vpn作前置节点让tor流量优先走其他节点进行转发再头tor，绕过防火墙封锁，只需要在其他代理软件/vpn软件启用vpn模式连接后，再打开tor浏览器通网桥或不走网桥 连上tor    
 - tor浏览器连接后会在本地生成一个socks5代理转发端口，ip为 `127.0.0.1`,端口为`9150`,因此其他软件也可以通过代理设置从此端口访问tor网络实现代理翻墙     
 firefox火狐浏览器及其分支如fennec可以下载插件[foxyproxy](https://addons.mozilla.org/zh-CN/firefox/addon/foxyproxy-standard/)，点击此插件设置-选项设置-proxies-模式选择socks5,ip（hostname）填写`127.0.0.1`，端口填写`9150`，然后保存，再次点击浏览器插件的foxyproxy按钮-点击添加的代理切换到tor代理 即可让火狐浏览器全局走tor代理模式
-xmpp软件中gajim支持代理设置，安卓端口monocles chat只支持tor 9050端口的tor代理tor浏览器的9150端口无法修改所以无法使用代理模式，电报第三方客户端nekogram支持代理设置 ，fdroid应用商店支持代理设置， 安卓/linux系统都支持系统全局的代理模式，安卓在wifi设里，不过一般情况下最好不要启用，因为设置了手机所有软件都会强制走代理。 
+&ensp;&ensp;xmpp软件中gajim支持代理设置，安卓端口monocles chat只支持tor 9050端口的tor代理tor浏览器的9150端口无法修改所以无法使用代理模式，电报第三方客户端nekogram支持代理设置 ，fdroid应用商店支持代理设置， 安卓/linux系统都支持系统全局的代理模式，安卓在wifi设里，不过一般情况下最好不要启用，因为设置了手机所有软件都会强制走代理。 
      
 
             
@@ -345,15 +344,15 @@ xmpp软件中gajim支持代理设置，安卓端口monocles chat只支持tor 905
             
 </p>   
 
-linux电脑上因没有invizible这种tor代理软件，只能使用tor浏览器，要想系统全局走tor代理，只需在kde/gnome 桌面系统设在-网络-代理-设置socks5代理, 地址`127.0.0.1`,端口`9150`的系统代理端口即可 ，但是在这里设置后是管不了终端操作下的代理的，特别是使用git的时候（从github下载软件），这时需要使用终端指令启用代理          
+&ensp;&ensp;linux电脑上因没有invizible这种tor代理软件，只能使用tor浏览器，要想系统全局走tor代理，只需在kde/gnome 桌面系统设在-网络-代理-设置socks5代理, 地址`127.0.0.1`,端口`9150`的系统代理端口即可 ，但是在这里设置后是管不了终端操作下的代理的，特别是使用git的时候（从github下载软件），这时需要使用终端指令启用代理          
 linux终端输入下面内容并回车
 ``` 
 export ALL_PROXY=socks5://127.0.0.1:9150           
 git config --global http.proxy 'socks5://127.0.0.1:9150'
 git config --global https.proxy 'socks5://127.0.0.1:9150'         
 ```
-第一行为系统全局tor代理，第二和第三行为git走tor代理             
-关闭tor系统代理和git代理的指令为：
+&ensp;&ensp;第一行为系统全局tor代理，第二和第三行为git走tor代理             
+&ensp;&ensp;关闭tor系统代理和git代理的指令为：
 ``` 
 unset all_proxy       
 git config --global --unset http.proxy      
@@ -401,7 +400,7 @@ URL（  订阅主页伪装网页用，填入任意可访问的自定义网址格
 -  Cloudflare Workers & Pages 报错 Error 1101 详解，edgetunnel实用技巧，修复报错522 #科学上网 #优选ip #免费vpn #翻墙软件     
 https://m.youtube.com/watch?v=r4uVTEJptdE
 ---  
-#### 勇哥脚本（开启tls加密无需自定义域名，部署步骤最简单）
+#### 甬哥脚本（开启tls加密无需自定义域名，部署步骤最简单）
 - [CF-workers/pages代理脚本【Vless与Trojan】，Serv00三合一脚本【Vless-reality、Vmess-ws(Argo)、Hysteria2】支持一键自建proxyip与CF反代IP，CF优选官方IP三地区应用脚本，自动输出美、亚、欧最佳优选IP](https://github.com/yonggekkk/Cloudflare_vless_trojan)   视频教程参考项目介绍里的youtube链接    
 
 - cloulfire worker部署最简单，项目进入文件夹：       ”Vless_workers_pages“   https://github.com/yonggekkk/Cloudflare_vless_trojan/tree/main/Vless_workers_pages                           
