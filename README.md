@@ -127,9 +127,9 @@ https://f-droid.org/packages/ch.protonvpn.android/
      
 <details>    
 
-<summary><code><strong><font color="red"><font size="4">三. nekbox/v2r/clash /sinbox等自由及开源代理程序加机场 </font></font></strong></code></summary>
+<summary><code><strong><font color="red"><font size="4">三. nekobox/v2r/clash /sinbox等自由及开源代理程序加机场 </font></font></strong></code></summary>
 
-## 三. nekbox/v2r/clash /sinbox等自由及开源代理程序加机场    
+## 三. nekobox/v2r/clash /sinbox等自由及开源代理程序加机场    
           
 &ensp;&ensp; 优点：软件自由开源，可以使用别人搭建的节点也可以自己搭建节点  ，只要是正常tls加密，节点一般不能破解用户加密流量只可能记录真实ip和真实访问地址        
 &ensp;&ensp; 缺点：非自建的机场节点不一定可靠（可能记录日志并泄漏ip），非自建节点（不管是付费还是免费）都可能存在高峰期拥堵网速慢不稳定的情况，购买的付费机场可能随时跑路或者本身搭建技术不过关挑选的vps有问题所以有风险，别人搭建的免费节点也好不到哪里去，自建节点请看标题5   ，同时避免使用中国包括香港和澳门的节点               
@@ -138,7 +138,7 @@ https://f-droid.org/packages/ch.protonvpn.android/
 - [电脑版免代理下载请点击此](https://gitea.com/gjcxn358/go-to-word/src/branch/main/%E7%94%B5%E8%84%91%E7%89%88)  
 - 然后点击下载按钮下载并安装 ，苹果用户看后文                
    
-&ensp;&ensp;这里以nekbox-[NB4A安卓版为例（点击免代理下载）](https://gitea.com/gjcxn358/go-to-word/src/branch/main/%E5%AE%89%E5%8D%93%E5%BC%80%E6%BA%90%E7%89%88%E4%B8%8B%E8%BD%BD)进行说明：  （clash/v
+&ensp;&ensp;这里以nekobox-[NB4A安卓版为例（点击免代理下载）](https://gitea.com/gjcxn358/go-to-word/src/branch/main/%E5%AE%89%E5%8D%93%E5%BC%80%E6%BA%90%E7%89%88%E4%B8%8B%E8%BD%BD)进行说明：  （clash/v
 2r/singbox使用方法类似）         
 此软件 [最新版官方下载地址](https://github.com/MatsuriDayo/NekoBoxForAndroid/releases)             
 同类：          
@@ -197,7 +197,7 @@ https://github.com/free18/v2ray
 <img src="./photos/nek/nek7.png" width="150"/>            
        
 </p>    
-&ensp;&ensp;clash/rayng/v2rayn的操作和nekobbox比较接近，不做单单独介绍，不同的是clash一般只能倒入clash订阅，不能倒入v2ray订阅，模式需要选择全局模式 ，电脑v2rayn需要选择全局模式，clash只能导入节点订阅或将节点文件，v2rayn/v2rayng/nekobox/hiddify/karing 既可以直接导入支持的订阅，有可以直接导入单/多节点链接。      
+&ensp;&ensp;clash/rayng/v2rayn的操作和nekobox比较接近，不做单单独介绍，不同的是clash一般只能导入clash订阅，不能导入v2ray订阅，模式需要选择全局模式 ，电脑v2rayn需要选择全局模式，clash只能导入节点订阅或将节点文件，v2rayn/v2rayng/nekobox/hiddify/karing 既可以直接导入支持的订阅，有可以直接导入单/多节点链接。      
 ##### nekobox操作文字说明：              
 - 打开 nekbox  点击左上侧三横 -分组  -添加分组- 分组类型-订阅（下方会刷新出来订阅设置）   ，再点击订阅链接 -粘贴上面的链接 ，分组名随意  ，然后勾选保存
 - 点击左上侧三横-路由-关闭中国域名绕过和中国ip绕过规则，点击设置-关闭绕过局域网-开启分应用代理-点击不代理的应用，勾选无需代理的所有应用，如果是国产系统，应选择仅代理勾选应用模式并勾选需要代理的应用    
