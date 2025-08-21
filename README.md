@@ -66,7 +66,7 @@
 
 - 迷雾通 vpn模式启用后，会在本地生成与两个代理转发端口， 其中一个端口 ip为`localhost`或也可以是`127.0.0.1`，端口为`9909`,模式为`scoks5`，，一个http端口，ip：`localhost`，端口`9910`,可在软件设置在内找到，如上面图二底部调试一栏          
 支持代理设置的软件启用socks5/hppt代理访问tor网络比单纯的vpn模式更安全 ，使用vpn模式下访问软件/网站，如果invizible软件bug意外断开连接，系统杀后台，关闭软件/网站前关闭tor软件，网站/云服务会切换到直连，读取到用户真实ip导致ip泄露，在代理端口模式下，tor软件断开连接，本地代理端口不通，软件/网站就直接断网显示错误,就不会出现ip泄露。    
-支持代理设置的软件目前并不多，firefox火狐浏览器及其分支如fennec可以下载插件[foxyproxy](https://addons.mozilla.org/zh-CN/firefox/addon/foxyproxy-standard/)，点击此插件设置-选项设置-proxies-模式选择socks5,ip（hostname）填写`localhost`，端口填写`9909`，然后保存，再次点击浏览器插件的foxyproxy按钮-点击添加的代理切换到tor代理 即可让火狐浏览器全局走tor代理模式而不是使用有断连后ip泄露风险的vpn模式 。     
+支持代理设置的软件目前并不多，firefox火狐浏览器及其分支如fennec可以下载插件[foxyproxy](https://addons.mozilla.org/zh-CN/firefox/addon/foxyproxy-standard/)，点击此插件设置-选项设置-proxies-模式选择socks5,ip（hostname）填写`localhost`，端口填写`9909`，然后保存，再次点击浏览器插件的foxyproxy按钮-点击添加的代理切换到迷雾通的代理 即可让火狐浏览器全局走代理模式而不是使用有断连后ip泄露风险的vpn模式 。     
 xmpp软件中gajim支持代理设置，安卓端口monocles chat支持tor 9050端口的tor代理启用但迷雾通不支持端口修改所以无法使用代理模式，电报第三方客户端nekogram支持代理设置 ，fdroid应用商店支持代理设置， 安卓/linux系统都支持系统全局的代理模式，安卓在wifi设里，不过一般情况下最好不要启用，因为设置了手机所有软件都会强制走代理。   
 
 - 教程最后编辑时间迷雾通分流分应用设置不支持只允许勾选应用访问代理的模式，排除勾选应用代理的方法难以找到所有国内软件，特别是国产系统内置的服务软件，因此最好启用分流隧道的排除中国大陆流量按钮，但是需要注意的是排除中国大陆流量有个缺陷，比如当你要使用匿名qq号代理的方式登陆qq隐藏ip时，启用此排除大陆流量后登陆的ip为真实ip，如果访问网页是大陆网页内容镶嵌有国外服务托管的中国内容或者国外服务，这样国内网页内容真实ip，内嵌的国外内容显示用户的是代理ip，就会产生身份关联暴露实名，或者一个浏览器同时打开国内网站和国外网站，国内网站带有跨站跟踪的监控服务会检测到国外网站信息产生关联（跨站cooike跟踪）            
@@ -240,8 +240,8 @@ https://search.pub.solar/search
 
 &ensp;&ensp; 注意：此类 公开节点来源不明（包括付费节点），不建议经常使用，最好只用于过渡使用，重点使用下面的方法  ，下面几种方法 使用可能都需要借助方法1临时连接国际互联网        
 &ensp;&ensp;注意开启全局模式（而不是规则模式或绕过局域网），避免真实ip泄漏，然后勾选不代理的应用避免非自由开源实名软件走代理自爆 ，有dns防护选项的应开启dns防护，使用浏览器上网比如火狐浏览器，应该下载disable   webrtc插件，来屏蔽媒体webrtc,避免代理后真实ip泄漏               
-- v2rayng/clash mate/nekobox等vpn模式启用后，会在本地生成与一个代理转发端口， ip为`127.0.0.1`，rayng默认端口为`10808`(端口号也可在软件内修改，不同软件默认代理端口不同，可以在软件设在里面找到),模式为`scoks5`，也可以手动启用http模式端口，支持代理设置的软件启用socks5代理访问tor网络比单纯的vpn模式更安全 ，使用vpn模式下访问软件/网站，如果invizible软件bug意外断开连接，系统杀后台，关闭软件/网站前关闭tor软件，网站/云服务会切换到直连，读取到用户真实ip导致ip泄露，在代理端口模式下，tor软件断开连接，本地代理端口不通，软件/网站就直接断网显示错误,就不会出现ip泄露。        
-支持代理设置的软件目前并不多，firefox火狐浏览器及其分支如fennec可以下载插件[foxyproxy](https://addons.mozilla.org/zh-CN/firefox/addon/foxyproxy-standard/)，点击此插件设置-选项设置-proxies-模式选择socks5,ip（hostname）填写`127.0.0.1`，端口填写`10808`，然后保存，再次点击浏览器插件的foxyproxy按钮=点击添加的代理切换到tor代理 即可让火狐浏览器全局走tor代理模式而不是有ip泄露风险的vpn模式 。         
+- v2rayng/clash mate/nekobox等vpn模式启用后，会在本地生成与一个代理转发端口， ip为`127.0.0.1`，nekobox默认端口为`2090` (端口号也可在软件内修改，不同软件默认代理端口不同，可以在软件设在里面找到，v2r系列一般默认socks5端口是10808,clash一般是7890或8090等),模式为`scoks5`，也可以手动启用http模式端口，支持代理设置的软件启用socks5代理访问tor网络比单纯的vpn模式更安全 ，使用vpn模式下访问软件/网站，如果invizible软件bug意外断开连接，系统杀后台，关闭软件/网站前关闭tor软件，网站/云服务会切换到直连，读取到用户真实ip导致ip泄露，在代理端口模式下，tor软件断开连接，本地代理端口不通，软件/网站就直接断网显示错误,就不会出现ip泄露。          
+支持代理设置的软件目前并不多，firefox火狐浏览器及其分支如fennec可以下载插件[foxyproxy](https://addons.mozilla.org/zh-CN/firefox/addon/foxyproxy-standard/)，点击此插件设置-选项设置-proxies-模式选择socks5,ip（hostname）填写`127.0.0.1`，端口填写`2090`，然后保存，再次点击浏览器插件的foxyproxy按钮=点击添加的代理切换到nek代理 即可让火狐浏览器全局走代理模式而不是有ip泄露风险的vpn模式 。         
 xmpp软件中gajim支持代理设置，安卓端口monocles chat支持tor 9050端口的tor代理启用，v2rayng将socks5端口手动改为9050，monocles chat启用tor代理，即可让这个软件v2ryng的代理端口模式      
 ，电报第三方客户端nekogram支持代理设置 ，fdroid应用商店支持代理设置， 安卓/linux系统都支持系统全局的代理模式，安卓在wifi设里（类型为http而不是socks5），不过一般情况下最好不要启用，因为设置了手机所有软件都会强制走代理。          
 ### 1.2  非常不推荐       
