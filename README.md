@@ -18,7 +18,6 @@
            
 ---   
 
-目录： 
 <details>    
 
 <summary><code><strong><font color="red"><font size="6">目录『点击展开』</font></font></strong></code></summary>  
@@ -39,6 +38,7 @@
 
 ---    
 #### [图文pdf教程参考资料点击此跳转](https://gitea.com/gjcxn358/go-to-word/src/branch/main/%E5%9B%BE%E6%96%87pdf%E6%95%99%E7%A8%8B)       图文教程请结合下面的文字说明一起使用，pdf图文教程更新速度比简版文字教程慢，因为不能实时编辑，pdf教程和这里的文字教程有冲突的地方以这里为准   
+#### 教程软件免代理下载，安卓版[点击此跳转](https://gitea.com/gjcxn358/go-to-word/src/branch/main/%E5%AE%89%E5%8D%93%E5%BC%80%E6%BA%90%E7%89%88%E4%B8%8B%E8%BD%BD)，电脑版[点击此跳转](https://gitea.com/gjcxn358/go-to-word/src/branch/main/%E7%94%B5%E8%84%91%E7%89%88)              
                           
 ---   
 
