@@ -369,7 +369,7 @@ git config --global --unset https.proxy
   
 <details>    
 
-<summary><code><strong><font color="red"><font size="4">五. 自建节点使用标题三中软件连接使用 </font></font></strong></code></summary>
+<summary><code><strong><font color="red"><font size="4">五. vps或其他方法自建节点，然后使用标题三中软件连接使用 </font></font></strong></code></summary>
  
 
 ## 五. 自建节点订阅并导入clash/v2r/sinbox等开源程序使用-需要先连接其他代理才能自建节点订阅                      
