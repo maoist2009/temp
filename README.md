@@ -103,12 +103,12 @@ fdroid自由软件商店内搜索下载）注册登陆使用不限速安全节�
 和我们一起对抗审查-关闭数据收集和上传                     
 自动模式连接优先为wireguard协议，此协议加密型高但是无流量混淆特征很明显，容容易被墙，优点是速度快，为了更加安全和稳定可以在设置协议手动切换到自研的steath协议 。      
 <p>       
-<img src="./photos/geph/proton/proton1.png"  width="200"/ >   
-<img src="./photos/geph/proton/proton2.png"  width="200"/ >
-<img src="./photos/geph/proton/proton3.png"  width="200"/ >
-<img src="./photos/geph/proton/proton4.png"  width="200"/ >
-<img src="./photos/geph/proton/proton4.png"  width="200"/ >
-<img src="./photos/geph/proton/proton5.png"  width="200"/ >
+<img src="./photos/proton/proton1.png"  width="200"/ >   
+<img src="./photos/proton/proton2.png"  width="200"/ >
+<img src="./photos/proton/proton3.png"  width="200"/ >
+<img src="./photos/proton/proton4.png"  width="200"/ >
+<img src="./photos//proton/proton4.png"  width="200"/ >
+<img src="./photos/proton/proton5.png"  width="200"/ >
  
 </p>                   
 
