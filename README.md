@@ -465,20 +465,27 @@ connectbot 或termux（需使用 pkg install openssh安装ssh工具后才可使�
 1. 老王vPS一键四协议安装脚本： https://github.com/eooce/Sing-box 
 2. [老王xray-argo无交互一键四协议安装脚本:https://github.com/eooce/xray-2go
 3. ArgoSB一键无交互小钢炮脚本:    https://github.com/yonggekkk/ArgoSB       
-4.3x-ui 或s-ui面板 ，默认面板无https加密，不推荐，需要手动申请tls证书绑定自定义域名才可启用https的面板管理ui                
-#### 使用clouldfire的warp进行中转提高ip纯净度，对访问网站隐藏原始（vps）代理地址，可以将仅  ipv6的ps中转为ipv4+ipv6双栈   
+4.3x-ui 或s-ui面板 ，默认面板无https加密，不推荐，需要手动申请tls证书绑定自定义域名才可启用https的面板管理ui             
+
+### 删除vps的系统和节点连接的日志保护隐私        
+- 删除vps的系统日志和 输入命令的历史记录参考：  https://codeberg.org/p23tyjujukk/linux-privacy-security/    
+- 删除 部署节点的连接日志——不同协议的方法不同，可网上或者ai查询 比如关键词： Vless协议禁用日志    
+
+#### 可选：使用clouldfire的warp进行中转提高ip纯净度，对访问网站隐藏原始vps代理地址，可以将仅  ipv6的ps中转为ipv4+ipv6双栈   
 1. P3TERX  一键warp项目：https://github.com/P3TERX/warp.sh                   
 2. fscarmen 一键warp项目： https://gitlab.com/fscarmen/warp/    
 3. 【WGCF】连接CF WARP为服务器添加IPv4/IPv6网络 :   https://gitlab.com/ProjectWARP/warp-script  
 4. -CloudFlare WARP 一键管理脚本 :   https://gitlab.com/Misaka-blog/warp-script/     
 5.  yonggekkk-使用cloudfire的warp提高vps部署节点ip纯净度，warp多功能一键脚本，支持warp-go与wgcf切换 :  https://github.com/yonggekkk/warp-yg     (项目内有sh脚本源码，无开源申明)      
-6. vless+xhttps协议 不加tls时可以套前置cloufire cdn服务进行加速和防止防火墙封禁vps的ip，只不过需要在cloudfire上面托管绑定域名 ，搭建[需要使用3x-ui面板  ](https://github.com/MHSanaei/3x-ui)    ，建议绑定域名申请tls证书后使用3x-ui面板不然默认只有http网页会导致节点信息面板密码等泄露       
-7. vless 和vmess都可以套cloudfire 的argo服务达到和cdn一样的效果，这种可以无需在cloiudfire绑定自定义域名，临时隧道，项目比如 
-[xray-argo无交互一键四协议安装脚本vless-grpc-reality | vless-xhttp-reality | vless-ws-tls(argo) | vmess-ws-tls(argo)](https://github.com/eooce/xray-2go)       
+
+#### 可选: 使用cloudlfire服务作为vps节点的前置节点转发，对防火墙隐藏 vps的ip地址减小ip封锁概率
+    
+1. vless 和vmess都可以套cloudfire 的argo服务达到和cdn一样的效果，这种可以无需在cloiudfire绑定自定义域名，临时隧道，项目比如 
+[xray-argo无交互一键四协议安装脚本vless-grpc-reality | vless-xhttp-reality | vless-ws-tls(argo) | vmess-ws-tls(argo)](https://github.com/eooce/xray-2go)  ，如果使用临时隧道，重启/关闭Vps就会失效，重启vps又要进入脚本管理页面重新申请临时隧道。   
+2. vless+xhttps协议不加tls时可以套前置cloufire cdn服务进行加速和防止防火墙封禁vps的ip，只不过需要在cloudfire上面托管绑定域名 ，搭建[需要使用3x-ui面板  ](https://github.com/MHSanaei/3x-ui)    ，建议绑定域名申请tls证书后使用3x-ui面板不然默认只有http网页会导致节点信息面板密码等泄露              
 
 
-
-### 重装vps的linux系统为开源可靠的纯官方版本            
+#### 可选： 重装vps的linux系统为开源可靠的纯官方版本               
 - 注意：部分Vps厂商提供的linux系统是修改版或内置监控程序，特别是腾讯/阿里等国产厂商的海外云服务器，为了安全，最好重装Vps为可靠的开源版本，参考此开源项目：一键DD/重装脚本(One-click reinstall OS on VPS) ： https://github.com/bin456789/reinstall                                     
 
 下载脚本：                     
@@ -486,9 +493,7 @@ connectbot 或termux（需使用 pkg install openssh安装ssh工具后才可使�
 `       ，        
 下载完成后输入`bash reinstall.sh ...`可查看可安装系统，以安装debian13 为例 指令为 ： `bash reinstall.sh debian 13`           ，输入新的密码（同ssh登陆密码） 并再次输入确认  ，最后输入`reboot`重启vps，断开ssh连接重新连接，这里密钥已经发生改变，需要删除原来的本地密钥所在目录（rm -R .ssh的目录）后再连接     ，然后就可以开始部署节点了。     
 
-### 删除vps的系统和节点连接的日志保护隐私   
-- 删除vps的系统日志和 输入命令的历史记录参考：  https://codeberg.org/p23tyjujukk/linux-privacy-security/    
-- 删除 部署节点的连接日志——不同协议的方法不同，可网上或者ai查询 比如关键词： Vless协议禁用日志       
+      
 
 </details>         
 
