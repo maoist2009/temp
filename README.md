@@ -377,12 +377,34 @@ git config --global --unset https.proxy
 ### A. 通过clouldfire的pages服务，利用cf全球节点自建节点订阅教程（使用免费域名）并在v2r/clash/sinbox代理软件内使用，支持各种Vless/Trojan等协议      
 &ensp;&ensp;优点：比各种不知商业背景的商业公开节点（节点有别人部署不透明）和不知来源的免费节点安全,高速低延迟优于tor，可作为tor的备用（可用此节点来获取tor网桥和高速下载文件） ，CF的pages服务使用clouldfire的全球节点，节点非常多（在大陆各省也有很多合作云服务器），承诺不配合各国政府出卖用户隐私（应该避开cf的国区服务器），可以选择出口国家，而且cf的peages服务可用于搭建节点/网站等用途，很多大型跨国商业公司也在使用他的pages网页托管服务，因此不容易被封，及时封一些ip问题也不大，因为数量大备用多，
 节点搭建也比较简单，无需linux指令和部署远程操作系统，cf网站虽然是美国的商业性质公司运营，但部署节点的代码是完全开源的可以自定义的                                                
-&ensp;&ensp;缺点：此方法直接使用安全性不如tor，但是可以作为tor的前置代理，绕开防火墙对tor。提高连接稳定性，降低延迟，部分节点ip很可能不干净（触发私有网站的监测），商业性质承诺的安全不一定完全可靠（只是节点部署可选开源代码） ，注意避免使用中国大陆/香港/澳门的节点，     cloudlfire香港服务是和中国阿里云合作的           
+&ensp;&ensp;缺点：此方法直接使用安全性不如tor，但是可以作为tor的前置代理，绕开防火墙对tor。提高连接稳定性，降低延迟，部分节点ip很可能不干净（触发私有网站的监测），商业性质承诺的安全不一定完全可靠（只是节点部署可选开源代码） ，注意避免使用中国大陆/香港/澳门的节点，     cloudlfire香港服务是和中国阿里云合作的 
+- [clouldfire国际官网](https://www.cloudflare.com/)      
+- 这里是[免费域名申请网站示例](https://dynv6.com/)  （cloudlfire官方给的给的项目域名一般是被墙的，需要开启代理软件分片功能才能连接使用，导入订阅时很可能也需要开启其他代理才能加载成功，如果给cf pages项目绑定自己的域名，就可以绕开防火墙限制，不使用分片功能也能直接使用） ，
+- 所有的部署项目项目都支持clouldifre pages和workers部署，但是最好使用clouldfire pages 部署而不是clouldifre workers ，前者绑定的域名可以不是托管到cloudlfire的域名（dynv6注册的免费无限制域名不能托管给cloudfire，cloudns的免费域名可以托管给cloudlfire） ，wokers添加自定义域名还可能需要双向解析，设置稍微麻烦。               
+##### 这类部署的开源项目和教程比较多：比如：   
+
+####1.  
+
+
+#### 2. 甬哥脚本（开启tls加密无需自定义域名，部署步骤最简单）
+- [CF-workers/pages代理脚本【Vless与Trojan】，Serv00三合一脚本【Vless-reality、Vmess-ws(Argo)、Hysteria2】支持一键自建proxyip与CF反代IP，CF优选官方IP三地区应用脚本，自动输出美、亚、欧最佳优选IP](https://github.com/yonggekkk/Cloudflare_vless_trojan)   视频教程参考项目介绍里的youtube链接    
+- 推荐pages部署，下载_workers.js，下载好的文件后缀如果是_workers.txt就改文件名为_workers.js，zip格式压缩此文件，pages服务上传此压缩包，添加变量uuid，点击再次部署重新上传压缩包覆盖，生成的cf域名/uuid值   进入自己的订阅网站，复制对应订阅到对应客户端即可。   
+- proxyip 设置    -一般情况下使用和clouldifrei worksers/pagse部署的节点无法自己访问自己，也就是说无法访问clouldifre上面部署或者托管的网站或者套了clouldifre网站人机验证服务的网站，这类网站在外网占比比较大，因此需要使用非coiuldifre的节点来访问cloudfire服务的网站，这就是praoxyip。proxyip参数可以改为cm维护的美国甲骨文proxyip的：用于解锁cf网站的代理访问以及网站带有cf验证（cf节点自己不能访问cf自己）     
+`ProxyIP.Oracle.fxxk.dedyn.io`                    
+&ensp;&ensp;，如果要自己改其他 可以访问          
+[proxyip即时获取地址1](https://www.nslookup.io/domains/cdn-all.xn--b6gac.eu.org/dns-records/)      
+ [proxyip获取地址2](https://www.nslookup.io/domains/cdn.xn--b6gac.eu.org/dns-records/)               
+注意看 选择的proxyip不要是阿里云服务器的香港节点  
+
+
+- 无需proxip的方法部署： https://www.youtube.com/watch?v=yR-JpVV6SHs 
+
+#### 3. cmliu 的部署教程和开源项目-相对复杂         
 [1.点击观看部署cf节点视频教程](https://m.youtube.com/watch?pp=ygUKY2xvdWRmbGFyZQ%3D%3D&v=cqQioz_Kdag)         
 [2.官方精简视频教程](https://m.youtube.com/watch?v=59THrmJhmAw)请结合教程1一起看            
-[3.教程所需github源项目网站及文字教程说明](https://github.com/cmliu/edgetunnel.git)         
-- [clouldfire国际官网](https://www.cloudflare.com/)      
-- 这里是[免费域名申请网站示例](https://dynv6.com/)             
+[3.教程所需github源项目网站及文字教程说明](https://github.com/cmliu/edgetunnel.git)   
+
+
 - 问题故障解决：下面视频up主为此节点部署开源项目作者，在他的视频列表能找到所有相关教程-[Worker Vless免费节点 进阶教程 解除cfdn网站访问限制，更换订阅器和添加clash的MultiMode模式/全局模式代理规则等](https://m.youtube.com/watch?v=s91zjpw3-P8&t=1446s&pp=2AGmC5ACAQ%3D%3D)     
 - 部署后建议添加自定义域以开启TLS加密，同时添加clouldfire项目的这几个变量和值然后重新上传代码部署更新，输入值参考github项目里面的说明:     
 
@@ -395,43 +417,10 @@ DLS（测速筛选用）
 ADDCSV（测速用）             
 PROXYIP（解锁clouldfire服务托管的网页登陆，为了安全性建议使用作者电报里分享美国ip订阅而不是项目介绍里给到香港阿里云部署的ip,值为：ProxyIP.Oracle.fxxk.dedyn.io）          
 URL（  订阅主页伪装网页用，填入任意可访问的自定义网址格式比如：https://www.xxx.com/      ） 
-'        
              
 -  Cloudflare Workers & Pages 报错 Error 1101 详解，edgetunnel实用技巧，修复报错522 #科学上网 #优选ip #免费vpn #翻墙软件     
 https://m.youtube.com/watch?v=r4uVTEJptdE
----  
-#### 甬哥脚本（开启tls加密无需自定义域名，部署步骤最简单）
-- [CF-workers/pages代理脚本【Vless与Trojan】，Serv00三合一脚本【Vless-reality、Vmess-ws(Argo)、Hysteria2】支持一键自建proxyip与CF反代IP，CF优选官方IP三地区应用脚本，自动输出美、亚、欧最佳优选IP](https://github.com/yonggekkk/Cloudflare_vless_trojan)   视频教程参考项目介绍里的youtube链接    
-
-- cloulfire worker部署最简单，项目进入文件夹：       ”Vless_workers_pages“   https://github.com/yonggekkk/Cloudflare_vless_trojan/tree/main/Vless_workers_pages                           
-复制_workers.js中的加密代码部署，添加设置变量"uuid",值填uuid生成网站生成的值（浏览器搜索"uuid在线生成"），其他变量可以都不管，访问地址："https://生成的cf域名/uuid值" 进入自己的订阅网站，复制对应订阅到对应客户端即可。      
-
-- pages部署（支持绑定免费域名），下载_workers.js，下载好的文件后缀如果是_workers.txt就改文件名为_workers.js，zip格式压缩此文件，pages服务上传此压缩包，添加变量uuid，点击再次部署重新上传压缩包覆盖，生成的cf域名/uuid值   进入自己的订阅网站，复制对应订阅到对应客户端即可。   
-
----                    
-- cf自建节点dns泄漏修复方案     
-&ensp;&ensp;dns域名解析网站如果包括中国或者香港的，在把访问网址解析为目标ip时，可能会将你的真实访问域名和ip记录并标记上报给政府      
-dns和ip泄漏测试网站：    
-https://browserleaks.com/dns   
-webrtc泄漏测试网站：  
-https://browserleaks.com/webrtc  
-综合测试：
-https://ipleak.net/    
-    
-&ensp;&ensp;这种dns泄漏需要修复  ，修复方法为 clouldfire部署bpb面板节点，部署完成后登陆后台bpb面板修改远程dnsb和本地dns,这里修改为adgruard的dns       
-远程dns   ：   `https://dns.adguard-dns.com/dns-query`             
-本地dns  ：`94.140.14.14`               
-[adfuard dns设置官网链接](https://adguard-dns.io/en/public-dns.html)         
-        
-proxyip改为美国甲骨文的：用于解锁cf网站的代理访问以及网站带有cf验证（cf节点自己不能访问cf自己）     
-`ProxyIP.Oracle.fxxk.dedyn.io`                    
-&ensp;&ensp;这个proxyip是由 edgetunnel节点部署项目作者提供 ，如果要自己改其他 可以访问          
-[proxyip即时获取地址1](https://www.nslookup.io/domains/cdn-all.xn--b6gac.eu.org/dns-records/)      
-  [proxyip获取地址2](https://www.nslookup.io/domains/cdn.xn--b6gac.eu.org/dns-records/)           
-注意看 选择的proxyip不要是阿里云服务器的香港节点         
-&ensp;&ensp;改完以后保存并在代理软件内刷新节点    ，对于edgetunnel项目部署的节点要解决dns泄漏问题，因为不懂其源代码，可可行的方法为在v2r/clash内修改dns设置，开启强制dns覆盖，将本地和远程的dns都修改为clouldfire的   `1.1.1.1`                
-&ensp;&ensp;上面方法对于linux电脑并不会生效，因为linux电脑不会强制系统所有程序全局代理  ，即使开启了全局系统代理，解决-方法1.不使用代理协议软件而是使用vpn协议软件,但是vpn协议容易被识别拦截（高加密但是无流量混淆伪装特征明显），方法2.对于浏览器上网，在火狐浏览器设置-隐私安全-dns-勾选最大安全clouldfire（默认）          ，brave浏览器也有内置安全dns功能， 方法3.linux中使用clah-verge-rev来代理，开启系统代理和thun模式以及全局模式，方法4.在虚拟机内使用whonix系统，他的网关虚拟机和工作虚拟机是隔离的 网关连tor,工作虚拟机全局局域网连网关虚拟机上网，工作虚拟机和互联网不是直连，中间有网关虚拟机代理，可以有效避免操作环境的泄漏      
-
+---     
 - couldfire自建节点开源项目脚本多，其他方法不一定按上面教程来，可以在youtube上面搜索到其他项目的使用教程             
 
 
@@ -446,24 +435,19 @@ proxyip改为美国甲骨文的：用于解锁cf网站的代理访问以及网�
   
 
 ### a. 免费匿名方案                             
-免费vps不稳定而且容易凉，目前暂时无固定方法和教程，请自行探索。
-教程参考— 
-
--  [永久白嫖谷歌云服务器 | 3个月试用过后依然有效 | 全网最详细小白教程 | Google Cloud Platform | 四个回车搭建Hysteria 2高速代理节点](https://www.youtube.com/watch?v=NN5JzsvJJuk)        
-
-- [真正永久免费VPS全攻略！抢注/续期注意要点 高速多节点VPN搭建 Warp部署提升ip纯净度|Hax/Woiden Free VPS | Cloudflare Warp](https://www.youtube.com/watch?v=-Z0MbGJKX9c)            
+免费vps不稳定而且容易凉，目前暂时无固定方法和教程，请自行探索。不是很推荐使用，谷歌云，亚马逊云，甲骨文云的免费vps申请难度较高，
 
 ---
 ###  b. 使用付费 vps虚拟主机搭建，一般比免费的更稳定              
 
-- 网上搜索性价比高的国外vps厂商进行购买，最低大约 70-80左右一年，甲骨文微软谷歌等大厂较贵，有些支持支付宝微信支付（等于半匿名），最好使用匿名加密货币           
+- 网上搜索性价比高的国外vps厂商进行购买，最低大约 70-80左右一年，甲骨文微软谷歌等大厂较贵，有些支持支付宝微信支付（等于半匿名），有些支持人民币/外币双币种银行储蓄卡，在国内很多银行都可以申请办理，不过有条件最好使用匿名加密货币                   
 
 
 - 购买vps时系统选择linux发行版，完成购买收到账户密码后，使用ssh远程连接软件登陆vps进行命令行部署              
 - [网页版ssh远程登陆vps服务](https://ssh.hax.co.id/)   
-- shh软件linux内核系统可用 eaeyshh或者 系统自带终端app  ，安卓可以用   
-connectbot              
-- linux桌面发行版如果使用终端登陆ssh，终端登陆ssh指令一般为   ssh 用户名@地址:端口号   ，然后根据提示输入密码完成登陆      
+- shh软件linux内核系统可用 easyshh或者 系统自带终端app  ，安卓可以用   
+connectbot 或termux（需使用 pkg install openssh安装ssh工具后才可使用）              
+- linux桌面发行版如果使用终端登陆ssh，终端登陆ssh指令一般为   ssh 用户名@地址:端口号   ，输入yes或者y同意连接，然后根据提示输入密码完成登陆      
 ---                         
 (1).如果想零基础自动搭建，可以使用github上面的一键部署部署脚本                            
 - 可以使用github开源项目老王一键部署脚本，[vPS一键四协议安装脚本](https://github.com/eooce/Sing-box)   ,根据项目的使用介绍，密码登陆ssh后可以输入`bash <(curl -Ls https://raw.githubusercontent.com/eooce/sing-box/main/sing-box.sh) `  ，根据提示完成安装并复制出节点信息。   或者使用此项目   [VPS一键脚本工具箱](https://github.com/eooce/ssh_tool)    。也可以在github搜索其他一键部署项目。                                                
@@ -477,15 +461,21 @@ connectbot
 为了应对 TLS in TLS 和指纹识别等阻断或封禁的风险，Xray-core 团队推出了 Vision 和 Reality 两种新颖的技术方案。它们能够有效地隐藏和保护流量的特征，提高安全性和稳定性。 代理协议推荐less+reality和歇斯底里2（hy2），这两种目前特性少                                                 
 &ensp;&ensp;自建的节点订阅可以导入clash/v2r/sinbox/singbox内使用         
 
-##### vps部署脚本：
-1. 老王vPS一键四协议安装脚本： https://github.com/eooce/Sing-box           
-2. ArgoSB一键无交互小钢炮脚本:    https://github.com/yonggekkk/ArgoSB                
+##### vps部署脚本即说明：
+1. 老王vPS一键四协议安装脚本： https://github.com/eooce/Sing-box 
+2. [老王xray-argo无交互一键四协议安装脚本:https://github.com/eooce/xray-2go
+3. ArgoSB一键无交互小钢炮脚本:    https://github.com/yonggekkk/ArgoSB       
+4.3x-ui 或s-ui面板 ，默认面板无https加密，不推荐，需要手动申请tls证书绑定自定义域名才可启用https的面板管理ui                
 #### 使用clouldfire的warp进行中转提高ip纯净度，对访问网站隐藏原始（vps）代理地址，可以将仅  ipv6的ps中转为ipv4+ipv6双栈   
 1. P3TERX  一键warp项目：https://github.com/P3TERX/warp.sh                   
 2. fscarmen 一键warp项目： https://gitlab.com/fscarmen/warp/    
 3. 【WGCF】连接CF WARP为服务器添加IPv4/IPv6网络 :   https://gitlab.com/ProjectWARP/warp-script  
 4. -CloudFlare WARP 一键管理脚本 :   https://gitlab.com/Misaka-blog/warp-script/     
-5.  yonggekkk-使用cloudfire的warp提高vps部署节点ip纯净度，warp多功能一键脚本，支持warp-go与wgcf切换 :  https://github.com/yonggekkk/warp-yg     (项目内有sh脚本源码，无开源申明)    
+5.  yonggekkk-使用cloudfire的warp提高vps部署节点ip纯净度，warp多功能一键脚本，支持warp-go与wgcf切换 :  https://github.com/yonggekkk/warp-yg     (项目内有sh脚本源码，无开源申明)      
+6. vless+xhttps协议 不加tls时可以套前置cloufire cdn服务进行加速和防止防火墙封禁vps的ip，只不过需要在cloudfire上面托管绑定域名 ，搭建[需要使用3x-ui面板  ](https://github.com/MHSanaei/3x-ui)    ，建议绑定域名申请tls证书后使用3x-ui面板不然默认只有http网页会导致节点信息面板密码等泄露       
+7. vless 和vmess都可以套cloudfire 的argo服务达到和cdn一样的效果，这种可以无需在cloiudfire绑定自定义域名，临时隧道，项目比如 
+[xray-argo无交互一键四协议安装脚本vless-grpc-reality | vless-xhttp-reality | vless-ws-tls(argo) | vmess-ws-tls(argo)](https://github.com/eooce/xray-2go)       
+
 
 
 ### 重装vps的linux系统为开源可靠的纯官方版本            
