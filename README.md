@@ -197,8 +197,8 @@ https://github.com/free18/v2ray
 <img src="./photos/nek/nek7.png" width="150"/>            
        
 </p>    
-&ensp;&ensp;clash/rayng/v2rayn的操作和nekobbox比较接近，不做单单独介绍，不同的是clash一般只能倒入clash订阅，不能倒入v2ray订阅，模式需要选择全局模式 ，电脑v2rayn需要选择全局模式，clash只能导入节点订阅或将节点文件，v2rayn/v2rayng/nekobox/hiddify/karing 既可以直接导入支持的订阅，有可以直接导入单/多节点链接。             
-nekobox操作文字说明：           
+&ensp;&ensp;clash/rayng/v2rayn的操作和nekobbox比较接近，不做单单独介绍，不同的是clash一般只能倒入clash订阅，不能倒入v2ray订阅，模式需要选择全局模式 ，电脑v2rayn需要选择全局模式，clash只能导入节点订阅或将节点文件，v2rayn/v2rayng/nekobox/hiddify/karing 既可以直接导入支持的订阅，有可以直接导入单/多节点链接。      
+##### nekobox操作文字说明：              
 - 打开 nekbox  点击左上侧三横 -分组  -添加分组- 分组类型-订阅（下方会刷新出来订阅设置）   ，再点击订阅链接 -粘贴上面的链接 ，分组名随意  ，然后勾选保存
 - 点击左上侧三横-路由-关闭中国域名绕过和中国ip绕过规则，点击设置-关闭绕过局域网-开启分应用代理-点击不代理的应用，勾选无需代理的所有应用，如果是国产系统，应选择仅代理勾选应用模式并勾选需要代理的应用    
 - dns设置-远程和本地dns改为cloudfire加密域名解析“ https://1.1.1.1/dns-query ”或谷歌加密域名解析 ”https://dns.google/dns-query”    ，
