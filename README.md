@@ -59,9 +59,9 @@
 - 打开软件点击下方的注册，注册完成点击登陆，完整迷雾通服务选择暂不就不需要付费，注意一定要点击软件内的设置按钮-分流隧道-启用应用选择-点击选择要排除的无需代理的应用-勾选无需代理的软件（根据自己的需求勾选，防止实名服务连接代理自爆使用代理服务）然后点击连接就连上了国际互联网   
 操作图：    
 <p>       
-<img src="./photos/geph/geph1.png"  width="216"/ >      
-<img src="./photos/geph/geph2.png"  width="216"/ >    
-<img src="./photos/geph/geph3.png"  width="216"/ >         
+<img src="./photos/geph/geph1.png"  width="216"/ >         
+<img src="./photos/geph/geph2.png"  width="216"/ >         
+<img src="./photos/geph/geph3.png"  width="216"/ >             
 </p>       
 
 - 迷雾通 vpn模式启用后，会在本地生成与两个代理转发端口， 其中一个端口 ip为`localhost`或也可以是`127.0.0.1`，端口为`9909`,模式为`scoks5`，，一个http端口，ip：`localhost`，端口`9910`,可在软件设置在内找到，如上面图二底部调试一栏          
