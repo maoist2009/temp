@@ -59,9 +59,9 @@
 - 打开软件点击下方的注册，注册完成点击登陆，完整迷雾通服务选择暂不就不需要付费，注意一定要点击软件内的设置按钮-分流隧道-启用应用选择-点击选择要排除的无需代理的应用-勾选无需代理的软件（根据自己的需求勾选，防止实名服务连接代理自爆使用代理服务）然后点击连接就连上了国际互联网   
 操作图：    
 <p>       
-<img src="./photos/geph/geph1.png"  width="216"/ >         
-<img src="./photos/geph/geph2.png"  width="216"/ >         
-<img src="./photos/geph/geph3.png"  width="216"/ >             
+<img src="./photos/geph/geph1.png"  width="216"/>         
+<img src="./photos/geph/geph2.png"  width="216"/>         
+<img src="./photos/geph/geph3.png"  width="216"/>             
 </p>       
 
 - 迷雾通 vpn模式启用后，会在本地生成与两个代理转发端口， 其中一个端口 ip为`localhost`或也可以是`127.0.0.1`，端口为`9909`,模式为`scoks5`，，一个http端口，ip：`localhost`，端口`9910`,可在软件设置在内找到，如上面图二底部调试一栏          
@@ -109,12 +109,12 @@ fdroid自由软件商店内搜索下载）注册登陆使用不限速安全节�
 和我们一起对抗审查-关闭数据收集和上传                     
 自动模式连接优先为wireguard协议，此协议加密型高但是无流量混淆特征很明显，容容易被墙，优点是速度快，为了更加安全和稳定可以在设置协议手动切换到自研的steath协议 。      
 <p>       
-<img src="./photos/proton/proton1.png"  width="200"/ >   
-<img src="./photos/proton/proton2.png"  width="200"/ >
-<img src="./photos/proton/proton3.png"  width="200"/ >
-<img src="./photos/proton/proton4.png"  width="200"/ >
-<img src="./photos//proton/proton4.png"  width="200"/ >
-<img src="./photos/proton/proton5.png"  width="200"/ >
+<img src="./photos/proton/proton1.png"  width="200"/>       
+<img src="./photos/proton/proton2.png"  width="200"/>    
+<img src="./photos/proton/proton3.png"  width="200"/>   
+<img src="./photos/proton/proton4.png"  width="200"/>    
+<img src="./photos//proton/proton5.png"  width="200"/> 
+<img src="./photos/proton/proton6.png"  width="200"/>         
  
 </p>                   
 
@@ -288,13 +288,13 @@ xmpp软件中gajim支持代理设置，安卓端口monocles chat支持tor 9050�
        
 操作图：      
 <p>           
-<img src="./photos/invi/invi1.png" width="150"/>       
-<img src="./photos/invi/invi2.png" width="150"/>    
-<img src="./photos/invi/invi3.png" width="150"/>    
-<img src="./photos/invi/invi4.png" width="150"/>   
-<img src="./photos/invi/invi5.png" width="150"/>   
-<img src="./photos/invi/invi6.png" width="150"/>   
-<img src="./photos/invi/invi7.png" width="150"/>    
+<img src="./photos/invi/invi1.png" width="150"/>          
+<img src="./photos/invi/invi2.png" width="150"/>       
+<img src="./photos/invi/invi3.png" width="150"/>       
+<img src="./photos/invi/invi4.png" width="150"/>     
+<img src="./photos/invi/invi5.png" width="150"/>      
+<img src="./photos/invi/invi6.png" width="150"/>     
+<img src="./photos/invi/invi7.png" width="150"/>        
 </p>         
  
 - invizible vpn模式启用后，会在本地生成与一个代理转发端口， ip为`127.0.0.1`，端口为`9050`(端口号也可在软件内修改，但最好使用默认的9050),模式为`scoks5`，支持代理设置的软件启用socks5代理访问tor网络比单纯的vpn模式更安全 ，使用vpn模式下访问软件/网站，如果invizible软件bug意外断开连接，系统杀后台，关闭软件/网站前关闭tor软件，网站/云服务会切换到直连，读取到用户真实ip导致ip泄露，在代理端口模式下，tor软件断开连接，本地代理端口不通，软件/网站就直接断网显示错误,就不会出现ip泄露。    
