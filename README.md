@@ -253,6 +253,18 @@ https://search.pub.solar/search
 &ensp;&ensp;注意事项：如果是获取web网桥，可以选择方法124,如果是获取obfs网桥，则推荐方法3,其次方法2,obfs4网桥比web网桥快 ，
 &ensp;&ensp;如果使用invizible和orbot应用（带有vpn模式），勾选无需代理的应用跳过代理，避免实名服务自爆翻墙，invizible注意开启dns防护        
 
+
+
+<p>           
+<img src="./photos/invi/invi1.png" width="150"/>       
+<img src="./photos/invi/invi2.png" width="150"/>    
+<img src="./photos/invi/invi3.png" width="150"/>    
+<img src="./photos/invi/invi4.png" width="150"/>   
+<img src="./photos/invi/invi5.png" width="150"/>   
+<img src="./photos/invi/invi6.png" width="150"/>   
+<img src="./photos/invi/invi7.png" width="150"/>    
+</p>         
+
 </details>     
 
         
