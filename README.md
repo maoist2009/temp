@@ -475,7 +475,8 @@ connectbot 或termux（需使用 pkg install openssh安装ssh工具后才可使�
 2. fscarmen 一键warp项目： https://gitlab.com/fscarmen/warp/    
 3. 【WGCF】连接CF WARP为服务器添加IPv4/IPv6网络 :   https://gitlab.com/ProjectWARP/warp-script  
 4. -CloudFlare WARP 一键管理脚本 :   https://gitlab.com/Misaka-blog/warp-script/     
-5.  yonggekkk-使用cloudfire的warp提高vps部署节点ip纯净度，warp多功能一键脚本，支持warp-go与wgcf切换 :  https://github.com/yonggekkk/warp-yg     (项目内有sh脚本源码，无开源申明)      
+5.  yonggekkk-使用cloudfire的warp提高vps部署节点ip纯净度，warp多功能一键脚本，支持warp-go与wgcf切换 :  https://github.com/yonggekkk/warp-yg     (项目内有sh脚本源码，无开源申明)    
+6. warp+ 账户，使用warp+账户比普通账户连接更稳定，warp+账户 密钥key可以在电报上面获取 ：  @generatewarpplusbot           
 
 #### 可选: 使用cloudlfire服务作为vps节点的前置节点转发，对防火墙隐藏 vps的ip地址减小ip封锁概率
     
