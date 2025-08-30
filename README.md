@@ -101,7 +101,8 @@
 
    
    ---                     
-&ensp;&ensp;提醒：此应用免费版只能全局vpn,不能让部分应用绕过，因此如果设备是非纯国外系统以及登陆了实名账户（国产改版安卓比如oppo/vivo/小米手机默认系统不算纯国外系统），不是很建议使用，国外系统如果安装了国产非自由开源应用，应使用shelter/炼妖壶开启工作空间进行和其他应用的环境隔离，或者使用自带的多应用/隐私空间隔离，将pn软件和需要使用vpn的软件装进去使用                                                                        
+&ensp;&ensp;提醒：此应用免费版只能全局vpn,不能让部分应用绕过，因此如果设备是非纯国外系统以及登陆了实名账户（国产改版安卓比如oppo/vivo/小米手机默认系统不算纯国外系统），不是很建议使用，国外系统如果安装了国产非自由开源应用，应使用shelter/炼妖壶开启工作空间进行和其他应用的环境隔离，或者使用自带的多应用/隐私空间隔离，将pn软件和需要使用vpn的软件装进去使用 。
+&ensp; &ensp; 也有第三方支持免费分流分应用的版本，见这小节末尾。                                                       #### 官方免费无分流版下载地址：                  
 https://f-droid.org/packages/ch.protonvpn.android/                  
 &ensp;&ensp;注册登陆使用不限速安全节点 （protonvpn注册需要连国际互联网 ）       ，fdroid 官网：https://f-droid.org/   ，在其中搜索proton vpn也可找到      
 &ensp;&ensp;下载安装后注册proton账户登陆使用，此过程需要先连上其他代理。    
@@ -118,7 +119,9 @@ https://f-droid.org/packages/ch.protonvpn.android/
  
 </p>                   
 
-- linux版本的protonpn 教程最后编辑时间不支持steath协议，难以连接上           
+- linux版本的protonpn 教程最后编辑时间不支持steath协议，难以连接上  
+
+- 其他人做的[proton vpn安卓第三方版本，这个免费模式下也支持分应用/分流功能,只运行勾选应用走vpn访问网络，需要在设置分流中手动勾选，避免全局vpn暴露](https://github.com/maoist2009/proton-android)    
 
 
 </details>          
