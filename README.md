@@ -280,7 +280,9 @@ https://search.pub.solar/search
 1. 从github的开源项目中获取最新可用网桥列表，比如  
 https://github.com/scriptzteam/Tor-Bridges-Collector      
 打开此网站项目，点击作者上传文件夹内你需要的网桥类型文件，即可跳转查看网桥列表，复制一部分出来使用即可，这里推荐的是obfs4 ipv6,和web网桥（也是ipv6的）  ，因为ipv6地址被拦截的概率比ipv4低，当然前提是网络环境支持ipv6,不然就优先选择 obfs4 ipv4的网桥                                         
-2. 其他项目 .....                       
+2. 其他项目 .....  
+
+--- 
 &ensp;&ensp;如果使用invizible和orbot应用（带有vpn模式），勾选无需代理的应用跳过代理，避免实名服务自爆翻墙，invizible注意开启dns防护       
 
 #### tor代理工具移动端invizible 教程：          
