@@ -273,13 +273,14 @@ https://search.pub.solar/search
 
 1. 访问 https://bridges.torproject.org/options/ 并按照说明操作，此方法可以获取obfs4网桥和web网桥
 2. 使用 Gmail 或 Riseup 的邮箱服务发送邮件到 frontdesk@torproject.org，并且邮件主题需要包含private bridge cn （受到回复邮箱可能需要半天,会收到两个web网桥和obfs网桥）
-3. 通过 Telegram 向 @GetBridgesBot 发送消息。在聊天中点击“开始”，或者输入/Start或/bridges。此方法只能获取obfs4网桥 ，但是秒回复，大陆地区也能用
-4. 安卓手机fdroid自由开源应用商店内内搜索 invizible 安装启动，快速设置 -网桥 ，获取私人网桥 -，选择类似请求网桥 --输入验证码确认获取,此方法可以获取所有类型网桥 
+3. 通过 Telegram 向 @GetBridgesBot 发送消息。在聊天中点击“开始”，或者输入/Start或/bridges。此方法只能获取obfs4网桥 ，但是秒回复，大陆地区也能用，电报不会回复web网桥  
+4. 安卓手机fdroid自由开源应用商店内内搜索 invizible 安装启动，快速设置 -网桥 ，获取私人网桥 -，选择类似请求网桥 --输入验证码确认获取,此方法可以获取所有类型网桥  ，但是这种获取方式很可能卡验证码  ，获取时也需要提前连接其他代理/vpn     
 
-其他获取网桥的方法：
+#### 其他取网桥的方法：目前最推荐，比较简单，无需电报号或者谷歌邮箱        
 1. 从github的开源项目中获取最新可用网桥列表，比如  
-https://github.com/scriptzteam/Tor-Bridges-Collector   ，打开此网站项目，点击作者上传文件夹内你需要的网桥类型文件，即可跳转查看网桥列表，复制一部分出来使用即可        
-2. 其他项目                         
+https://github.com/scriptzteam/Tor-Bridges-Collector      
+打开此网站项目，点击作者上传文件夹内你需要的网桥类型文件，即可跳转查看网桥列表，复制一部分出来使用即可，这里推荐的是obfs4 ipv6,和web网桥（也是ipv6的）  ，因为ipv6地址被拦截的概率比ipv4低，当然前提是网络环境支持ipv6,不然就优先选择 obfs4 ipv4的网桥                                         
+2. 其他项目 .....                       
 &ensp;&ensp;如果使用invizible和orbot应用（带有vpn模式），勾选无需代理的应用跳过代理，避免实名服务自爆翻墙，invizible注意开启dns防护       
 
 #### tor代理工具移动端invizible 教程：          
