@@ -394,7 +394,7 @@ git config --global --unset https.proxy
 - 首先需要使用其他代理/vpn连上外网 
 - 访问[CF-workers/pages代理脚本【Vless与Trojan】，Serv00三合一脚本【Vless-reality、Vmess-ws(Argo)、Hysteria2】支持一键自建proxyip与CF反代IP，CF优选官方IP三地区应用脚本，自动输出美、亚、欧最佳优选IP](https://github.com/yonggekkk/Cloudflare_vless_trojan)   ，视频教程参考项目介绍里的youtube链接  
 实测可行文字教程：  
-- 点击进入文件夹Cloudflare-vless-trojan ，下载`vless无需proxyip的nat64套壳版 (推荐使用).js` ,修改文件名为`_worker.js`     ，zip格式压缩此文件，压缩后文件名为`_worker.zip`      
+- 点击进入文件夹Cloudflare-vless-trojan ，下载`vless无需proxyip的nat64套壳混淆代码版(推荐使用).js` ,修改文件名为`_worker.js`     ，zip格式压缩此文件，压缩后文件名为`_worker.zip`      
 - 进入cloudlfire官网完成注册，如果不是中文简体就可以在注册页面切换到中文，注册邮箱地址应选择海外匿名邮箱地址而不是国内油箱地址，如gmail，protonmail，tutamail等
 - 登陆cloiudfire ，进入到管理面板，如果不是中文简体，可以在网页右上角语言设置点击切换，点击左侧 计算（wokers）-pages和workers-创建-pages，点击使用直接上传-开始使用，项目名称随便填写，比如`abcdg123`,不要用拼音或涉及代理/项目作者等词汇，然后点击创建项目，点击从计算机选择，上传选择压缩包，选择上传压缩包，上传上面的步骤的_worker.zip，上传完成后点击部署站点，继续处理项目   
 - 刚刚创建的项目-设置-变量和机密 -添加，变量名称填写`uuid` ,数值需要在uuid生成网站生成复制进去（保存一份到本地记事本或者办公软件中） ，uuid生成网站比如 https://www.uuidgenerator.net/version4 ，填写进去后保存      
