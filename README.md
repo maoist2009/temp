@@ -404,7 +404,9 @@ git config --global --unset https.proxy
 - 在订阅网站找到  2：聚合通用-聚合通用分享链接 (可直接导入客户端)，复制粘贴到 v2rayn/r2ayng/nekobox/karing中即可连接使用，如果都无法连通，开启代理软件的(Fragment)分片功能，nekobxo目前不支持分片       
 - 代理软件使用教程及要求参卡 教程 大标题三          
 -.如果要在clash或者singbox中使用，在订阅网站下滑找到` 2：聚合通用、Clash-meta、Sing-box订阅链接如下：` Clash-meta订阅链接： Sing-box订阅链接： 复制对应的地址到对应的客户端即可使用
--.复制 订阅网站 ，自己保存起来方便以后导入新设备                  
+- 注意：在没有添加自定义域名前，默认分配的域名基本是被防火墙拦截的无法连同，需要代理软件支持分片功能，在设置内开启分片功能后才可以连通，支持分片功能的客户端有vrayng/vrayn/hiddify/karing 。  
+- 如果要绑定自定义域名，可以把域名托管到cloudflare上然后添加子域名，不能托管的域名 也可以，只是可能不稳定，一般情况没必要使用自定义域名 ， 操作有点麻烦                   
+-.复制 订阅网站 ，自己保存起来方便以后导入新设备                      
  
 
 
@@ -412,6 +414,7 @@ git config --global --unset https.proxy
 [1.点击观看部署cf节点视频教程](https://m.youtube.com/watch?pp=ygUKY2xvdWRmbGFyZQ%3D%3D&v=cqQioz_Kdag)         
 [2.官方精简视频教程](https://m.youtube.com/watch?v=59THrmJhmAw)请结合教程1一起看            
 [3.教程所需github源项目网站及文字教程说明](https://github.com/cmliu/edgetunnel.git)   
+- 手动加密混淆源代码，参考1. 中提到的方法  ，不添加自定义域名一样要开启代理软件的flagment分片功能          
 
 
 - 问题故障解决：下面视频up主为此节点部署开源项目作者，在他的视频列表能找到所有相关教程-[Worker Vless免费节点 进阶教程 解除cfdn网站访问限制，更换订阅器和添加clash的MultiMode模式/全局模式代理规则等](https://m.youtube.com/watch?v=s91zjpw3-P8&t=1446s&pp=2AGmC5ACAQ%3D%3D)     
