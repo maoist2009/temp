@@ -394,12 +394,13 @@ git config --global --unset https.proxy
 - 首先需要使用其他代理/vpn连上外网 
 - 访问[CF-workers/pages代理脚本【Vless与Trojan】，Serv00三合一脚本【Vless-reality、Vmess-ws(Argo)、Hysteria2】支持一键自建proxyip与CF反代IP，CF优选官方IP三地区应用脚本，自动输出美、亚、欧最佳优选IP](https://github.com/yonggekkk/Cloudflare_vless_trojan)   ，视频教程参考项目介绍里的youtube链接  
 实测可行文字教程：  
-- 点击进入文件夹Cloudflare-vless-trojan ，下载`vless无需proxyip的nat64套壳混淆代码版(推荐使用).js` ,修改文件名为`_worker.js`     ，zip格式压缩此文件，压缩后文件名为`_worker.zip`      
-- 进入cloudlfire官网完成注册，如果不是中文简体就可以在注册页面切换到中文，注册邮箱地址应选择海外匿名邮箱地址而不是国内油箱地址，如gmail，protonmail，tutamail等
-- 登陆cloiudfire ，进入到管理面板，如果不是中文简体，可以在网页右上角语言设置点击切换，点击左侧 计算（wokers）-pages和workers-创建-pages，点击使用直接上传-开始使用，项目名称随便填写，比如`abcdg123`,不要用拼音或涉及代理/项目作者等词汇，然后点击创建项目，点击从计算机选择，上传选择压缩包，选择上传压缩包，上传上面的步骤的_worker.zip，上传完成后点击部署站点，继续处理项目   
-- 刚刚创建的项目-设置-变量和机密 -添加，变量名称填写`uuid` ,数值需要在uuid生成网站生成复制进去（保存一份到本地记事本或者办公软件中） ，uuid生成网站比如 https://www.uuidgenerator.net/version4 ，填写进去后保存      
-- 在此项目内点击创建部署，再次上传 前面的压缩文件  ，完成后即可    
--  点击改项目的部署  -看到生产-域，点击这个网址跳转 ，点击地址栏 在复制跳转的网址后面占输入`/` 然后粘贴刚刚复制的uuid值 然后回车进入你的节点订阅网站     
+- 点击进入文件夹Cloudflare-vless-trojan ，下载`vless无需proxyip的nat64套壳明文版.js` ,下载后用记事本打开这个文件，找到开头的这一行 ` let userID = "86c50e3a-5b87-49dd-bd20-03c7f2735e40"   ` ，我们需要修改这个引号内的id值（密码），避免搭建的节点被别人盗用。进入[uuid生成网站](https://www.uuidgenerator.net/)生成 随机uuid，复制生成的uuid的内容比如`a0c6ea8e-3050-4643-b62f-8f3d675f5dda`，替换` let userID = "86c50e3a-5b87-49dd-bd20-03c7f2735e40" ` 内双引号的uuid内容。修改这个uuid数值请保存好，因为这个是后面搭建的节点的密码            。完成保存文件，全选文件内的所有代码内容，复制。     
+- [点击打开代码混淆网站](https://toolonline.net/js-obfuscator)进行手动加密混淆代码，防止cloudlare检测到特征码进行封禁，在混淆网站的`粘贴JavaScript代码` 下粘贴所有代码，`混淆选项预设`选择中等混淆，`基础设置`取消勾选代码优化结构，其余不动，`变量加密规则`选择base64,然后点击`粘贴JavaScript代码` 下面的混淆加密按钮进行加密，加密成功后在`加密结果`一栏看到加密后的代码，点击下载混淆代码按钮，保存文件名为`_worker.js`，然后压缩这个文件，压缩后文件名为`_worker.zip`
+之所以手动混淆不用项目的混淆代码是因为手动混淆的每人都不一样，公开的混淆版本使用的人多可能被cloudflare加入黑名单        
+- 进入[cloudlflare官网](https://www.cloudflare.com/)完成注册，如果不是中文简体就可以在注册页面切换到中文，注册邮箱地址应选择海外匿名邮箱地址而不是国内油箱地址，如gmail，protonmail，tutamail等    
+- 登陆cloiudflare ，进入到管理面板，如果不是中文简体，可以在网页右上角语言设置点击切换，点击左侧 计算（wokers）-pages和workers-创建-pages，点击使用直接上传-开始使用，项目名称随便填写，比如`abcdg123`,不要用拼音或涉及代理/项目作者等词汇，然后点击创建项目，点击从计算机选择，上传选择压缩包，选择上传压缩包，上传上面的步骤的`_worker.zip`压缩包，上传完成后点击部署站点，继续处理项目           
+
+-  点击改项目的部署  -看到生产-域，点击这个网址跳转 ，点击地址栏 在复制跳转的网址后面占输入`/` 然后粘贴刚刚复制的uuid值 然后回车进入你的节点订阅网站        ，比如` https://abcdg123.page.dev/a0c6ea8e-3050-4643-b62f-8f3d675f5dda`同时保存好这个网页/uuid的网站地址方便以后使用   ,注意uuid前面只有一个`/`                 
 - 在订阅网站找到  2：聚合通用-聚合通用分享链接 (可直接导入客户端)，复制粘贴到 v2rayn/r2ayng/nekobox/karing中即可连接使用，如果都无法连通，开启代理软件的(Fragment)分片功能，nekobxo目前不支持分片       
 - 代理软件使用教程及要求参卡 教程 大标题三          
 -.如果要在clash或者singbox中使用，在订阅网站下滑找到` 2：聚合通用、Clash-meta、Sing-box订阅链接如下：` Clash-meta订阅链接： Sing-box订阅链接： 复制对应的地址到对应的客户端即可使用
@@ -407,7 +408,7 @@ git config --global --unset https.proxy
  
 
 
-#### 2. cmliu 的部署教程和开源项目-相对复杂         
+#### 2. cmliu 的部署教程和开源项目-相对复杂-不推荐 ，1可用的情况直接跳过2              
 [1.点击观看部署cf节点视频教程](https://m.youtube.com/watch?pp=ygUKY2xvdWRmbGFyZQ%3D%3D&v=cqQioz_Kdag)         
 [2.官方精简视频教程](https://m.youtube.com/watch?v=59THrmJhmAw)请结合教程1一起看            
 [3.教程所需github源项目网站及文字教程说明](https://github.com/cmliu/edgetunnel.git)   
