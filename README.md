@@ -394,13 +394,13 @@ git config --global --unset https.proxy
 - 首先需要使用其他代理/vpn连上外网 
 - 访问[CF-workers/pages代理脚本【Vless与Trojan】，Serv00三合一脚本【Vless-reality、Vmess-ws(Argo)、Hysteria2】支持一键自建proxyip与CF反代IP，CF优选官方IP三地区应用脚本，自动输出美、亚、欧最佳优选IP](https://github.com/yonggekkk/Cloudflare_vless_trojan)   ，视频教程参考项目介绍里的youtube链接  
 实测可行文字教程：  
-- 点击进入文件夹Cloudflare-vless-trojan ，下载`vless无需proxyip的nat64套壳明文版.js` ,下载后用记事本打开这个文件，找到开头的这一行 ` let userID = "86c50e3a-5b87-49dd-bd20-03c7f2735e40"   ` ，我们需要修改这个引号内的id值（密码），避免搭建的节点被别人盗用。进入[uuid生成网站](https://www.uuidgenerator.net/)生成 随机uuid，复制生成的uuid的内容比如`a0c6ea8e-3050-4643-b62f-8f3d675f5dda`，替换` let userID = "86c50e3a-5b87-49dd-bd20-03c7f2735e40" ` 内双引号的uuid内容。修改这个uuid数值请保存好，因为这个是后面搭建的节点的密码            。完成保存文件，全选文件内的所有代码内容，复制。     
-- [点击打开代码混淆网站](https://toolonline.net/js-obfuscator)进行手动加密混淆代码，防止cloudlare检测到特征码进行封禁，在混淆网站的`粘贴JavaScript代码` 下粘贴所有代码，`混淆选项预设`选择中等混淆，`基础设置`取消勾选代码优化结构，其余不动，`变量加密规则`选择base64,然后点击`粘贴JavaScript代码` 下面的混淆加密按钮进行加密，加密成功后在`加密结果`一栏看到加密后的代码，点击下载混淆代码按钮，保存文件名为`_worker.js`，然后以zip压缩格式压缩这个文件，压缩后文件名为`_worker.zip`       
-之所以手动混淆不用项目的混淆代码是因为手动混淆的每人都不一样，公开的混淆版本使用的人多可能被cloudflare加入黑名单        
+- 点击进入文件夹Cloudflare-vless-trojan ，下载`vless无需proxyip的nat64套壳加密版.js` ,保存文件名为`_worker.js`，然后以zip压缩格式压缩这个文件，压缩后文件名为`_worker.zip`               
 - 进入[cloudlflare官网](https://www.cloudflare.com/)完成注册，如果不是中文简体就可以在注册页面切换到中文，注册邮箱地址应选择海外匿名邮箱地址而不是国内油箱地址，如gmail，protonmail，tutamail等    
-- 登陆cloiudflare ，进入到管理面板，如果不是中文简体，可以在网页右上角语言设置点击切换，点击左侧 计算（wokers）-pages和workers-创建-pages，点击使用直接上传-开始使用，项目名称随便填写，比如`abcdg123`,不要用拼音或涉及代理/项目作者等词汇，然后点击创建项目，点击从计算机选择，上传选择压缩包，选择上传压缩包，上传上面的步骤的`_worker.zip`压缩包，上传完成后点击部署站点，继续处理项目           
 
--  点击改项目的部署  -看到生产-域，点击这个网址跳转 ，点击地址栏 在复制跳转的网址后面占输入`/` 然后粘贴刚刚复制的uuid值 然后回车进入你的节点订阅网站        ，比如` https://abcdg123.page.dev/a0c6ea8e-3050-4643-b62f-8f3d675f5dda`同时保存好这个网页/uuid的网站地址方便以后使用   ,注意uuid前面只有一个`/`                 
+- 登陆cloiudfire ，进入到管理面板，如果不是中文简体，可以在网页右上角语言设置点击切换，点击左侧 计算（wokers）-pages和workers-创建-pages，点击使用直接上传-开始使用，项目名称随便填写，比如abcdg123,不要用拼音或涉及代理/项目作者等词汇，然后点击创建项目，点击从计算机选择，上传选择压缩包，选择上传压缩包，上传上面的步骤的_worker.zip，上传完成后点击部署站点，继续处理项目                
+- 点击刚刚创建的项目-设置-变量和机密 -添加，变量名称填写uuid ,数值需要在uuid生成网站生成复制进去（保存一份到本地记事本或者办公软件中） ，uuid生成网站比如 https://www.uuidgenerator.net/version4 ，填写进去后保存。   
+-  在此项目内点击创建部署，再次上传 前面的压缩文件 ，完成后即可          
+-  点击该项目的部署  -看到生产-域，点击这个网址跳转 ，点击地址栏 在复制跳转的网址后面占输入`/` 然后粘贴刚刚复制的uuid值 然后回车进入你的节点订阅网站        ，比如` https://abcdg123.page.dev/a0c6ea8e-3050-4643-b62f-8f3d675f5dda`同时保存好这个网页/uuid的网站地址方便以后使用   ,注意uuid前面只有一个`/`                 
 - 在订阅网站找到  2：聚合通用-聚合通用分享链接 (可直接导入客户端)，复制粘贴到 v2rayn/r2ayng/nekobox/karing中即可连接使用，如果都无法连通，开启代理软件的(Fragment)分片功能，nekobxo目前不支持分片       
 - 代理软件使用教程及要求参卡 教程 大标题三          
 -.如果要在clash或者singbox中使用，在订阅网站下滑找到` 2：聚合通用、Clash-meta、Sing-box订阅链接如下：` Clash-meta订阅链接： Sing-box订阅链接： 复制对应的地址到对应的客户端即可使用
@@ -410,28 +410,8 @@ git config --global --unset https.proxy
  
 
 
-#### 2. cmliu 的部署教程和开源项目-相对复杂-不推荐 ，1可用的情况直接跳过2              
-[1.点击观看部署cf节点视频教程](https://m.youtube.com/watch?pp=ygUKY2xvdWRmbGFyZQ%3D%3D&v=cqQioz_Kdag)         
-[2.官方精简视频教程](https://m.youtube.com/watch?v=59THrmJhmAw)请结合教程1一起看            
-[3.教程所需github源项目网站及文字教程说明](https://github.com/cmliu/edgetunnel.git)   
-- 手动加密混淆源代码，参考1. 中提到的方法  ，不添加自定义域名一样要开启代理软件的flagment分片功能          
+#### 2. cmliu 的部署教程和开源项目-相对复杂-不推荐 ，略               
 
-
-- 问题故障解决：下面视频up主为此节点部署开源项目作者，在他的视频列表能找到所有相关教程-[Worker Vless免费节点 进阶教程 解除cfdn网站访问限制，更换订阅器和添加clash的MultiMode模式/全局模式代理规则等](https://m.youtube.com/watch?v=s91zjpw3-P8&t=1446s&pp=2AGmC5ACAQ%3D%3D)     
-- 部署后建议添加自定义域以开启TLS加密，同时添加clouldfire项目的这几个变量和值然后重新上传代码部署更新，输入值参考github项目里面的说明:     
-
-' 
-UUID（可以浏览器搜索UUID在线生成，生成一个可用UUID值）     
-SUBAPI（clash、singbox等订阅转换后端）         
-SUBCONFIG（clash、singbox等 订阅转换配置文件）         
-SUB（优选IP订阅地址）        
-DLS（测速筛选用）        
-ADDCSV（测速用）             
-PROXYIP（解锁clouldfire服务托管的网页登陆，为了安全性建议使用作者电报里分享美国ip订阅而不是项目介绍里给到香港阿里云部署的ip,值为：ProxyIP.Oracle.fxxk.dedyn.io）          
-URL（  订阅主页伪装网页用，填入任意可访问的自定义网址格式比如：https://www.xxx.com/      ） 
-             
--  Cloudflare Workers & Pages 报错 Error 1101 详解，edgetunnel实用技巧，修复报错522 #科学上网 #优选ip #免费vpn #翻墙软件     
-https://m.youtube.com/watch?v=r4uVTEJptdE
 ---     
 - couldfire自建节点开源项目脚本多，其他方法不一定按上面教程来，可以在youtube上面搜索到其他项目的使用教程             
 
@@ -496,7 +476,7 @@ connectbot 或termux（需使用 pkg install openssh安装ssh工具后才可使�
     
 1. vless 和vmess都可以套cloudfire 的argo服务达到和cdn一样的效果，这种可以无需在cloiudfire绑定自定义域名，临时隧道，项目比如 
 [xray-argo无交互一键四协议安装脚本vless-grpc-reality | vless-xhttp-reality | vless-ws-tls(argo) | vmess-ws-tls(argo)](https://github.com/eooce/xray-2go)  ，如果使用临时隧道，重启/关闭Vps就会失效，重启vps又要进入脚本管理页面重新申请临时隧道。   
-2. vless+xhttps协议不加tls时可以套前置cloufire cdn服务进行加速和防止防火墙封禁vps的ip，只不过需要在cloudfire上面托管绑定域名 ，搭建[需要使用3x-ui面板  ](https://github.com/MHSanaei/3x-ui)    ，建议绑定域名申请tls证书后使用3x-ui面板不然默认只有http网页会导致节点信息面板密码等泄露              
+2. vless+xhttp协议不加tls时可以套前置cloufire cdn服务进行加速和防止防火墙封禁vps的ip。xhttp目前安全性可能是最高的。 只不过需要在cloudfire上面托管绑定域名 ，搭建[需要使用3x-ui面板  ](https://github.com/MHSanaei/3x-ui)    ，建议绑定域名申请tls证书后使用3x-ui面板不然默认只有http网页会导致节点信息面板密码等泄露-，3x-ui部署完成看到http后台网页和账户密码，保存下来，vps终端 内输入 ’x-ui’ 进入3xui设置，找到ssl申请选项数字,通过输入设置根据提示完成域名绑定和https申请  。[视频教程点击此观看](https://m.youtube.com/watch?v=GB_SHmqotzQ)                             
 
 
 #### 可选： 重装vps的linux系统为开源可靠的纯官方版本               
