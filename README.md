@@ -439,7 +439,7 @@ git config --global --unset https.proxy
 - [网页版ssh远程登陆vps服务](https://ssh.hax.co.id/)      ，不推荐有泄露风险       
 - shh软件linux内核系统可用 easyshh或者 系统自带终端app  ，安卓可以用   
 connectbot 或termux（需使用 pkg install openssh安装ssh工具后才可使用） ，windows系统可以使用开源的PuTTY，  
-- putty连接ssh教程    [如何使用PuTTY远程登录管理VPS服务器](https://www.youtube.com/watch? v=ky2r2FgXG7U)                                                    
+- putty连接ssh教程    [如何使用PuTTY远程登录管理VPS服务器](https://www.youtube.com/watch?v=ky2r2FgXG7U )                                                                    
 - linux桌面发行版和安卓termux openssh如果使用终端登陆ssh，终端登陆ssh指令一般为   ssh 用户名@地址:端口号（用户名替换为root时表示以root用登陆vps）   ，然后输入yes或同意连接（第一次连接时需要），然后根据提示输入密码完成登陆                    
 - 安卓connect bot（fdroid商店下载） 使用很简单  新建连接输入 用户名@vps的ip地址 然后保存点击连接               
 
@@ -449,7 +449,7 @@ connectbot 或termux（需使用 pkg install openssh安装ssh工具后才可使�
 (2).如果有代码使用基础，最好是自行使用开源协议代码完全手动搭建，杜绝任何后门，比如要部署hy2协议节点，就去[hy2
 项目的官方网站](https://v2.hysteria.network/zh/)查看手动部署完整教程                                                                                                              
 全过程教程可以参考             
--            [ArgoSB one-click (Part 1): AnyTLS | Xhttp | Reality | Hy2 | Tuic | SS | Argo ] https://www.youtube.com/watch?v=CiXmttY7mhw                 
+-  [ArgoSB one-click (Part 1): AnyTLS | Xhttp | Reality | Hy2 | Tuic | SS | Argo ](https://www.youtube.com/watch?v=CiXmttY7mhw   )                     
 
 &ensp;&ensp;自建的节点订阅可以导入v2r/sinbox/karing
 /hiddify等开源代理工具内使用                 
