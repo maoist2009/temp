@@ -476,7 +476,52 @@ connectbot 或termux（需使用 pkg install openssh安装ssh工具后才可使�
     
 1. vless 和vmess都可以套cloudfire 的argo服务达到和cdn一样的效果，这种可以无需在cloiudfire绑定自定义域名，临时隧道，项目比如 
 [xray-argo无交互一键四协议安装脚本vless-grpc-reality | vless-xhttp-reality | vless-ws-tls(argo) | vmess-ws-tls(argo)](https://github.com/eooce/xray-2go)  ，如果使用临时隧道，重启/关闭Vps就会失效，重启vps又要进入脚本管理页面重新申请临时隧道。   
-2. vless+xhttp协议不加tls时可以套前置cloufire cdn服务进行加速和防止防火墙封禁vps的ip。xhttp目前安全性可能是最高的。 只不过需要在cloudfire上面托管绑定域名 ，搭建[需要使用3x-ui面板  ](https://github.com/MHSanaei/3x-ui)    ，建议绑定域名申请tls证书后使用3x-ui面板不然默认只有http网页会导致节点信息面板密码等泄露-，3x-ui部署完成看到http后台网页和账户密码，保存下来，vps终端 内输入 ’x-ui’ 进入3xui设置，找到ssl申请选项数字,通过输入设置根据提示完成域名绑定和https申请  。[视频教程点击此观看](https://m.youtube.com/watch?v=GB_SHmqotzQ)                             
+2. vless+xhttp协议不加tls时可以套前置cloufire cdn服务进行加速和防止防火墙封禁vps的ip。xhttp目前安全性可能是最高的。 只不过需要在cloudfire上面托管绑定域名 ，搭建[需要使用3x-ui面板  ](https://github.com/MHSanaei/3x-ui)    ，建议绑定域名申请tls证书后使用3x-ui面板不然默认只有http网页会导致节点信息面板密码等泄露-，3x-ui部署完成看到http后台网页和账户密码，保存下来，vps终端 内输入 ’x-ui’ 进入3xui设置，找到ssl申请选项数字,通过输入设置根据提示完成域名绑定和https申请  。  
+
+
+#### 延伸：vless+xhttp+cloudflare cdn 搭建详细步骤         
+
+0. 打开ssh工具，输入 ssh root@xxxx （xxx为vps的ip地址）
+，然后根据提示输入yes回车确认（第一次连接需要），然后输入密码并回车完成登陆                
+
+1.  ssh登陆vps后，用甬哥的脚本建立hy2协议节点，后面的cloudns免费域名申请要用这个翻墙节点  
+输入指令' hypt=""  bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh) '
+完成安装，如果提示没有curl,就输入`apt install curl`安装依赖然后重新输入节点安装指令进行安装复制节点信息导入到v2rayn，连接，连通即可            
+
+2. 建立自定义域名， 主域托管到cloudflare,参考 [最新免费域名ClouDNS申请教程 托管cloudflare 边缘证书，自定义域等演示教程 IP滥用率高以及双向解析注意事项的讲解](https://m.youtube.com/watch?v=zvRYOsi7ynk&pp=ygUeY2xvdWRuc-Wfn-WQjeaJmOeuoSBjbG91ZGZsYXJl)
+，观看前7分钟，完成主域托管cf的ssl边缘证书绑定申请。
+注意：优先使用步骤1建立的hy2协议节点的代理进行cloudns的注册和域名建立，如果还是提示ip滥用想办法切换到其他ip干净的代理/vpn进行免费域名申请                  
+
+3. 新建两个子域名，一个用于3x-ui的https加密的管理面板后台，一个用于 节点 cdn加速    。在cloudns主域名的两个ns记录分别点击编辑，复制其中的名称服务器值到记事本保存，不对内容修改。cloudns免费域名下依次新建两个ns记录 ，名称填写一样的子域前缀比如www,两个内容分别填写复制的两个名称服务器值，这样就完成www.子域名的建立。    
+然后重复步骤建立另一个子域名，前缀比如m,这样得到了两个子域名：www.主域名和  m.主域名。    
+
+4. 进入clouldflare托管的域名，点击dns记录，新建dns记录，如果vps是ipv6,建立aaaa记录，名称填写子域名1的前缀www,地址内容填写vps的ipv6地址（如果是ipv4的vps就建立a记录），关闭小黄云图标加速，然后保存-用于3x-ui面板启用https加密。
+重复步骤再次新建dns记录，名称填写子域名2的前缀m,不关小黄云，用于节点的cdn加速。    
+
+5. 卸载之前vps安装的节点，避免和3x-ui冲突  ，在ssh软件重新登陆vps,
+输入‘ agsb del ’，删除步骤1建立的节点，删除后这个节点暂时不再可用。   
+
+6. 安装3x-ui面板并启用https加密，避免明文泄漏节点信息，登陆vps,
+输入代码'  apt install wget git   ' 安装好依赖。
+然后输入''安装好3x-ui面板
+ 所有提示都按回车使用默认配置即可，,安装完成找到网址和账户秘密一栏，复制保存到记事本。网址前缀为http不带加密的网址，浏览器复制网址进入面板后台，看到图形界面，说明面板正常工作，不做登陆避免秘密泄漏。             
+回到 登陆vps的终端，使用ctrl+c快捷键关闭vps运行中的安装程序，然后输入x-ui进入3x-ui的高级设置选项，找到ssl证书申请，进行证书申请。3x-ui和ssl证书申请以及域名绑定参考视频：[VPS节点搭建与加速](https://m.youtube.com/watch?v=W9QX3fphyes&t=1247s&pp=0gcJCckJAYcqIYzv)，观看视频15分到17分钟末，注意 这里绑定的域名应为步骤3中的  www.主域名                         
+
+7. 建立最安全的vless+xhttp+cf cdn中转加速节点，[【代理新姿势】全场景通吃的xhttp传输协议快速上手，GFW直呼内行](https://m.youtube.com/watch?v=GB_SHmqotzQ&pp=ygUPdmxlc3MgeGh0dHAgY2Ru) ，观看视频4分55s到9分30秒，
+注意这里cdn加速的域名为 步骤3中    m.主域名，无需按视频教程中的再次建立子域名和dns解析。完成视频教程得到一个vless+xhttp+reality协议节点，一个vless+xhttp+ cf cdn加速节点，我们主要用后面这个，因为它有cf中转加速的能欺骗防火墙，防止防火墙知道和封锁vps真实ip的。vless+xhttp+cf cdn能否连通取决于cf托管域名的的 ssl边缘证书是否通过  ，从步骤3的双向解析申请到通过可能需要半天时间 。
+ cf cdn优选ip和cdn大厂域名参考 其他教程     
+                    
+
+
+8.重建hy2协议协议节点，可以将hy2协议节点用于高速文件下载和备用节点，hy2的速度更快，过程重复步骤1           
+
+
+
+
+
+
+
+                               
 
 
 #### 可选： 重装vps的linux系统为开源可靠的纯官方版本               
