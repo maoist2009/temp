@@ -448,15 +448,18 @@ connectbot 或termux（需使用 pkg install openssh安装ssh工具后才可使�
 
 ---      
 #### 搭建教程                          
-(1). 如果想零基础自动搭建，可以使用github上面的一键部署部署脚本                            
-- 可以使用github开源项目甬哥一键部署脚本，[vPS一键四协议安装脚本](https://github.com/eooce/Sing-box)   ,根据项目的使用介绍，密码登陆ssh后可以输入`name="" sspt="" vlpt="" vmpt="" hypt="" tupt="" xhpt="" vxpt="" anpt="" arpt="" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh)  ` ，根据提示完成安装并复制出节点信息。   或者使用此项目   [VPS一键脚本工具箱](https://github.com/eooce/ssh_tool)    。也可以在github搜索其他一键部署项目。                                                        
-(2). 如果有代码使用基础，最好是自行使用开源协议代码完全手动搭建，杜绝任何后门，比如要部署hy2协议节点，就去[hy2
-项目的官方网站](https://v2.hysteria.network/zh/)查看手动部署完整教程                                                                                                              
-全过程教程可以参考             
--  [ArgoSB one-click (Part 1): AnyTLS | Xhttp | Reality | Hy2 | Tuic | SS | Argo ](https://www.youtube.com/watch?v=CiXmttY7mhw   )                     
+(1).  如果想零基础自动搭建，可以使用github上面的一键部署部署脚本                            
+- 可以使用github开源项目甬哥一键部署脚本，[vPS一键四协议安装脚本](https://github.com/eooce/Sing-box)   ,根据项目的使用介绍，密码登陆ssh后可以输入`name="" sspt="" vlpt="" vmpt="" hypt="" tupt="" xhpt="" vxpt="" anpt="" arpt="" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh)  ` ，根据提示完成安装并复制出节点信息。   或者使用此项目   [VPS一键脚本工具箱](https://github.com/eooce/ssh_tool)    。也可以在github搜索其他一键部署项目。                
+
+
+(2).  如果有代码使用基础，最好是自行使用开源协议代码完全手动搭建，杜绝任何后门，比如要部署hy2协议节点，就去[hy2
+项目的官方网站](https://v2.hysteria.network/zh/)查看手动部署完整教程                                                                                                            
+ ---                 
+##### 全过程教程可以参考                                  
+-  [甬哥ArgoSB一键部署脚本 one-click (Part 1): AnyTLS | Xhttp | Reality | Hy2 | Tuic | SS | Argo ](https://www.youtube.com/watch?v=CiXmttY7mhw   )                                 
 
 &ensp;&ensp;自建的节点订阅可以导入v2r/sing-box/karing
-/hiddify等开源代理工具内使用                 
+/hiddify等开源代理工具内使用                    
 
 ##### vps部署脚本即说明：（选一个即可,最推荐1）       
 1. 甬哥ArgoSB一键无交互小钢炮脚本:    https://github.com/yonggekkk/ArgoSB         
@@ -464,10 +467,12 @@ connectbot 或termux（需使用 pkg install openssh安装ssh工具后才可使�
 3. [老王xray-argo无交互一键四协议安装脚本:https://github.com/eooce/xray-2go              
 4. 3x-ui 或s-ui面板 ，默认面板无https加密，如果不是用于vless+xhttp+cloudflare cdn的节点组合待建，则不推荐，使用相对麻烦，需要手动申请tls证书绑定自定义域名才可启用https的面板管理ui                     
 
+---        
 ### 删除vps的系统和节点连接的日志保护隐私        
 - 删除vps的系统日志和 输入命令的历史记录参考：  https://codeberg.org/p23tyjujukk/linux-privacy-security/       
 - 删除 部署节点的连接日志——不同协议的方法不同，可网上或者ai查询 比如关键词： Vless协议禁用日志           
 
+---        
 #### 可选：使用clouldflare的warp进行中转提高ip纯净度，对访问网站隐藏原始vps代理地址，可以将仅  ipv6的ps中转为ipv4+ipv6双栈   
 - 视频教程[给纯ipv6的vps添加一个Cf原生ipv4出站地址，ip安全评分全面提升](https://www.youtube.com/watch?v=jlig1IvnIzU)        
 1. P3TERX  一键warp项目：https://github.com/P3TERX/warp.sh                        
@@ -477,13 +482,14 @@ connectbot 或termux（需使用 pkg install openssh安装ssh工具后才可使�
 5.  yonggekkk-使用cloudfire的warp提高vps部署节点ip纯净度，warp多功能一键脚本，支持warp-go与wgcf切换 :  https://github.com/yonggekkk/warp-yg     (项目内有sh脚本源码，无开源申明)       
 6. warp+ 账户，使用warp+账户比普通账户连接更稳定，warp+账户 密钥key可以在电报上面获取 ：  @generatewarpplusbot                  
 
+---         
 #### 可选: 使用cloudlfire服务作为vps节点的前置节点转发，对防火墙隐藏 vps的ip地址减小ip封锁概率
     
 1. vless 和vmess都可以套cloudfire 的argo服务达到和cdn一样的效果，这种可以无需在cloiudfire绑定自定义域名，临时隧道，项目比如 
 [xray-argo无交互一键四协议安装脚本vless-grpc-reality | vless-xhttp-reality | vless-ws-tls(argo) | vmess-ws-tls(argo)](https://github.com/eooce/xray-2go)  ，如果使用临时隧道，重启/关闭Vps就会失效，重启vps又要进入脚本管理页面重新申请临时隧道。   
-2. vless+xhttp协议不加tls时可以套前置cloufire cdn服务进行加速和防止防火墙封禁vps的ip。xhttp目前安全性可能是最高的。 只不过需要在cloudfire上面托管绑定域名 ，搭建[需要使用3x-ui面板  ](https://github.com/MHSanaei/3x-ui)    ，建议绑定域名申请tls证书后使用3x-ui面板不然默认只有http网页会导致节点信息面板密码等泄露-，3x-ui部署完成看到http后台网页和账户密码，保存下来，vps终端 内输入 ’x-ui’ 进入3xui设置，找到ssl申请选项数字,通过输入设置根据提示完成域名绑定和https申请  。  
+2. vless+xhttp协议不加tls时可以套前置cloufire cdn服务进行加速和防止防火墙封禁vps的ip。xhttp目前安全性可能是最高的。 只不过需要在cloudfire上面托管绑定域名 ，搭建[需要使用3x-ui面板  ](https://github.com/MHSanaei/3x-ui)    ，建议绑定域名申请tls证书后使用3x-ui面板不然默认只有http网页会导致节点信息面板密码等泄露-，3x-ui部署完成看到http后台网页和账户密码，保存下来，vps终端 内输入 ’x-ui’ 进入3xui设置，找到ssl申请选项数字,通过输入设置根据提示完成域名绑定和https申请  。     
 
-
+---      
 ### ==延伸==：vless+xhttp+cloudflare cdn /vless+xhttp+reality/ hysteria2 三种最安全的协议组合搭建详细步骤                        
 
 &ensp;&ensp; 注意：xhttp协议支持的客户端相对较少，有v2rayn/v2rayng等               
@@ -522,18 +528,9 @@ ssh登陆vps后，用甬哥的脚本建立hy2协议节点，后面的cloudns免�
 注意这里cdn加速的域名为 步骤3中    m.主域名，无需按视频教程中的再次建立子域名和dns解析。完成视频教程得到一个vless+xhttp+reality协议节点，一个vless+xhttp+ cf cdn加速节点，我们主要用后面这个，因为它有cf中转加速的能欺骗防火墙，防止防火墙知道和封锁vps真实ip的。vless+xhttp+cf cdn能否连通取决于cf托管域名的的 ssl边缘证书是否通过  ，从步骤3的双向解析申请到通过可能需要半天时间 。
  cf cdn优选ip和cdn大厂域名参考 其他教程     
                     
-8. 重建hy2协议协议节点，可以将hy2协议节点用于高速文件下载和备用节点，hy2的速度更快，过程重复步骤1    ，这一套组合下离开，平时优先使用 vless+xhttp+cloudflare cdn 协议节点（对防火墙隐藏vps搭建节点的真实ip），其次 vless+xhttp+reeality（混淆性最好），再其次hy2协议节点（速度最快），大文件下载优先使用hy2协议节点，这个速度最快          。xhttp协议支持的客户端相对较少，有v2rayn/v2rayng等。                          
+8. 重建hy2协议协议节点，可以将hy2协议节点用于高速文件下载和备用节点，hy2的速度更快，过程重复步骤1    ，这一套组合下离开，平时优先使用 vless+xhttp+cloudflare cdn 协议节点（对防火墙隐藏vps搭建节点的真实ip），其次 vless+xhttp+reeality（混淆性最好），再其次hy2协议节点（速度最快），大文件下载优先使用hy2协议节点，这个速度最快          。xhttp协议支持的客户端相对较少，有v2rayn/v2rayng等。                              
    
-
-
-
-
-
-
-
-                               
-
-
+---      
 #### 可选： 重装vps的linux系统为开源可靠的纯官方版本               
 - 注意：部分Vps厂商提供的linux系统是修改版或内置监控程序，特别是腾讯/阿里等国产厂商的海外云服务器，为了安全，最好重装Vps为可靠的开源版本，参考此开源项目：一键DD/重装脚本(One-click reinstall OS on VPS) ： https://github.com/bin456789/reinstall                                     
 
