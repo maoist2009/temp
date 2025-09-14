@@ -397,7 +397,7 @@ git config --global --unset https.proxy
 - 点击进入文件夹Cloudflare-vless-trojan ，下载`vless无需proxyip的nat64套壳加密版.js` ,保存文件名为`_worker.js`，然后以zip压缩格式压缩这个文件，压缩后文件名为`_worker.zip`               
 - 进入[cloudlflare官网](https://www.cloudflare.com/)完成注册，如果不是中文简体就可以在注册页面切换到中文，注册邮箱地址应选择海外匿名邮箱地址而不是国内油箱地址，如gmail，protonmail，tutamail等    
 
-- 登陆cloiudfire ，进入到管理面板，如果不是中文简体，可以在网页右上角语言设置点击切换，点击左侧 计算（wokers）-pages和workers-创建-pages，点击使用直接上传-开始使用，项目名称随便填写，比如abcdg123,不要用拼音或涉及代理/项目作者等词汇，然后点击创建项目，点击从计算机选择，上传选择压缩包，选择上传压缩包，上传上面的步骤的_worker.zip，上传完成后点击部署站点，继续处理项目                
+- 登陆cloiudflare ，进入到管理面板，如果不是中文简体，可以在网页右上角语言设置点击切换，点击左侧 计算（wokers）-pages和workers-创建-pages，点击使用直接上传-开始使用，项目名称随便填写，比如abcdg123,不要用拼音或涉及代理/项目作者等词汇，然后点击创建项目，点击从计算机选择，上传选择压缩包，选择上传压缩包，上传上面的步骤的_worker.zip，上传完成后点击部署站点，继续处理项目                
 - 点击刚刚创建的项目-设置-变量和机密 -添加，变量名称填写uuid ,数值需要在uuid生成网站生成复制进去（保存一份到本地记事本或者办公软件中） ，uuid生成网站比如 https://www.uuidgenerator.net/version4 ，填写进去后保存。   
 -  在此项目内点击创建部署，再次上传 前面的压缩文件 ，完成后即可          
 -  点击该项目的部署  -看到生产-域，点击这个网址跳转 ，点击地址栏 在复制跳转的网址后面占输入`/` 然后粘贴刚刚复制的uuid值 然后回车进入你的节点订阅网站        ，比如` https://abcdg123.page.dev/a0c6ea8e-3050-4643-b62f-8f3d675f5dda`同时保存好这个网页/uuid的网站地址方便以后使用   ,注意uuid前面只有一个`/`                 
@@ -455,14 +455,14 @@ connectbot 或termux（需使用 pkg install openssh安装ssh工具后才可使�
 /hiddify等开源代理工具内使用                 
 
 ##### vps部署脚本即说明：（选一个即可,最推荐1）       
-1. 甬哥ArgoSB一键无交互小钢炮脚本:    https://github.com/yonggekkk/ArgoSB      
-2 老王vPS一键四协议安装脚本： https://github.com/eooce/Sing-box 
-3. [老王xray-argo无交互一键四协议安装脚本:https://github.com/eooce/xray-2go        
-4. 3x-ui 或s-ui面板 ，默认面板无https加密，如果不是用于vless+xhttp+cloudflare cdn的节点组合待建，则不推荐，使用相对麻烦，需要手动申请tls证书绑定自定义域名才可启用https的面板管理ui             
+1. 甬哥ArgoSB一键无交互小钢炮脚本:    https://github.com/yonggekkk/ArgoSB         
+2.  老王vPS一键四协议安装脚本： https://github.com/eooce/Sing-box           
+3. [老王xray-argo无交互一键四协议安装脚本:https://github.com/eooce/xray-2go              
+4. 3x-ui 或s-ui面板 ，默认面板无https加密，如果不是用于vless+xhttp+cloudflare cdn的节点组合待建，则不推荐，使用相对麻烦，需要手动申请tls证书绑定自定义域名才可启用https的面板管理ui                     
 
 ### 删除vps的系统和节点连接的日志保护隐私        
-- 删除vps的系统日志和 输入命令的历史记录参考：  https://codeberg.org/p23tyjujukk/linux-privacy-security/    
-- 删除 部署节点的连接日志——不同协议的方法不同，可网上或者ai查询 比如关键词： Vless协议禁用日志    
+- 删除vps的系统日志和 输入命令的历史记录参考：  https://codeberg.org/p23tyjujukk/linux-privacy-security/       
+- 删除 部署节点的连接日志——不同协议的方法不同，可网上或者ai查询 比如关键词： Vless协议禁用日志           
 
 #### 可选：使用clouldfire的warp进行中转提高ip纯净度，对访问网站隐藏原始vps代理地址，可以将仅  ipv6的ps中转为ipv4+ipv6双栈   
 - 视频教程[给纯ipv6的vps添加一个Cf原生ipv4出站地址，ip安全评分全面提升](https://www.youtube.com/watch?v=jlig1IvnIzU)        
@@ -471,7 +471,7 @@ connectbot 或termux（需使用 pkg install openssh安装ssh工具后才可使�
 3. 【WGCF】连接CF WARP为服务器添加IPv4/IPv6网络 :   https://gitlab.com/ProjectWARP/warp-script     
 4. -CloudFlare WARP 一键管理脚本 :   https://gitlab.com/Misaka-blog/warp-script/         
 5.  yonggekkk-使用cloudfire的warp提高vps部署节点ip纯净度，warp多功能一键脚本，支持warp-go与wgcf切换 :  https://github.com/yonggekkk/warp-yg     (项目内有sh脚本源码，无开源申明)       
-6. warp+ 账户，使用warp+账户比普通账户连接更稳定，warp+账户 密钥key可以在电报上面获取 ：  @generatewarpplusbot              
+6. warp+ 账户，使用warp+账户比普通账户连接更稳定，warp+账户 密钥key可以在电报上面获取 ：  @generatewarpplusbot                  
 
 #### 可选: 使用cloudlfire服务作为vps节点的前置节点转发，对防火墙隐藏 vps的ip地址减小ip封锁概率
     
