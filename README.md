@@ -516,7 +516,7 @@ ssh登陆vps后，用甬哥的脚本建立hy2协议节点，后面的cloudns免�
 注意这里cdn加速的域名为 步骤3中    m.主域名，无需按视频教程中的再次建立子域名和dns解析。完成视频教程得到一个vless+xhttp+reality协议节点，一个vless+xhttp+ cf cdn加速节点，我们主要用后面这个，因为它有cf中转加速的能欺骗防火墙，防止防火墙知道和封锁vps真实ip的。vless+xhttp+cf cdn能否连通取决于cf托管域名的的 ssl边缘证书是否通过  ，从步骤3的双向解析申请到通过可能需要半天时间 。
  cf cdn优选ip和cdn大厂域名参考 其他教程     
                     
-8. 重建hy2协议协议节点，可以将hy2协议节点用于高速文件下载和备用节点，hy2的速度更快，过程重复步骤1    ，这一套组合下离开，平时优先使用 vless+xhttp+cloudflare cdn 协议节点（对防火墙隐藏vps搭建节点的真实ip），其次 vless+xhttp+reeality（混淆性最好），再其次hy2协议节点（速度最快），大文件下载优先使用hy2协议节点，这个速度最快          。
+8. 重建hy2协议协议节点，可以将hy2协议节点用于高速文件下载和备用节点，hy2的速度更快，过程重复步骤1    ，这一套组合下离开，平时优先使用 vless+xhttp+cloudflare cdn 协议节点（对防火墙隐藏vps搭建节点的真实ip），其次 vless+xhttp+reeality（混淆性最好），再其次hy2协议节点（速度最快），大文件下载优先使用hy2协议节点，这个速度最快   ，注意支持xhttp协议的代理软件较少，目前vrayn和vrayng支持。                   
 
 
 
