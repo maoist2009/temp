@@ -484,9 +484,9 @@ connectbot 或termux（需使用 pkg install openssh安装ssh工具后才可使�
 2. vless+xhttp协议不加tls时可以套前置cloufire cdn服务进行加速和防止防火墙封禁vps的ip。xhttp目前安全性可能是最高的。 只不过需要在cloudfire上面托管绑定域名 ，搭建[需要使用3x-ui面板  ](https://github.com/MHSanaei/3x-ui)    ，建议绑定域名申请tls证书后使用3x-ui面板不然默认只有http网页会导致节点信息面板密码等泄露-，3x-ui部署完成看到http后台网页和账户密码，保存下来，vps终端 内输入 ’x-ui’ 进入3xui设置，找到ssl申请选项数字,通过输入设置根据提示完成域名绑定和https申请  。  
 
 
-#### 延伸：vless+xhttp+cloudflare cdn /vless+xhttp+reality/ hysteria2 三种最安全的协议组合搭建详细步骤        
+### ==延伸==：vless+xhttp+cloudflare cdn /vless+xhttp+reality/ hysteria2 三种最安全的协议组合搭建详细步骤                        
 
-xhttp协议支持的客户端相对较少，有v2rayn/v2rayng等     
+&ensp;&ensp; 注意：xhttp协议支持的客户端相对较少，有v2rayn/v2rayng等               
 
 0. 打开ssh工具，输入 ssh root@xxxx （xxx为vps的ip地址）
 ，然后根据提示输入yes回车确认（第一次连接需要），然后输入密码并回车完成登陆                
