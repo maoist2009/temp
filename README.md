@@ -436,22 +436,23 @@ git config --global --unset https.proxy
 
 
 - 购买vps时系统选择linux发行版，完成购买收到账户密码后，使用ssh远程连接软件登陆vps进行命令行部署              
-- [网页版ssh远程登陆vps服务](https://ssh.hax.co.id/)   
+- [网页版ssh远程登陆vps服务](https://ssh.hax.co.id/)      ，不推荐有泄露风险       
 - shh软件linux内核系统可用 easyshh或者 系统自带终端app  ，安卓可以用   
-connectbot 或termux（需使用 pkg install openssh安装ssh工具后才可使用）              
-- linux桌面发行版如果使用终端登陆ssh，终端登陆ssh指令一般为   ssh 用户名@地址:端口号   ，输入yes或者y同意连接，然后根据提示输入密码完成登陆      
+connectbot 或termux（需使用 pkg install openssh安装ssh工具后才可使用） ，windows系统可以使用开源的PuTTY，  
+- putty连接ssh教程    [如何使用PuTTY远程登录管理VPS服务器]https://www.youtube.com/watch? v=ky2r2FgXG7U)                                                 
+- linux桌面发行版和安卓termux openssh如果使用终端登陆ssh，终端登陆ssh指令一般为   ssh 用户名@地址:端口号（用户名替换为root时表示以root用登陆vps）   ，然后输入yes或同意连接（第一次连接时需要），然后根据提示输入密码完成登陆                    
+- 安卓connect bot（fdroid商店下载） 使用很简单  新建连接输入 用户名@vps的ip地址 然后保存点击连接               
+
 ---                         
 (1).如果想零基础自动搭建，可以使用github上面的一键部署部署脚本                            
-- 可以使用github开源项目老王一键部署脚本，[vPS一键四协议安装脚本](https://github.com/eooce/Sing-box)   ,根据项目的使用介绍，密码登陆ssh后可以输入`bash <(curl -Ls https://raw.githubusercontent.com/eooce/sing-box/main/sing-box.sh) `  ，根据提示完成安装并复制出节点信息。   或者使用此项目   [VPS一键脚本工具箱](https://github.com/eooce/ssh_tool)    。也可以在github搜索其他一键部署项目。                                                
+- 可以使用github开源项目甬哥一键部署脚本，[vPS一键四协议安装脚本](https://github.com/eooce/Sing-box)   ,根据项目的使用介绍，密码登陆ssh后可以输入`name="" sspt="" vlpt="" vmpt="" hypt="" tupt="" xhpt="" vxpt="" anpt="" arpt="" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh)  ` ，根据提示完成安装并复制出节点信息。   或者使用此项目   [VPS一键脚本工具箱](https://github.com/eooce/ssh_tool)    。也可以在github搜索其他一键部署项目。                                                        
 (2).如果有代码使用基础，最好是自行使用开源协议代码完全手动搭建，杜绝任何后门，比如要部署hy2协议节点，就去[hy2
-项目的官方网站](https://v2.hysteria.network/zh/)查看手动部署完整教程                                                                                                               
+项目的官方网站](https://v2.hysteria.network/zh/)查看手动部署完整教程                                                                                                              
 全过程教程可以参考             
--    [真正永久免费VPS全攻略！抢注/续期注意要点 高速多节点VPN搭建 Warp部署提升ip纯净度|Hax/Woiden Free VPS | Cloudflare Warp](https://www.youtube.com/watch?v=-Z0MbGJKX9c)                                       
-- [付费租用vps自建节点教程， 、Trojan、vmess](https://m.youtube.com/watch?v=JC_25k_3Q70)              
-- [付费最新自建机场节点喂饭级教程](https://m.youtube.com/watch?v=66V2J6lVv9E)          
-- [1分钟搭建Xray最新Reality协议|号称用不被封](https://m.youtube.com/watch?v=XB6W3c3dNQI&pp=ygUeY2xvdWxkZmlyZSDpg6jnvbJyZWFsaXR55Y2P6K6u)
-为了应对 TLS in TLS 和指纹识别等阻断或封禁的风险，Xray-core 团队推出了 Vision 和 Reality 两种新颖的技术方案。它们能够有效地隐藏和保护流量的特征，提高安全性和稳定性。 代理协议推荐less+reality和歇斯底里2（hy2），这两种目前特性少                                                 
-&ensp;&ensp;自建的节点订阅可以导入clash/v2r/sinbox/singbox内使用         
+-            [ArgoSB one-click (Part 1): AnyTLS | Xhttp | Reality | Hy2 | Tuic | SS | Argo ] https://www.youtube.com/watch?v=CiXmttY7mhw                 
+
+&ensp;&ensp;自建的节点订阅可以导入v2r/sinbox/karing
+/hiddify等开源代理工具内使用                 
 
 ##### vps部署脚本即说明：（选一个即可,最推荐1）       
 1. 甬哥ArgoSB一键无交互小钢炮脚本:    https://github.com/yonggekkk/ArgoSB      
