@@ -432,14 +432,14 @@ git config --global --unset https.proxy
 ---
 ###  b. 使用付费 vps虚拟主机搭建，一般比免费的更稳定              
 
-- 网上搜索性价比高的国外vps厂商进行购买，最低大约 70-80左右一年，甲骨文微软谷歌等大厂较贵，有些支持支付宝微信支付（等于半匿名），有些支持人民币/外币双币种银行储蓄卡，在国内很多银行都可以申请办理，不过有条件最好使用匿名加密货币                   
+- 网上搜索性价比高的国外vps厂商进行购买，最低大约 70-80左右一年，甲骨文微软谷歌等大厂较贵，有些支持支付宝微信支付（等于半匿名），有些支持人民币/外币双币种银行储蓄卡，在国内很多银行都可以申请办理，不过有条件最好使用匿名加密货币                           
 
 
 - 购买vps时系统选择linux发行版，完成购买收到账户密码后，使用ssh远程连接软件登陆vps进行命令行部署              
 - [网页版ssh远程登陆vps服务](https://ssh.hax.co.id/)      ，不推荐有泄露风险       
 - shh软件linux内核系统可用 easyshh或者 系统自带终端app  ，安卓可以用   
 connectbot 或termux（需使用 pkg install openssh安装ssh工具后才可使用） ，windows系统可以使用开源的PuTTY，  
-- putty连接ssh教程    [如何使用PuTTY远程登录管理VPS服务器]https://www.youtube.com/watch? v=ky2r2FgXG7U)                                                 
+- putty连接ssh教程    [如何使用PuTTY远程登录管理VPS服务器](https://www.youtube.com/watch? v=ky2r2FgXG7U)                                                    
 - linux桌面发行版和安卓termux openssh如果使用终端登陆ssh，终端登陆ssh指令一般为   ssh 用户名@地址:端口号（用户名替换为root时表示以root用登陆vps）   ，然后输入yes或同意连接（第一次连接时需要），然后根据提示输入密码完成登陆                    
 - 安卓connect bot（fdroid商店下载） 使用很简单  新建连接输入 用户名@vps的ip地址 然后保存点击连接               
 
