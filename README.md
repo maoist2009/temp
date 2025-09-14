@@ -444,7 +444,7 @@ connectbot 或termux（需使用 pkg install openssh安装ssh工具后才可使�
 (1).如果想零基础自动搭建，可以使用github上面的一键部署部署脚本                            
 - 可以使用github开源项目老王一键部署脚本，[vPS一键四协议安装脚本](https://github.com/eooce/Sing-box)   ,根据项目的使用介绍，密码登陆ssh后可以输入`bash <(curl -Ls https://raw.githubusercontent.com/eooce/sing-box/main/sing-box.sh) `  ，根据提示完成安装并复制出节点信息。   或者使用此项目   [VPS一键脚本工具箱](https://github.com/eooce/ssh_tool)    。也可以在github搜索其他一键部署项目。                                                
 (2).如果有代码使用基础，最好是自行使用开源协议代码完全手动搭建，杜绝任何后门，比如要部署hy2协议节点，就去[hy2
-项目的官方网站](https://v2.hysteria.network/zh/)查看手动部署完整教程                                                                                                     
+项目的官方网站](https://v2.hysteria.network/zh/)查看手动部署完整教程                                                                                                               
 全过程教程可以参考             
 -    [真正永久免费VPS全攻略！抢注/续期注意要点 高速多节点VPN搭建 Warp部署提升ip纯净度|Hax/Woiden Free VPS | Cloudflare Warp](https://www.youtube.com/watch?v=-Z0MbGJKX9c)                                       
 - [付费租用vps自建节点教程， 、Trojan、vmess](https://m.youtube.com/watch?v=JC_25k_3Q70)              
@@ -453,11 +453,11 @@ connectbot 或termux（需使用 pkg install openssh安装ssh工具后才可使�
 为了应对 TLS in TLS 和指纹识别等阻断或封禁的风险，Xray-core 团队推出了 Vision 和 Reality 两种新颖的技术方案。它们能够有效地隐藏和保护流量的特征，提高安全性和稳定性。 代理协议推荐less+reality和歇斯底里2（hy2），这两种目前特性少                                                 
 &ensp;&ensp;自建的节点订阅可以导入clash/v2r/sinbox/singbox内使用         
 
-##### vps部署脚本即说明：
-1. 老王vPS一键四协议安装脚本： https://github.com/eooce/Sing-box 
-2. [老王xray-argo无交互一键四协议安装脚本:https://github.com/eooce/xray-2go
-3. ArgoSB一键无交互小钢炮脚本:    https://github.com/yonggekkk/ArgoSB       
-4.3x-ui 或s-ui面板 ，默认面板无https加密，不推荐，需要手动申请tls证书绑定自定义域名才可启用https的面板管理ui             
+##### vps部署脚本即说明：（选一个即可,最推荐1）       
+1. 甬哥ArgoSB一键无交互小钢炮脚本:    https://github.com/yonggekkk/ArgoSB      
+2 老王vPS一键四协议安装脚本： https://github.com/eooce/Sing-box 
+3. [老王xray-argo无交互一键四协议安装脚本:https://github.com/eooce/xray-2go        
+4. 3x-ui 或s-ui面板 ，默认面板无https加密，如果不是用于vless+xhttp+cloudflare cdn的节点组合待建，则不推荐，使用相对麻烦，需要手动申请tls证书绑定自定义域名才可启用https的面板管理ui             
 
 ### 删除vps的系统和节点连接的日志保护隐私        
 - 删除vps的系统日志和 输入命令的历史记录参考：  https://codeberg.org/p23tyjujukk/linux-privacy-security/    
@@ -479,13 +479,14 @@ connectbot 或termux（需使用 pkg install openssh安装ssh工具后才可使�
 2. vless+xhttp协议不加tls时可以套前置cloufire cdn服务进行加速和防止防火墙封禁vps的ip。xhttp目前安全性可能是最高的。 只不过需要在cloudfire上面托管绑定域名 ，搭建[需要使用3x-ui面板  ](https://github.com/MHSanaei/3x-ui)    ，建议绑定域名申请tls证书后使用3x-ui面板不然默认只有http网页会导致节点信息面板密码等泄露-，3x-ui部署完成看到http后台网页和账户密码，保存下来，vps终端 内输入 ’x-ui’ 进入3xui设置，找到ssl申请选项数字,通过输入设置根据提示完成域名绑定和https申请  。  
 
 
-#### 延伸：vless+xhttp+cloudflare cdn 搭建详细步骤         
+#### 延伸：vless+xhttp+cloudflare cdn /vless+xhttp=reality/ hysteria2 三协议组合搭建详细步骤                          
 
 0. 打开ssh工具，输入 ssh root@xxxx （xxx为vps的ip地址）
 ，然后根据提示输入yes回车确认（第一次连接需要），然后输入密码并回车完成登陆                
 
-1.  ssh登陆vps后，用甬哥的脚本建立hy2协议节点，后面的cloudns免费域名申请要用这个翻墙节点  
-输入指令' hypt=""  bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh) '
+1.  确保没用vps搭建过其他节点，如果搭建过请卸载，如果是接手别人的vps不知道有没有搭建过，就需要重装vps系统（一般vps厂家提高的管理面板有此功能，重装系统应选择debian系统，或者使用一键重装vps脚本手动重装）
+ssh登陆vps后，用甬哥的脚本建立hy2协议节点，后面的cloudns免费域名申请要用这个翻墙节点  
+输入指令` hypt=""  bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh) `
 完成安装，如果提示没有curl,就输入`apt install curl`安装依赖然后重新输入节点安装指令进行安装复制节点信息导入到v2rayn，连接，连通即可            
 
 2. 建立自定义域名， 主域托管到cloudflare,参考 [最新免费域名ClouDNS申请教程 托管cloudflare 边缘证书，自定义域等演示教程 IP滥用率高以及双向解析注意事项的讲解](https://m.youtube.com/watch?v=zvRYOsi7ynk&pp=ygUeY2xvdWRuc-Wfn-WQjeaJmOeuoSBjbG91ZGZsYXJl)
@@ -499,21 +500,20 @@ connectbot 或termux（需使用 pkg install openssh安装ssh工具后才可使�
 重复步骤再次新建dns记录，名称填写子域名2的前缀m,不关小黄云，用于节点的cdn加速。    
 
 5. 卸载之前vps安装的节点，避免和3x-ui冲突  ，在ssh软件重新登陆vps,
-输入‘ agsb del ’，删除步骤1建立的节点，删除后这个节点暂时不再可用。   
+输入` agsb del ` ，删除步骤1建立的节点，删除后这个节点暂时不再可用。   
 
 6. 安装3x-ui面板并启用https加密，避免明文泄漏节点信息，登陆vps,
-输入代码'  apt install wget git   ' 安装好依赖。
+输入代码`apt install wget git   `  安装好依赖（vps的系统为debian或者ubuntu使用此指令）。         
 然后输入''安装好3x-ui面板
  所有提示都按回车使用默认配置即可，,安装完成找到网址和账户秘密一栏，复制保存到记事本。网址前缀为http不带加密的网址，浏览器复制网址进入面板后台，看到图形界面，说明面板正常工作，不做登陆避免秘密泄漏。             
-回到 登陆vps的终端，使用ctrl+c快捷键关闭vps运行中的安装程序，然后输入x-ui进入3x-ui的高级设置选项，找到ssl证书申请，进行证书申请。3x-ui和ssl证书申请以及域名绑定参考视频：[VPS节点搭建与加速](https://m.youtube.com/watch?v=W9QX3fphyes&t=1247s&pp=0gcJCckJAYcqIYzv)，观看视频15分到17分钟末，注意 这里绑定的域名应为步骤3中的  www.主域名                         
+回到 登陆vps的终端，使用ctrl+c快捷键关闭vps运行中的安装程序，然后输入x-ui进入3x-ui的高级设置选项，找到ssl证书申请，进行证书申请。3x-ui和ssl证书申请以及域名绑定参考视频：[VPS节点搭建与加速](https://m.youtube.com/watch?v=W9QX3fphyes&t=1247s&pp=0gcJCckJAYcqIYzv)，观看视频15分到17分钟末，注意 这里绑定的域名应为步骤3中的  www.主域  名                            
 
 7. 建立最安全的vless+xhttp+cf cdn中转加速节点，[【代理新姿势】全场景通吃的xhttp传输协议快速上手，GFW直呼内行](https://m.youtube.com/watch?v=GB_SHmqotzQ&pp=ygUPdmxlc3MgeGh0dHAgY2Ru) ，观看视频4分55s到9分30秒，
 注意这里cdn加速的域名为 步骤3中    m.主域名，无需按视频教程中的再次建立子域名和dns解析。完成视频教程得到一个vless+xhttp+reality协议节点，一个vless+xhttp+ cf cdn加速节点，我们主要用后面这个，因为它有cf中转加速的能欺骗防火墙，防止防火墙知道和封锁vps真实ip的。vless+xhttp+cf cdn能否连通取决于cf托管域名的的 ssl边缘证书是否通过  ，从步骤3的双向解析申请到通过可能需要半天时间 。
  cf cdn优选ip和cdn大厂域名参考 其他教程     
                     
+8. 重建hy2协议协议节点，可以将hy2协议节点用于高速文件下载和备用节点，hy2的速度更快，过程重复步骤1    ，这一套组合下离开，平时优先使用 vless+xhttp+cloudflare cdn 协议节点（对防火墙隐藏vps搭建节点的真实ip），其次 vless+xhttp+reeality（混淆性最好），再其次hy2协议节点（速度最快），大文件下载优先使用hy2协议节点，这个速度最快          。
 
-
-8.重建hy2协议协议节点，可以将hy2协议节点用于高速文件下载和备用节点，hy2的速度更快，过程重复步骤1           
 
 
 
