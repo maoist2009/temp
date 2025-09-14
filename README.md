@@ -479,12 +479,12 @@ connectbot 或termux（需使用 pkg install openssh安装ssh工具后才可使�
 2. vless+xhttp协议不加tls时可以套前置cloufire cdn服务进行加速和防止防火墙封禁vps的ip。xhttp目前安全性可能是最高的。 只不过需要在cloudfire上面托管绑定域名 ，搭建[需要使用3x-ui面板  ](https://github.com/MHSanaei/3x-ui)    ，建议绑定域名申请tls证书后使用3x-ui面板不然默认只有http网页会导致节点信息面板密码等泄露-，3x-ui部署完成看到http后台网页和账户密码，保存下来，vps终端 内输入 ’x-ui’ 进入3xui设置，找到ssl申请选项数字,通过输入设置根据提示完成域名绑定和https申请  。  
 
 
-#### 延伸：vless+xhttp+cloudflare cdn /vless+xhttp=reality/ hysteria2 三协议组合搭建详细步骤                          
+#### 延伸：vless+xhttp+cloudflare cdn /vless+xhttp+reality/ hysteria2 三种最安全的协议组合搭建详细步骤                                 
 
 0. 打开ssh工具，输入 ssh root@xxxx （xxx为vps的ip地址）
 ，然后根据提示输入yes回车确认（第一次连接需要），然后输入密码并回车完成登陆                
 
-1.  确保没用vps搭建过其他节点，如果搭建过请卸载，如果是接手别人的vps不知道有没有搭建过，就需要重装vps系统（一般vps厂家提高的管理面板有此功能，重装系统应选择debian系统，或者使用一键重装vps脚本手动重装）
+1.  确保没用vps搭建过其他节点，如果搭建过请卸载，如果是接手别人的vps不知道有没有搭建过，或者不知道如何卸载之前搭建的节点，就需要重装vps系统（一般vps厂家提供的网页管理面板有此功能，重装系统应选择debian系统，或者使用一键重装vps脚本手动重装）
 ssh登陆vps后，用甬哥的脚本建立hy2协议节点，后面的cloudns免费域名申请要用这个翻墙节点  
 输入指令` hypt=""  bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh) `
 完成安装，如果提示没有curl,就输入`apt install curl`安装依赖然后重新输入节点安装指令进行安装复制节点信息导入到v2rayn，连接，连通即可            
