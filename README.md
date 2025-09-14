@@ -10,7 +10,7 @@
       
 #### &ensp;&ensp;下列软件均可在上方文件区免代理下载（仅方便不能初始代理的用户下载，版本更新不会快，最新版本安装请自行连接国际互联网后去推荐的官方网址下载或更新，有条件的最好验证签名或者哈希值确保下载过程中不被动手脚，有能力者最好自己从源代码拉取编译打包）     
 
-#### ==特别提醒==： 不安全的代理/vpn节点可能会泄漏连接日志，向当地有关部门妥协主动或者被动提交，或者直接受控制（包括控股/钓鱼/所属），不安全的非开源vpn/代理软件客户端因其高权限特性还会对设备除网络连接外进行额外监控，替换上网加密证书等操作导致用户设备全透明。因此首先要确保vpn/代理软件本身开源（代码开源可以公开审查），其次尽量保证使用节点本身可靠，可控的自建节点>tor节点(多次跳转)>别人提供的付费/免费节点/vpn节点，不要相信任何商家承诺。  
+#### ==特别提醒==： 不安全的代理/vpn节点可能会泄漏连接日志，向当地有关部门妥协主动或者被动提交，或者直接受控制（包括控股/钓鱼/所属），不安全的非开源vpn/代理软件客户端因其高权限特性还会对设备除网络连接外进行额外监控，替换上网加密证书等操作导致用户设备全透明。因此首先要确保vpn/代理软件本身开源（代码开源可以公开审查），其次尽量保证使用节点本身可靠，可控的自建节点>tor节点(多次跳转)>别人提供的付费/免费节点/vpn节点，不要完全相信任何商家承诺。     
 
 </details>         
 
@@ -56,7 +56,7 @@
 &ensp;&ensp; 安装开源的vpn软件geph迷雾通（文件夹内版本不一定最新，） ，并注册登陆                 
 - 最新版官网  https://geph.io/zhs ，
 - [geph迷雾通免代理镜像下载点击这里](https://gitea.com/gjcxn358/go-to-word/src/branch/main/%E5%AE%89%E5%8D%93%E5%BC%80%E6%BA%90%E7%89%88%E4%B8%8B%E8%BD%BD) 点击文件geph.apk,然后点击下载按钮即可下载安装  
-- 打开软件点击下方的注册，注册完成点击登陆，完整迷雾通服务选择暂不就不需要付费，注意一定要点击软件内的设置按钮-分流隧道-启用应用选择-点击选择要排除的无需代理的应用-勾选无需代理的软件（根据自己的需求勾选，防止实名服务连接代理自爆使用代理服务）然后点击连接就连上了国际互联网   
+- 打开软件点击下方的注册，注册完成点击登陆，完整迷雾通服务-选择暂不，就不需要付费，注意一定要点击软件内的设置按钮-分流隧道-启用应用选择-点击选择要排除的无需代理的应用-勾选无需代理的软件（根据自己的需求勾选，防止实名服务连接代理自爆使用代理服务）然后点击连接就连上了国际互联网   
 操作图：    
 <p>       
 <img src="./photos/geph/geph1.png"  width="216"/>         
@@ -65,8 +65,8 @@
 </p>       
 
 - 迷雾通 vpn模式启用后，会在本地生成与两个代理转发端口， 其中一个端口 ip为`localhost`或也可以是`127.0.0.1`，端口为`9909`,模式为`scoks5`，，一个http端口，ip：`localhost`，端口`9910`,可在软件设置在内找到，如上面图二底部调试一栏          
-支持代理设置的软件启用socks5/hppt代理访问tor网络比单纯的vpn模式更安全 ，使用vpn模式下访问软件/网站，如果invizible软件bug意外断开连接，系统杀后台，关闭软件/网站前关闭tor软件，网站/云服务会切换到直连，读取到用户真实ip导致ip泄露，在代理端口模式下，tor软件断开连接，本地代理端口不通，软件/网站就直接断网显示错误,就不会出现ip泄露。    
-支持代理设置的软件目前并不多，firefox火狐浏览器及其分支如fennec可以下载插件[foxyproxy](https://addons.mozilla.org/zh-CN/firefox/addon/foxyproxy-standard/)，点击此插件设置-选项设置-proxies-模式选择socks5,ip（hostname）填写`localhost`，端口填写`9909`，然后保存，再次点击浏览器插件的foxyproxy按钮-点击添加的代理切换到迷雾通的代理 即可让火狐浏览器全局走代理模式而不是使用有断连后ip泄露风险的vpn模式 。     
+支持代理设置的软件启用socks5/http代理访问tor网络比单纯的vpn模式更安全 ，使用vpn模式下访问软件/网站，如果invizible软件bug意外断开连接，系统杀后台，关闭软件/网站前关闭tor软件，网站/云服务会切换到直连，读取到用户真实ip导致ip泄露，在代理端口模式下，tor软件断开连接，本地代理端口不通，软件/网站就直接断网显示错误,就不会出现ip泄露。    
+支持代理设置的软件目前并不多，firefox火狐浏览器及其分支如fennec可以下载插件[foxyproxy](https://addons.mozilla.org/zh-CN/firefox/addon/foxyproxy-standard/)，点击此插件设置-选项设置-proxies-模式选择socks5,ip（hostname）填写`localhost`，端口填写`9909`，然后保存，再次点击浏览器插件的foxyproxy按钮-点击添加的代理切换到迷雾通的代理 ,即可让火狐浏览器全局走代理模式而不是使用有断连后ip泄露风险的vpn模式 。     
 &ensp;&ensp;xmpp软件中gajim支持代理设置，安卓端口monocles chat支持tor 9050端口的tor代理启用但迷雾通不支持端口修改所以无法使用代理模式，电报第三方客户端nekogram支持代理设置 ，fdroid应用商店支持代理设置， 安卓/linux系统都支持系统全局的代理模式，安卓在wifi设里，不过一般情况下最好不要启用，因为设置了手机所有软件都会强制走代理。   
 
 - 教程最后编辑时间迷雾通分流分应用设置不支持只允许勾选应用访问代理的模式，排除勾选应用代理的方法难以找到所有国内软件，特别是国产系统内置的服务软件，因此最好启用分流隧道的排除中国大陆流量按钮，但是需要注意的是排除中国大陆流量有个缺陷，比如当你要使用匿名qq号代理的方式登陆qq隐藏ip时，启用此排除大陆流量后登陆的ip为真实ip，如果访问网页是大陆网页内容镶嵌有国外服务托管的中国内容或者国外服务，这样国内网页内容真实ip，内嵌的国外内容显示用户的是代理ip，就会产生身份关联暴露实名，或者一个浏览器同时打开国内网站和国外网站，国内网站带有跨站跟踪的监控服务会检测到国外网站信息产生关联（跨站cooike跟踪）            
@@ -78,8 +78,8 @@
 &ensp;&ensp; 优缺点分析     
 &ensp;&ensp;优点：免费稳定，使用简单，缺点：免费版限速，文字图片浏览勉强还行，据其他人反馈，有在校园网（校园网有专门的服务器监控学生上网服务并识别常见梯子）使用迷雾通被喝茶的案例                                              
 ##### 迷雾通linux版本安装:
-- [官网下载](https://geph.io/zhs)后缀为`.flatpak`的迷雾通安装包linux版，次过程需要使用代理，如果电脑没有，那就在手机上下载好以后导入到电脑里，也可以[免代理下载上面文件夹里面的旧版](https://gitea.com/gjcxn358/go-to-word/src/branch/main/%E7%94%B5%E8%84%91%E7%89%88)                                
-&ensp;&ensp;确保linux电脑里有flatpak软件，在下载目录鼠标右键从此处打开终端，将终端app界面最大化防止后面的id遮挡，然后输入`flatpak install ./迷雾通包名（含后缀）`。然后输入`flatpak list `罗列所有flatpak软件。找到迷雾通`GephGui`那一行旁边的应用程序id并复制，然后输入`flatpak run 迷雾通的应用完整ID`启动软件，注册后即可使用，在其设置内开启vpn模式可以让系统全局走代理。如果系统桌面为kde或者gnome,应该会在开始菜单自动生成启动快捷方式，通过查看迷雾通设置里面的代理本地ip和端口号可以也实现系统代理或者应用代理（支持设置代理的应用）                
+- [官网下载](https://geph.io/zhs)后缀为`.flatpak`的迷雾通安装包linux版，此过程需要使用代理，如果电脑没有，那就在手机上下载好以后导入到电脑里，也可以[免代理下载上面文件夹里面的旧版](https://gitea.com/gjcxn358/go-to-word/src/branch/main/%E7%94%B5%E8%84%91%E7%89%88)                                
+&ensp;&ensp;确保linux电脑里有flatpak软件，文件管理器在下载目录，鼠标右键选择从此处打开终端，将终端app界面最大化防止后面的id遮挡，然后输入`flatpak install ./迷雾通包名（含后缀）`。然后输入`flatpak list `罗列所有flatpak软件。找到迷雾通`GephGui`那一行旁边的应用程序id并复制，然后输入`flatpak run 迷雾通的应用完整ID`启动软件，注册后即可使用，在其设置内开启vpn模式可以让系统全局走代理。如果系统桌面为kde或者gnome,应该会在开始菜单自动生成启动快捷方式，通过查看迷雾通设置里面的代理本地ip和端口号可以也实现系统代理或者应用代理（支持设置代理的应用）                
 - 如果linux电脑里面没有flatpak,就需要手动安装，[安装教程参考此](https://cn.linux-console.net/?p=20741)                                   
 
              
@@ -101,7 +101,7 @@
 
    
    ---                     
-&ensp;&ensp;提醒：此应用免费版只能全局vpn,不能让部分应用绕过，因此如果设备是非纯国外系统以及登陆了实名账户（国产改版安卓比如oppo/vivo/小米手机默认系统不算纯国外系统），不是很建议使用，国外系统如果安装了国产非自由开源应用，应使用shelter/炼妖壶开启工作空间进行和其他应用的环境隔离，或者使用自带的多应用/隐私空间隔离，将pn软件和需要使用vpn的软件装进去使用 。       
+&ensp;&ensp;提醒：此应用免费版只能全局vpn,不能让部分应用绕过，因此如果设备是非纯国外系统以及登陆了实名账户（国产改版安卓比如oppo/vivo/小米手机默认系统不算纯国外系统），不是很建议使用，国外系统如果安装了国产非自由开源应用，应使用shelter/炼妖壶开启工作空间进行和其他应用的环境隔离，或者使用自带的多应用/隐私空间隔离，将vpn软件和需要使用vpn的软件装进去使用 。       
 
 &ensp; &ensp; 也有第三方支持免费分流分应用的版本，见这小节末尾。                                     
                               ---                           
@@ -135,17 +135,17 @@ https://f-droid.org/packages/ch.protonvpn.android/
 
 <summary><code><strong><font color="red"><font size="4">三. nekobox/v2r/clash /sinbox等自由及开源代理程序加机场 </font></font></strong></code></summary>
 
-## 三. nekobox/v2r/clash /sinbox等自由及开源代理程序加机场    
+## 三. nekobox/v2rayn(g)/clash系列/sing-box/karing/hiddify等自由及开源代理程序加机场              
           
-&ensp;&ensp; 优点：软件自由开源，可以使用别人搭建的节点也可以自己搭建节点  ，只要是正常tls加密，节点一般不能破解用户加密流量只可能记录真实ip和真实访问地址        
-&ensp;&ensp; 缺点：非自建的机场节点不一定可靠（可能记录日志并泄漏ip），非自建节点（不管是付费还是免费）都可能存在高峰期拥堵网速慢不稳定的情况，购买的付费机场可能随时跑路或者本身搭建技术不过关挑选的vps有问题所以有风险，别人搭建的免费节点也好不到哪里去，自建节点请看标题5   ，同时避免使用中国包括香港和澳门的节点               
+&ensp;&ensp; 优点：软件自由开源，可以使用别人搭建的节点也可以自己搭建节点  ，只要是正常tls加密，节点一般不能破解用户加密流量，只能记录真实ip和真实访问地址和访问时间及频率                
+&ensp;&ensp; 缺点：非自建的机场节点不一定可靠（可能记录日志并泄漏ip），非自建节点（不管是付费还是免费）都可能存在高峰期拥堵网速慢不稳定的情况，购买的付费机场可能随时跑路或者本身搭建技术不过关，挑选的vps有问题，所以有一点风险，别人搭建的免费节点也好不到哪里去，自建节点请看标题5   ，同时避免使用中国包括香港和澳门的节点               
 - [点击上方README.md上面的安卓开源版文件夹内的的nekobox.apk/v2r/clash/singbox/迷雾通/protonvpn](https://gitea.com/gjcxn358/go-to-word/src/branch/main/%E5%AE%89%E5%8D%93%E5%BC%80%E6%BA%90%E7%89%88%E4%B8%8B%E8%BD%BD)  
 ---   
 - [电脑版免代理下载请点击此](https://gitea.com/gjcxn358/go-to-word/src/branch/main/%E7%94%B5%E8%84%91%E7%89%88)  
 - 然后点击下载按钮下载并安装 ，苹果用户看后文                
    
 &ensp;&ensp;这里以nekobox-[NB4A安卓版为例（点击免代理下载）](https://gitea.com/gjcxn358/go-to-word/src/branch/main/%E5%AE%89%E5%8D%93%E5%BC%80%E6%BA%90%E7%89%88%E4%B8%8B%E8%BD%BD)进行说明：  （clash/v
-2r/singbox使用方法类似）         
+2r/sing-box使用方法类似）         
 此软件 [最新版官方下载地址](https://github.com/MatsuriDayo/NekoBoxForAndroid/releases)             
 同类：          
 - [v2rayng](https://github.com/2dust/v2rayNG/releases)  -支持安卓设备，更新维护比nekbox积极      
@@ -187,8 +187,8 @@ https://github.com/free18/v2ray
  https://t.me/zhibeii    （下载导入txt内的所有链接）          
 .......           
 ##### 使用教学：   
-- 首先需要特别注意的是：上面分享的节点订阅网站的节点均为互联网公开分享的，相比自建节点，安全性一般，也无法审查是否为钓鱼节点或者是否泄漏连接使用日志，因此连接以后不要访问http前缀的网站（目标网站不带加密，内容对于节点服务器来说是完全透明的，包括账户密码，比如http：//bing.com），应只访问带加密的https前缀的网站(目标网站内容自带tls加密，节点服务器解密代理协议后也无法查看真实内容，只知道你的ip，比如https：//bing.com)，可以在火狐浏览器安全设置中开启仅访问https网站 ,同时建议经常性切换节点或者每次使用不一样的节点，减少长时间使用到钓鱼节点或者泄漏日志的节点时被跟踪的时间。     正式使用前请在代理软件设置内勾选分应用代理，选择需要代理的应用或者绕过不需要代理的应用，避免实名服务使用代理自爆翻墙。最好使用代理软件的全局模式而不是规则模式，关闭绕过大陆局域网等，避免出现规则漏洞或者绕过漏洞泄漏真实ip， 注意身份隔离使用代理翻墙的应用软件不要登陆任何实名用户包括绑定国内邮箱和手机号，这泄漏个人隐私，如果需要同时访问国国内国外服务（或者一个需要实名，一个需要匿名），应准备两个国外浏览器，一个勾选允许代理访问国外/匿名，一个不勾选代理访问国内/实名，最好是准备两部设备，一台用于翻墙（比如谷歌手机/苹果手机海外版/三星手机海外版/其他海外手机海外版/国内手机但是刷入了国外系统的手机/搭载国外版操作系统的电脑或笔记本，且需要翻墙服务所在的设备用户空间内无其他国产软件-大部分系统都可以开启多个账户用于隔离应用），一台不翻墙（普通日常工作设备）。如果只有一台设备最好开启系统多用户/隐私模式/虚拟机，在其中使用翻墙服务和主用户的软件隔离                                                      
-- 以普通网站获取节点为例，代理软件以nekobxo为例，选择最新日期的帖子  进去，找到订阅链接 —v2ray订阅链接:复制订阅链接        
+- 首先需要特别注意的是：上面分享的节点订阅网站的节点均为互联网公开分享的，相比自建节点，安全性一般，也无法审查是否为钓鱼节点或者是否泄漏连接使用日志，因此连接以后不要访问http前缀的网站（目标网站不带加密，内容对于节点服务器来说是完全透明的，包括账户密码，比如http：//bing.com），应只访问带加密的https前缀的网站(目标网站内容自带tls加密，节点服务器解密代理协议后也无法查看真实内容，只知道你的ip，比如https：//bing.com)，可以在火狐浏览器安全设置中开启仅访问https网站 ,同时建议经常性切换节点或者每次使用不一样的节点，减少长时间使用到钓鱼节点或者泄漏日志的节点时被跟踪的时间。     正式使用前请在代理软件设置内勾选分应用代理，选择需要代理的应用或者绕过不需要代理的应用，避免实名服务使用代理自爆翻墙。最好使用代理软件的全局模式而不是规则模式，关闭绕过大陆局域网等，避免出现规则漏洞或者绕过漏洞泄漏真实ip， 注意身份隔离，使用代理翻墙的应用软件不要登陆任何实名用户，包括绑定国内邮箱和手机号，这会泄漏个人隐私，如果需要同时访问国国内国外服务（或者一个需要实名，一个需要匿名），应准备两个国外浏览器，一个勾选允许代理访问国外/匿名，一个不勾选代理访问国内/实名，最好是准备两部设备，一台用于翻墙（比如谷歌手机/苹果手机海外版/三星手机海外版/其他海外手机海外版/国内手机但是刷入了国外系统的手机/搭载国外版操作系统的电脑或笔记本，且需要翻墙服务所在的设备用户空间内无其他国产软件-大部分系统都可以开启多个账户用于隔离应用），一台不翻墙（普通日常工作设备）。如果只有一台设备最好开启系统多用户/隐私模式/虚拟机，在其中使用翻墙服务和主用户的软件隔离                                                      
+- 以普通网站获取节点为例，代理软件以nekobox为例，选择最新日期的帖子  进去，找到订阅链接 —v2ray订阅链接:复制订阅链接        
 比如  ：https://node.wenode.cc/2023/05/20230501.txt      
 
 
@@ -214,7 +214,7 @@ https://github.com/free18/v2ray
 
 - 普通网站这种节点需要每日进订阅网站订阅  更换订阅 地址               
 更换方式为 点击  进入订阅网站 ，点击最新帖子  ，找到最新订阅地址 ，然后复制            
-- NEKBOX/v2r/clash软件内  再次打开分组  之前添加的分组 点击编辑图标，然后在订阅设置里面更换订阅 并保存  ，回到分组  点击 更新  即可刷新节点      
+- nekobox/v2r/clash软件内  再次打开分组  之前添加的分组 点击编辑图标，然后在订阅设置里面更换订阅 并保存  ，回到分组  点击 更新  即可刷新节点      
 
 - **此类免费订阅网站不少 ，可以打开       
 https://search.pub.solar/search         
@@ -245,13 +245,13 @@ https://search.pub.solar/search
      
 
 &ensp;&ensp; 注意：此类 公开节点来源不明（包括付费节点），不建议经常使用，最好只用于过渡使用，重点使用下面的方法  ，下面几种方法 使用可能都需要借助方法1临时连接国际互联网        
-&ensp;&ensp;注意开启全局模式（而不是规则模式或绕过局域网），避免真实ip泄漏，然后勾选不代理的应用避免非自由开源实名软件走代理自爆 ，有dns防护选项的应开启dns防护，使用浏览器上网比如火狐浏览器，应该下载disable   webrtc插件，来屏蔽媒体webrtc,避免代理后真实ip泄漏               
+&ensp;&ensp;注意开启全局模式（而不是规则模式或绕过局域网），避免真实ip泄漏，然后勾选不代理的应用避免非自由开源实名软件走代理自爆 ，有dns防护选项的应开启dns防护，使用浏览器上网比如火狐浏览器，应该下载 disable webrtc 插件，来屏蔽媒体webrtc,避免代理后真实ip泄漏               
 - v2rayng/clash mate/nekobox等vpn模式启用后，会在本地生成与一个代理转发端口， ip为`127.0.0.1`，nekobox默认端口为`2090` (端口号也可在软件内修改，不同软件默认代理端口不同，可以在软件设在里面找到，v2r系列一般默认socks5端口是10808,clash一般是7890或8090等),模式为`scoks5`，也可以手动启用http模式端口，支持代理设置的软件启用socks5代理访问tor网络比单纯的vpn模式更安全 ，使用vpn模式下访问软件/网站，如果invizible软件bug意外断开连接，系统杀后台，关闭软件/网站前关闭tor软件，网站/云服务会切换到直连，读取到用户真实ip导致ip泄露，在代理端口模式下，tor软件断开连接，本地代理端口不通，软件/网站就直接断网显示错误,就不会出现ip泄露。          
 支持代理设置的软件目前并不多，firefox火狐浏览器及其分支如fennec可以下载插件[foxyproxy](https://addons.mozilla.org/zh-CN/firefox/addon/foxyproxy-standard/)，点击此插件设置-选项设置-proxies-模式选择socks5,ip（hostname）填写`127.0.0.1`，端口填写`2090`，然后保存，再次点击浏览器插件的foxyproxy按钮=点击添加的代理切换到nek代理 即可让火狐浏览器全局走代理模式而不是有ip泄露风险的vpn模式 。         
 &ensp;&ensp;xmpp软件中gajim支持代理设置，安卓端口monocles chat支持tor 9050端口的tor代理启用，v2rayng将socks5端口手动改为9050，monocles chat启用tor代理，即可让这个软件v2ryng的代理端口模式      ，电报第三方客户端nekogram支持代理设置 ，fdroid应用商店支持代理设置， 安卓/linux系统都支持系统全局的代理模式，安卓在wifi设里（类型为http而不是socks5），不过一般情况下最好不要启用，因为设置了手机所有软件都会强制走代理。          
 ### 1.2  非常不推荐       
 &ensp;&ensp;如果上述订阅都订阅不了，且其他方法全都无效的情况，那就只能使用非开源的代理软件作为第一次连接国际互联网用，比如蓝灯等         
-&ensp;&ensp; ==特别注意==：非开源应用安全性低，破解应用更有风险（木马病毒风险），也可能存在软件记录日志和泄漏真实ip的风险，甚至可能在设备偷偷安装根证书来窃取https网站访问加密的tls数据，1.2只适用于绝对小白或其他方案在当下环境均无法使用的情况临时使用，用于获取其他开源代理或vpn软件，且不能用作任何政治用途，以及登陆个人匿名账户，使用非开源程序造成的隐私泄漏后果自   负                                
+&ensp;&ensp; ==特别注意==：非开源应用安全性低，破解应用更有风险（木马病毒风险），也可能存在软件记录日志和泄漏真实ip的风险，甚至可能在设备偷偷安装根证书来窃取https网站访问加密的tls数据，1.2只适用于绝对小白或其他方案在当下环境均无法使用的情况临时使用，用于获取其他开源代理或vpn软件，且不能用作任何政治用途，以及登陆个人匿名账户，使用非开源程序造成的隐私泄漏后果自负                                   
 &ensp;&ensp;使用蓝灯vpn的有喝茶案例（原因未知），长期存在且完全免费免费的老王vpn等疑似钓鱼vpn,付费快连vpn听说可以在中国的企查查网站上查到企业信息（包括法人）......  经常被喝茶的翻墙人群大多喜欢使用非自由及开源程序/系统                     
 
 </details>      
@@ -381,9 +381,9 @@ git config --global --unset https.proxy
 ## 五. 自建节点订阅并导入clash/v2r/sinbox等开源程序使用-需要先连接其他代理才能自建节点订阅                      
 &ensp;&ensp;有条件的也可以免费自建 自建节点或自建节点订阅,可以申请免费域名和免费vps  ,然后用方法1的软件连接对应节点使用 ，注意域名注册和cf注册时应使用匿名邮箱而不是实名或绑定实名电话号的邮箱     
 ### A. 通过clouldflare（简称cf）的pages服务，利用cf全球节点自建节点订阅教程（使用免费域名）并在v2r/clash/sinbox代理软件内使用，支持各种Vless/Trojan等协议      
-&ensp;&ensp;优点：比各种不知商业背景的商业公开节点（节点有别人部署不透明）和不知来源的免费节点安全,高速低延迟方面优于tor， 可作为tor的备用（可用此节点来获取tor网桥和高速下载文件） ，CF的pages服务使用clouldflare的全球节点，节点非常多（在大陆各省也有很多合作云服务器），承诺不配合各国政府出卖用户隐私（应该避开cf的国区服务器），可以选择出口国家，而且cf的peages服务可用于搭建节点/网站等用途，很多大型跨国商业公司也在使用他的pages网页托管服务，因此不容易被封，及时封一些ip问题也不大，因为数量大备用多，
+&ensp;&ensp;优点：比各种不知商业背景的商业公开节点（节点有别人部署不透明）和不知来源的免费节点安全,高速低延迟优于tor，可作为tor的备用（可用此节点来获取tor网桥和高速下载文件） ，CF的pages服务使用clouldflare的全球节点，节点非常多（在大陆各省也有很多合作云服务器），承诺不配合各国政府出卖用户隐私（应该避开cf的国区服务器），可以选择出口国家，而且cf的peages服务可用于搭建节点/网站等用途，很多大型跨国商业公司也在使用他的pages网页托管服务，因此不容易被封，及时封一些ip问题也不大，因为数量大备用多，
 节点搭建也比较简单，无需linux指令和部署远程操作系统，cf网站虽然是美国的商业性质公司运营，但部署节点的代码是完全开源的可以自定义的                                                
-&ensp;&ensp;缺点：此方法直接使用安全性不如tor，但是可以作为tor的前置代理，绕开防火墙对tor的封锁。提高连接稳定性，降低延迟，部分节点ip很可能不干净（触发私有网站的监测），商业性质承诺的安全不一定完全可靠（只是节点部署可选开源代码） ，注意避免使用中国大陆/香港/澳门的节点，     cloudlfire香港服务是和中国阿里云合作的 
+&ensp;&ensp;缺点：此方法直接使用安全性不如tor，但是可以作为tor的前置代理，绕开防火墙对tor。提高连接稳定性，降低延迟，部分节点ip很可能不干净（触发私有网站的监测），商业性质承诺的安全不一定完全可靠（只是节点部署可选开源代码） ，注意避免使用中国大陆/香港/澳门的节点，     cloudlfire香港服务是和中国阿里云合作的 
 - [clouldflare国际官网](https://www.cloudflare.com/)      
 - 这里是[免费域名申请网站示例](https://dynv6.com/)  （cloudlflare官方给的给的项目域名一般是被墙的，需要开启代理软件分片功能才能连接使用，导入订阅时很可能也需要开启其他代理才能加载成功，如果给cf pages项目绑定自己的域名，就可以绕开防火墙限制，不使用分片功能也能直接使用）          
 - 所有的部署项目项目都支持clouldflare pages和workers部署，但是最好使用clouldfire pages 部署而不是clouldflare workers ，前者绑定的域名可以不是托管到cf的域名（dynv6注册的免费无限制域名不能托管给cf，cloudns的免费域名可以托管给cf） ，wokers添加自定义域名还可能需要双向解析，设置稍微麻烦。                     
@@ -397,14 +397,14 @@ git config --global --unset https.proxy
 - 点击进入文件夹Cloudflare-vless-trojan ，下载`vless无需proxyip的nat64套壳加密版.js` ,保存文件名为`_worker.js`，然后以zip压缩格式压缩这个文件，压缩后文件名为`_worker.zip`               
 - 进入[cloudlflare官网](https://www.cloudflare.com/)完成注册，如果不是中文简体就可以在注册页面切换到中文，注册邮箱地址应选择海外匿名邮箱地址而不是国内油箱地址，如gmail，protonmail，tutamail等    
 
-- 登陆cloudflare ，进入到管理面板，如果不是中文简体，可以在网页右上角语言设置点击切换，点击左侧 计算（wokers）-pages和workers-创建-pages，点击使用直接上传-开始使用，项目名称随便填写，比如abcdg123,不要用拼音或涉及代理/项目作者等词汇，然后点击创建项目，点击从计算机选择，上传选择压缩包，选择上传压缩包，上传上面的步骤的_worker.zip，上传完成后点击部署站点，继续处理项目                
+- 登陆cloiudfire ，进入到管理面板，如果不是中文简体，可以在网页右上角语言设置点击切换，点击左侧 计算（wokers）-pages和workers-创建-pages，点击使用直接上传-开始使用，项目名称随便填写，比如abcdg123,不要用拼音或涉及代理/项目作者等词汇，然后点击创建项目，点击从计算机选择，上传选择压缩包，选择上传压缩包，上传上面的步骤的_worker.zip，上传完成后点击部署站点，继续处理项目                
 - 点击刚刚创建的项目-设置-变量和机密 -添加，变量名称填写uuid ,数值需要在uuid生成网站生成复制进去（保存一份到本地记事本或者办公软件中） ，uuid生成网站比如 https://www.uuidgenerator.net/version4 ，填写进去后保存。   
 -  在此项目内点击创建部署，再次上传 前面的压缩文件 ，完成后即可          
 -  点击该项目的部署  -看到生产-域，点击这个网址跳转 ，点击地址栏 在复制跳转的网址后面占输入`/` 然后粘贴刚刚复制的uuid值 然后回车进入你的节点订阅网站        ，比如` https://abcdg123.page.dev/a0c6ea8e-3050-4643-b62f-8f3d675f5dda`同时保存好这个网页/uuid的网站地址方便以后使用   ,注意uuid前面只有一个`/`                 
 - 在订阅网站找到  2：聚合通用-聚合通用分享链接 (可直接导入客户端)，复制粘贴到 v2rayn/r2ayng/nekobox/karing中即可连接使用，如果都无法连通，开启代理软件的(Fragment)分片功能，nekobxo目前不支持分片       
 - 代理软件使用教程及要求参卡 教程 大标题三          
 -.如果要在clash或者singbox中使用，在订阅网站下滑找到` 2：聚合通用、Clash-meta、Sing-box订阅链接如下：` Clash-meta订阅链接： Sing-box订阅链接： 复制对应的地址到对应的客户端即可使用
-- 注意：在没有添加自定义域名前，默认分配的域名基本是被防火墙拦截的无法连同，需要代理软件支持分片功能，在设置内开启分片功能后才可以连通，支持分片功能的客户端有v2rayng/v2rayn/hiddify/karing等。  
+- 注意：在没有添加自定义域名前，默认分配的域名基本是被防火墙拦截的无法连同，需要代理软件支持分片功能，在设置内开启分片功能后才可以连通，支持分片功能的客户端有vrayng/vrayn/hiddify/karing 。  
 - 如果要绑定自定义域名，可以把域名托管到cloudflare上然后添加子域名，不能托管的域名 也可以，只是可能不稳定，一般情况没必要使用自定义域名 ， 操作有点麻烦                   
 -.复制 订阅网站 ，自己保存起来方便以后导入新设备                      
  
@@ -413,14 +413,14 @@ git config --global --unset https.proxy
 #### 2. cmliu 的部署教程和开源项目-相对复杂-不推荐 ，略               
 
 ---     
-- cloudfire自建节点开源项目脚本多，其他方法不一定按上面教程来，可以在youtube上面搜索到其他项目的使用教程             
+- couldfire自建节点开源项目脚本多，其他方法不一定按上面教程来，可以在youtube上面搜索到其他项目的使用教程             
 
 
 ---    
 
 
 ### B. 免费/付费租借vps和域名自建节点：    
-&ensp;&ensp;优点：相比于cloudflare自建节点订阅，优点是一人一个ip,ip比较干净，vps可以跑完整的gnulinux系统，通过修改密码以及远程登陆拥有对节点的最高控制权，
+&ensp;&ensp;优点：相比于clouldfire自建节点订阅，优点是一人一个ip,ip比较干净，vps可以跑完整的gnulinux系统，通过修改密码以及远程登陆拥有对节点的最高控制权，
 &ensp;&ensp;缺点：此方法自建节点被墙后更换ip可能要额外付费，一般可以免费换ip，使用频率高容易被检测，因为一般是固定代理ip,长期连接固定的ip而且高流量一眼看出来是代理节点，出问题解决也相对麻烦。购买vps以及域名付费如果用支付宝微信等有泄漏实名的风险，因此最好使用可以匿名的加密虚拟货币，vps服务网站一般都是纯商业性质，承诺的隐私性不一定完全可靠             
 
 &ensp;&ensp;油管搜索相关租借vps自建节点教程，例子： （有效性请自行测试）    
@@ -432,37 +432,36 @@ git config --global --unset https.proxy
 ---
 ###  b. 使用付费 vps虚拟主机搭建，一般比免费的更稳定              
 
-- 网上搜索性价比高的国外vps厂商进行购买，最低大约 70-80左右一年，甲骨文微软谷歌等大厂较贵，有些支持支付宝微信支付（等于半匿名），有些支持人民币/外币双币种银行储蓄卡，在国内很多银行都可以申请办理，不过有条件最好使用匿名加密货币                           
+- 网上搜索性价比高的国外vps厂商进行购买，最低大约 70-80左右一年，甲骨文微软谷歌等大厂较贵，有些支持支付宝微信支付（等于半匿名），有些支持人民币/外币双币种银行储蓄卡，在国内很多银行都可以申请办理，不过有条件最好使用匿名加密货币                   
 
 
-- 购买vps时系统选择linux发行版,最好选择debian系统，完成购买收到账户密码后，使用ssh远程连接软件登陆vps进行命令行部署              
-- [网页版ssh远程登陆vps服务](https://ssh.hax.co.id/)      ，不推荐有泄露风险       
+- 购买vps时系统选择linux发行版，完成购买收到账户密码后，使用ssh远程连接软件登陆vps进行命令行部署              
+- [网页版ssh远程登陆vps服务](https://ssh.hax.co.id/)   
 - shh软件linux内核系统可用 easyshh或者 系统自带终端app  ，安卓可以用   
-connectbot 或termux（需使用 pkg install openssh安装ssh工具后才可使用） ，windows系统可以使用开源的PuTTY，  
-- putty连接ssh教程    [如何使用PuTTY远程登录管理VPS服务器](https://www.youtube.com/watch?v=ky2r2FgXG7U )                                                                    
-- linux桌面发行版和安卓termux openssh如果使用终端登陆ssh，终端登陆ssh指令一般为   ssh 用户名@地址:端口号（用户名替换为root时表示以root用登陆vps）   ，然后输入yes或同意连接（第一次连接时需要），然后根据提示输入密码完成登陆                    
-- 安卓connect bot（fdroid商店下载） 使用很简单  新建连接输入 用户名@vps的ip地址 然后保存点击连接               
-
+connectbot 或termux（需使用 pkg install openssh安装ssh工具后才可使用）              
+- linux桌面发行版如果使用终端登陆ssh，终端登陆ssh指令一般为   ssh 用户名@地址:端口号   ，输入yes或者y同意连接，然后根据提示输入密码完成登陆      
 ---                         
 (1).如果想零基础自动搭建，可以使用github上面的一键部署部署脚本                            
-- 可以使用github开源项目甬哥一键部署脚本，[vPS一键四协议安装脚本](https://github.com/eooce/Sing-box)   ,根据项目的使用介绍，密码登陆ssh后可以输入`name="" sspt="" vlpt="" vmpt="" hypt="" tupt="" xhpt="" vxpt="" anpt="" arpt="" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh)  ` ，根据提示完成安装并复制出节点信息。   或者使用此项目   [VPS一键脚本工具箱](https://github.com/eooce/ssh_tool)    。也可以在github搜索其他一键部署项目。                                                        
+- 可以使用github开源项目老王一键部署脚本，[vPS一键四协议安装脚本](https://github.com/eooce/Sing-box)   ,根据项目的使用介绍，密码登陆ssh后可以输入`bash <(curl -Ls https://raw.githubusercontent.com/eooce/sing-box/main/sing-box.sh) `  ，根据提示完成安装并复制出节点信息。   或者使用此项目   [VPS一键脚本工具箱](https://github.com/eooce/ssh_tool)    。也可以在github搜索其他一键部署项目。                                                
 (2).如果有代码使用基础，最好是自行使用开源协议代码完全手动搭建，杜绝任何后门，比如要部署hy2协议节点，就去[hy2
-项目的官方网站](https://v2.hysteria.network/zh/)查看手动部署完整教程                                                                                                              
+项目的官方网站](https://v2.hysteria.network/zh/)查看手动部署完整教程                                                                                                     
 全过程教程可以参考             
--  [ArgoSB one-click (Part 1): AnyTLS | Xhttp | Reality | Hy2 | Tuic | SS | Argo ](https://www.youtube.com/watch?v=CiXmttY7mhw   )                     
+-    [真正永久免费VPS全攻略！抢注/续期注意要点 高速多节点VPN搭建 Warp部署提升ip纯净度|Hax/Woiden Free VPS | Cloudflare Warp](https://www.youtube.com/watch?v=-Z0MbGJKX9c)                                       
+- [付费租用vps自建节点教程， 、Trojan、vmess](https://m.youtube.com/watch?v=JC_25k_3Q70)              
+- [付费最新自建机场节点喂饭级教程](https://m.youtube.com/watch?v=66V2J6lVv9E)          
+- [1分钟搭建Xray最新Reality协议|号称用不被封](https://m.youtube.com/watch?v=XB6W3c3dNQI&pp=ygUeY2xvdWxkZmlyZSDpg6jnvbJyZWFsaXR55Y2P6K6u)
+为了应对 TLS in TLS 和指纹识别等阻断或封禁的风险，Xray-core 团队推出了 Vision 和 Reality 两种新颖的技术方案。它们能够有效地隐藏和保护流量的特征，提高安全性和稳定性。 代理协议推荐less+reality和歇斯底里2（hy2），这两种目前特性少                                                 
+&ensp;&ensp;自建的节点订阅可以导入clash/v2r/sinbox/singbox内使用         
 
-&ensp;&ensp;自建的节点订阅可以导入v2r/sinbox/karing
-/hiddify等开源代理工具内使用                 
-
-##### vps部署脚本即说明：（选一个即可,最推荐1）       
-1. 甬哥ArgoSB一键无交互小钢炮脚本:    https://github.com/yonggekkk/ArgoSB         
-2.  老王vPS一键四协议安装脚本： https://github.com/eooce/Sing-box           
-3. [老王xray-argo无交互一键四协议安装脚本:https://github.com/eooce/xray-2go              
-4. 3x-ui 或s-ui面板 ，默认面板无https加密，如果不是用于vless+xhttp+cloudflare cdn的节点组合待建，则不推荐，使用相对麻烦，需要手动申请tls证书绑定自定义域名才可启用https的面板管理ui                     
+##### vps部署脚本即说明：
+1. 老王vPS一键四协议安装脚本： https://github.com/eooce/Sing-box 
+2. [老王xray-argo无交互一键四协议安装脚本:https://github.com/eooce/xray-2go
+3. ArgoSB一键无交互小钢炮脚本:    https://github.com/yonggekkk/ArgoSB       
+4.3x-ui 或s-ui面板 ，默认面板无https加密，不推荐，需要手动申请tls证书绑定自定义域名才可启用https的面板管理ui             
 
 ### 删除vps的系统和节点连接的日志保护隐私        
-- 删除vps的系统日志和 输入命令的历史记录参考：  https://codeberg.org/p23tyjujukk/linux-privacy-security/       
-- 删除 部署节点的连接日志——不同协议的方法不同，可网上或者ai查询 比如关键词： Vless协议禁用日志           
+- 删除vps的系统日志和 输入命令的历史记录参考：  https://codeberg.org/p23tyjujukk/linux-privacy-security/    
+- 删除 部署节点的连接日志——不同协议的方法不同，可网上或者ai查询 比如关键词： Vless协议禁用日志    
 
 #### 可选：使用clouldfire的warp进行中转提高ip纯净度，对访问网站隐藏原始vps代理地址，可以将仅  ipv6的ps中转为ipv4+ipv6双栈   
 - 视频教程[给纯ipv6的vps添加一个Cf原生ipv4出站地址，ip安全评分全面提升](https://www.youtube.com/watch?v=jlig1IvnIzU)        
@@ -471,61 +470,13 @@ connectbot 或termux（需使用 pkg install openssh安装ssh工具后才可使�
 3. 【WGCF】连接CF WARP为服务器添加IPv4/IPv6网络 :   https://gitlab.com/ProjectWARP/warp-script     
 4. -CloudFlare WARP 一键管理脚本 :   https://gitlab.com/Misaka-blog/warp-script/         
 5.  yonggekkk-使用cloudfire的warp提高vps部署节点ip纯净度，warp多功能一键脚本，支持warp-go与wgcf切换 :  https://github.com/yonggekkk/warp-yg     (项目内有sh脚本源码，无开源申明)       
-6. warp+ 账户，使用warp+账户比普通账户连接更稳定，warp+账户 密钥key可以在电报上面获取 ：  @generatewarpplusbot                  
+6. warp+ 账户，使用warp+账户比普通账户连接更稳定，warp+账户 密钥key可以在电报上面获取 ：  @generatewarpplusbot              
 
 #### 可选: 使用cloudlfire服务作为vps节点的前置节点转发，对防火墙隐藏 vps的ip地址减小ip封锁概率
     
 1. vless 和vmess都可以套cloudfire 的argo服务达到和cdn一样的效果，这种可以无需在cloiudfire绑定自定义域名，临时隧道，项目比如 
 [xray-argo无交互一键四协议安装脚本vless-grpc-reality | vless-xhttp-reality | vless-ws-tls(argo) | vmess-ws-tls(argo)](https://github.com/eooce/xray-2go)  ，如果使用临时隧道，重启/关闭Vps就会失效，重启vps又要进入脚本管理页面重新申请临时隧道。   
-2. vless+xhttp协议不加tls时可以套前置cloufire cdn服务进行加速和防止防火墙封禁vps的ip。xhttp目前安全性可能是最高的。 只不过需要在cloudfire上面托管绑定域名 ，搭建[需要使用3x-ui面板  ](https://github.com/MHSanaei/3x-ui)    ，建议绑定域名申请tls证书后使用3x-ui面板不然默认只有http网页会导致节点信息面板密码等泄露-，3x-ui部署完成看到http后台网页和账户密码，保存下来，vps终端 内输入 ’x-ui’ 进入3xui设置，找到ssl申请选项数字,通过输入设置根据提示完成域名绑定和https申请  。  
-
-
-#### 延伸：vless+xhttp+cloudflare cdn /vless+xhttp+reality/ hysteria2 三种最安全的协议组合搭建详细步骤                                 
-
-0. 打开ssh工具，输入 ssh root@xxxx （xxx为vps的ip地址）
-，然后根据提示输入yes回车确认（第一次连接需要），然后输入密码并回车完成登陆                
-
-1.  确保没用vps搭建过其他节点，如果搭建过请卸载，如果是接手别人的vps不知道有没有搭建过，或者不知道如何卸载之前搭建的节点，就需要重装vps系统（一般vps厂家提供的网页管理面板有此功能，重装系统应选择debian系统，或者使用一键重装vps脚本手动重装）
-ssh登陆vps后，用甬哥的脚本建立hy2协议节点，后面的cloudns免费域名申请要用这个翻墙节点  
-输入指令` hypt=""  bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh) `
-完成安装，如果提示没有curl,就输入`apt install curl`安装依赖然后重新输入节点安装指令进行安装复制节点信息导入到v2rayn，连接，连通即可            
-
-2. 建立自定义域名， 主域托管到cloudflare,参考 [最新免费域名ClouDNS申请教程 托管cloudflare 边缘证书，自定义域等演示教程 IP滥用率高以及双向解析注意事项的讲解](https://m.youtube.com/watch?v=zvRYOsi7ynk&pp=ygUeY2xvdWRuc-Wfn-WQjeaJmOeuoSBjbG91ZGZsYXJl)
-，观看前7分钟。
-
-注意：视频教程中，ssl边缘证书绑定cloudns dns解析记录用的是txt记录，但是ssl证书是有期限的，也也就是说证书到期cf自动重新证书后txt记录的值会变，导师后要去cloudns dns 记录重新修改。因此我们可以使用ns记录替代txt记录，这样以后无需再修改，过程为；cloudns删除 视频教程中的txt记录，复制主域名两个ns记录的Points to值 到记事本，
-新建ns记录  Host名称填写`_acme-challenge`，Points to值填写复制的两个Points to值的其中之一，然后再次新建ns记录，Host名称填写`_acme-challenge`，Points to值填写复制的两个Points to值的另一个 ，保存即可。         
-优先使用步骤1建立的hy2协议节点的代理进行cloudns的注册和域名建立，如果还是提示ip滥用想办法切换到其他ip干净的代理/vpn进行免费域名申请。                  
-
-3. 新建两个子域名，一个用于3x-ui的https加密的管理面板后台，一个用于 节点 cdn加速    。在cloudns主域名的两个ns记录分别点击编辑，复制其中的名称服务器值到记事本保存，不对内容修改。cloudns免费域名下依次新建两个ns记录 ，每一个Host名称填写一样的子域前缀比如`www`,Points to内容分别填写复制的两个名称服务器值，这样就完成www.子域名的建立。              
-然后重复步骤建立另一个子域名，前缀比如m,这样得到了两个子域名：www.主域名和  m.主域名。    
-
-4. 进入clouldflare托管的域名，点击dns记录，新建dns记录，如果vps是ipv6,建立aaaa记录，Host名称填写子域名1的前缀www,地址内容填写vps的ipv6地址（如果是ipv4的vps就建立a记录），关闭小黄云图标加速，然后保存-用于3x-ui面板启用https加密。
-重复步骤再次新建dns记录，名称填写子域名2的前缀m,不关小黄云，用于节点的cdn加速。    
-
-5. 卸载之前vps安装的节点，避免和3x-ui冲突  ，在ssh软件重新登陆vps,
-输入` agsb del ` ，删除步骤1建立的节点，删除后这个节点暂时不再可用。   
-
-6. 安装3x-ui面板并启用https加密，避免明文泄漏节点信息，登陆vps,
-输入代码`apt install wget git   `  安装好依赖（vps的系统为debian或者ubuntu使用此指令）。         
-然后输入''安装好3x-ui面板
- 所有提示都按回车使用默认配置即可，,安装完成找到网址和账户秘密一栏，复制保存到记事本。网址前缀为http不带加密的网址，浏览器复制网址进入面板后台，看到图形界面，说明面板正常工作，不做登陆避免秘密泄漏。             
-回到 登陆vps的终端，使用ctrl+c快捷键关闭vps运行中的安装程序，然后输入x-ui进入3x-ui的高级设置选项，找到ssl证书申请，进行证书申请。3x-ui和ssl证书申请以及域名绑定参考视频：[VPS节点搭建与加速](https://m.youtube.com/watch?v=W9QX3fphyes&t=1247s&pp=0gcJCckJAYcqIYzv)，观看视频15分到17分钟末，注意 这里绑定的域名应为步骤3中的  www.主域  名                            
-
-7. 建立最安全的vless+xhttp+cf cdn中转加速节点，[【代理新姿势】全场景通吃的xhttp传输协议快速上手，GFW直呼内行](https://m.youtube.com/watch?v=GB_SHmqotzQ&pp=ygUPdmxlc3MgeGh0dHAgY2Ru) ，观看视频4分55s到9分30秒，
-注意这里cdn加速的域名为 步骤3中    m.主域名，无需按视频教程中的再次建立子域名和dns解析。完成视频教程得到一个vless+xhttp+reality协议节点，一个vless+xhttp+ cf cdn加速节点，我们主要用后面这个，因为它有cf中转加速的能欺骗防火墙，防止防火墙知道和封锁vps真实ip的。vless+xhttp+cf cdn能否连通取决于cf托管域名的的 ssl边缘证书是否通过  ，从步骤3的双向解析申请到通过可能需要半天时间 。
- cf cdn优选ip和cdn大厂域名参考 其他教程     
-                    
-8. 重建hy2协议协议节点，可以将hy2协议节点用于高速文件下载和备用节点，hy2的速度更快，过程重复步骤1    ，这一套组合下离开，平时优先使用 vless+xhttp+cloudflare cdn 协议节点（对防火墙隐藏vps搭建节点的真实ip），其次 vless+xhttp+reeality（混淆性最好），再其次hy2协议节点（速度最快），大文件下载优先使用hy2协议节点，这个速度最快   ，注意支持xhttp协议的代理软件较少，目前vrayn和vrayng支持。                   
-
-
-
-
-
-
-
-
-                               
+2. vless+xhttp协议不加tls时可以套前置cloufire cdn服务进行加速和防止防火墙封禁vps的ip。xhttp目前安全性可能是最高的。 只不过需要在cloudfire上面托管绑定域名 ，搭建[需要使用3x-ui面板  ](https://github.com/MHSanaei/3x-ui)    ，建议绑定域名申请tls证书后使用3x-ui面板不然默认只有http网页会导致节点信息面板密码等泄露-，3x-ui部署完成看到http后台网页和账户密码，保存下来，vps终端 内输入 ’x-ui’ 进入3xui设置，找到ssl申请选项数字,通过输入设置根据提示完成域名绑定和https申请  。[视频教程点击此观看](https://m.youtube.com/watch?v=GB_SHmqotzQ)                             
 
 
 #### 可选： 重装vps的linux系统为开源可靠的纯官方版本               
