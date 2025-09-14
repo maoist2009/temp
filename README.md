@@ -446,10 +446,11 @@ connectbot 或termux（需使用 pkg install openssh安装ssh工具后才可使�
 - linux桌面发行版和安卓termux openssh如果使用终端登陆ssh，终端登陆ssh指令一般为   ssh 用户名@地址:端口号（用户名替换为root时表示以root用登陆vps）   ，然后输入yes或同意连接（第一次连接时需要），然后根据提示输入密码完成登陆                    
 - 安卓connect bot（fdroid商店下载） 使用很简单  新建连接输入 用户名@vps的ip地址 然后保存点击连接               
 
----                         
-(1).如果想零基础自动搭建，可以使用github上面的一键部署部署脚本                            
+---      
+#### 搭建教程                          
+(1). 如果想零基础自动搭建，可以使用github上面的一键部署部署脚本                            
 - 可以使用github开源项目甬哥一键部署脚本，[vPS一键四协议安装脚本](https://github.com/eooce/Sing-box)   ,根据项目的使用介绍，密码登陆ssh后可以输入`name="" sspt="" vlpt="" vmpt="" hypt="" tupt="" xhpt="" vxpt="" anpt="" arpt="" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh)  ` ，根据提示完成安装并复制出节点信息。   或者使用此项目   [VPS一键脚本工具箱](https://github.com/eooce/ssh_tool)    。也可以在github搜索其他一键部署项目。                                                        
-(2).如果有代码使用基础，最好是自行使用开源协议代码完全手动搭建，杜绝任何后门，比如要部署hy2协议节点，就去[hy2
+(2). 如果有代码使用基础，最好是自行使用开源协议代码完全手动搭建，杜绝任何后门，比如要部署hy2协议节点，就去[hy2
 项目的官方网站](https://v2.hysteria.network/zh/)查看手动部署完整教程                                                                                                              
 全过程教程可以参考             
 -  [ArgoSB one-click (Part 1): AnyTLS | Xhttp | Reality | Hy2 | Tuic | SS | Argo ](https://www.youtube.com/watch?v=CiXmttY7mhw   )                     
