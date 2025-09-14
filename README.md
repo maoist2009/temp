@@ -501,11 +501,8 @@ ssh登陆vps后，用甬哥的脚本建立hy2协议节点，后面的cloudns免�
 完成安装，如果提示没有curl,就输入`apt install curl`安装依赖然后重新输入节点安装指令进行安装复制节点信息导入到v2rayn，连接，连通即可            
 
 2. 建立自定义域名， 主域托管到cloudflare,参考 [最新免费域名ClouDNS申请教程 托管cloudflare 边缘证书，自定义域等演示教程 IP滥用率高以及双向解析注意事项的讲解](https://m.youtube.com/watch?v=zvRYOsi7ynk&pp=ygUeY2xvdWRuc-Wfn-WQjeaJmOeuoSBjbG91ZGZsYXJl)
-，观看前7分钟。
-
-注意：视频教程中，ssl边缘证书绑定cloudns dns解析记录用的是txt记录，但是ssl证书是有期限的，也也就是说证书到期cf自动重新证书后txt记录的值会变，导师后要去cloudns dns 记录重新修改。因此我们可以使用ns记录替代txt记录，这样以后无需再修改，过程为；cloudns删除 视频教程中的txt记录，复制主域名两个ns记录的Points to值 到记事本，
-新建ns记录  Host名称填写`_acme-challenge`，Points to值填写复制的两个Points to值的其中之一，然后再次新建ns记录，Host名称填写`_acme-challenge`，Points to值填写复制的两个Points to值的另一个 ，保存即可。         
-优先使用步骤1建立的hy2协议节点的代理进行cloudns的注册和域名建立，如果还是提示ip滥用想办法切换到其他ip干净的代理/vpn进行免费域名申请。                  
+，观看前7分钟。注意：视频教程中，ssl边缘证书绑定cloudns dns解析记录用的是txt记录，但是ssl证书是有期限的，也也就是说证书到期cf自动重新证书后txt记录的值会变，导师后要去cloudns dns 记录重新修改。因此我们可以使用ns记录替代txt记录，这样以后无需再修改，过程为；cloudns删除 视频教程中的txt记录，复制主域名两个ns记录的Points to值 到记事本，
+新建ns记录  Host名称填写`_acme-challenge`，Points to值填写复制的两个Points to值的其中之一，然后再次新建ns记录，Host名称填写`_acme-challenge`，Points to值填写复制的两个Points to值的另一个 ，保存即可。优先使用步骤1建立的hy2协议节点的代理进行cloudns的注册和域名建立，如果还是提示ip滥用想办法切换到其他ip干净的代理/vpn进行免费域名申请。                                 
 
 3. 新建两个子域名，一个用于3x-ui的https加密的管理面板后台，一个用于 节点 cdn加速    。在cloudns主域名的两个ns记录分别点击编辑，复制其中的名称服务器值到记事本保存，不对内容修改。cloudns免费域名下依次新建两个ns记录 ，每一个Host名称填写一样的子域前缀比如`www`,Points to内容分别填写复制的两个名称服务器值，这样就完成www.子域名的建立。              
 然后重复步骤建立另一个子域名，前缀比如m,这样得到了两个子域名：www.主域名和  m.主域名。    
