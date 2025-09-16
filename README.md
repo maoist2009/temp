@@ -491,7 +491,7 @@ connectbot 或termux（需使用 pkg install openssh安装ssh工具后才可使�
 ### ==延伸==：vless+xhttp+cloudflare cdn /vless+xhttp+reality/ hysteria2 三种最安全的协议组合搭建详细步骤                        
 
 &ensp;&ensp; 注意：xhttp协议支持的客户端相对较少，有v2rayn/v2rayng等               
-
+##### 方法1 （方法2更简单）      
 0. 打开ssh工具，输入 ssh root@xxxx （xxx为vps的ip地址）
 ，然后根据提示输入yes回车确认（第一次连接需要），然后输入密码并回车完成登陆                
 
@@ -523,7 +523,33 @@ ssh登陆vps后，用甬哥的脚本建立hy2协议节点，后面的cloudns免�
 注意这里cdn加速的域名为 步骤3中    m.主域名，无需按视频教程中的再次建立子域名和dns解析。完成视频教程得到一个vless+xhttp+reality协议节点，一个vless+xhttp+ cf cdn加速节点，我们主要用后面这个，因为它有cf中转加速的能欺骗防火墙，防止防火墙知道和封锁vps真实ip的。vless+xhttp+cf cdn能否连通取决于cf托管域名的的 ssl边缘证书是否通过  ，从步骤3的双向解析申请到通过可能需要半天时间 。
  cf cdn优选ip和cdn大厂域名参考 其他教程     
                     
-8. 重建hy2协议协议节点，可以将hy2协议节点用于高速文件下载和备用节点，hy2的速度更快，过程重复步骤1    ，这一套组合下离开，平时优先使用 vless+xhttp+cloudflare cdn 协议节点（对防火墙隐藏vps搭建节点的真实ip），其次 vless+xhttp+reeality（混淆性最好），再其次hy2协议节点（速度最快），大文件下载优先使用hy2协议节点，这个速度最快          。xhttp协议支持的客户端相对较少，有v2rayn/v2rayng等。                              
+8. 重建hy2协议协议节点，可以将hy2协议节点用于高速文件下载和备用节点，hy2的速度更快，过程重复步骤1    ，这一套组合下离开，平时优先使用 vless+xhttp+cloudflare cdn 协议节点（对防火墙隐藏vps搭建节点的真实ip），其次 vless+xhttp+reeality（混淆性最好），再其次hy2协议节点（速度最快），大文件下载优先使用hy2协议节点，这个速度最快          。xhttp协议支持的客户端相对较少，有v2rayn/v2rayng等。           
+
+##### 方法2   （比步骤1简单很多）                               
+0. 打开ssh工具，输入 ssh root@xxxx （xxx为vps的ip地址）
+，然后根据提示输入yes回车确认（第一次连接需要），然后输入密码并回车完成登陆                
+
+1.  确保没用vps搭建过其他节点，如果搭建过请卸载，如果是接手别人的vps不知道有没有搭建过，或者不知道如何卸载之前搭建的节点，就需要重装vps系统（一般vps厂家提供的网页管理面板有此功能，重装系统应选择debian系统，或者使用一键重装vps脚本手动重装）
+ssh登陆vps后，用甬哥的脚本快速建立 三协议的三个节点   
+`name="" vxpt="80"  xhpt="" hypt=""  bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh) rep `
+完成安装，如果提示没有curl,就输入`apt install curl`安装依赖然后重新输入节点安装指令进行安装复制节点信息导入到v2rayn，
+得到三个节点，一个协议为vless-xhttp-reality，一个vless-xhttp（无tls），一个hy2,测试三个协议的节点都可以连通，就可以进行下一步。        
+
+2. 建立自定义域名， 主域托管到cloudflare,参考 [最新免费域名ClouDNS申请教程 托管cloudflare 边缘证书，自定义域等演示教程 IP滥用率高以及双向解析注意事项的讲解](https://m.youtube.com/watch?v=zvRYOsi7ynk&pp=ygUeY2xvdWRuc-Wfn-WQjeaJmOeuoSBjbG91ZGZsYXJl)
+，观看前7分钟。注意：视频教程中，ssl边缘证书绑定cloudns dns解析记录用的是txt记录，但是ssl证书是有期限的，也也就是说证书到期cf自动重新证书后txt记录的值会变，导师后要去cloudns dns 记录重新修改。因此我们可以使用ns记录替代txt记录，这样以后无需再修改，过程为；cloudns删除 视频教程中的txt记录，复制主域名两个ns记录的Points to值 到记事本，
+新建ns记录  Host名称填写`_acme-challenge`，Points to值填写复制的两个Points to值的其中之一，然后再次新建ns记录，Host名称填写`_acme-challenge`，Points to值填写复制的两个Points to值的另一个 ，保存即可。优先使用步骤1建立的节点的代理进行cloudns的注册和域名建立，如果还是提示ip滥用想办法切换到其他ip干净的代理/vpn进行免费域名申请。                                      
+
+3. 新建一个子域名，用于 vless-xhttp节点的 cdn加速    。在cloudns主域名的两个主域名ns记录分别点击编辑，复制其中的名称服务器值到记事本保存，不对内容修改。cloudns免费域名下依次新建两个ns记录 ，每一个Host名称填写一样的子域前缀比如`m`,Points to内容分别填写复制的两个名称服务器值，这样就完成m.子域名的建立。                   
+    
+
+4. 进入clouldflare托管的域名，点击dns记录，新建dns记录，如果vps是ipv6,建立aaaa记录，Host名称填写子域名1的前缀`m`,地址内容填写vps的ipv6地址（如果是ipv4的vps就建立a记录），保持小黄云图标开启加速，然后保存   
+
+
+5. 建立最安全的vless+xhttp+cf cdn中转加速节点，[【代理新姿势】全场景通吃的xhttp传输协议快速上手，GFW直呼内行](https://m.youtube.com/watch?v=GB_SHmqotzQ&pp=ygUPdmxlc3MgeGh0dHAgY2Ru) ，观看视频7分46s到9分30秒，
+注意这里cdn加速的域名为 步骤3中    m.主域名，无需按视频所说建立子域名，因为地3步已经建立好了，无需使用x-ui面板创建将诶点，因为第2步已经建立好了端口80的vless-xhttp 协议节点  ，无需设置规则，因为第2步生成的vless-xhttp端口为80, 只需要在v2rayn中原 vless-xhttp 节点修改服务器地址为 m.子域名，端口号为 443 ，启用tls，跳过验证ture，保存节点即可使用 。vless+xhttp+cf cdn能否连通取决于cf托管域名的的 ssl边缘证书是否通过  ，从步骤2的双向解析申请到通过可能需要半天时间 。
+ cf cdn优选ip和cdn大厂域名参考 其他教程     
+                    
+6. 平时优先使用 vless+xhttp+cloudflare cdn 协议节点（对防火墙隐藏vps搭建节点的真实ip），其次 vless+xhttp+reeality（混淆性最好），再其次hy2协议节点（速度最快），大文件下载优先使用hy2协议节点，这个速度最快          。xhttp协议支持的客户端相对较少，有v2rayn/v2rayng等。    
    
 ---      
 #### 可选： 重装vps的linux系统为开源可靠的纯官方版本               
