@@ -171,19 +171,19 @@ https://f-droid.org/packages/ch.protonvpn.android/
                                 
 - 普通节点分享网站：  
            
-https://wenode.cc/                   
-https://v2rayshare.com/                  
-https://onenode.cc/    
-https://clashgithub.com/                  
+1. https://wenode.cc/                   
+2. https://v2rayshare.com/                  
+3. https://onenode.cc/    
+4. https://clashgithub.com/                  
 - github开源代码托管平台的项目：（比上面网站的稳定靠谱，使用稍微复杂一点）                      
     
-https://github.com/chengaopan/AutoMergePublicNodes          
-https://github.com/Barabama/FreeNodes         （这个是爬虫github其他人分享节点项目的项目）     
-https://github.com/mahdibland/V2RayAggregator   
-https://github.com/aiboboxx/v2rayfree                                       
-https://github.com/free18/v2ray   
+1. https://github.com/chengaopan/AutoMergePublicNodes          
+2. https://github.com/Barabama/FreeNodes         （这个是爬虫github其他人分享节点项目的项目）     
+3. https://github.com/mahdibland/V2RayAggregator   
+4. https://github.com/aiboboxx/v2rayfree                                       
+5. https://github.com/free18/v2ray   
 
-https://github.com/shiteThings/extractNodes  (chromego提取节点，支持clash/nekobox/karing)                    
+6. https://github.com/shiteThings/extractNodes  (chromego提取节点，支持clash/nekobox/karing)                    
 
 也可以在github搜索关键词 free v2r 按时间排序，找到其他人分享的公开节点                                  
 - 获取节点的电报群示例：     
