@@ -181,7 +181,10 @@ https://github.com/chengaopan/AutoMergePublicNodes
 https://github.com/Barabama/FreeNodes         （这个是爬虫github其他人分享节点项目的项目）     
 https://github.com/mahdibland/V2RayAggregator   
 https://github.com/aiboboxx/v2rayfree                                       
-https://github.com/free18/v2ray      
+https://github.com/free18/v2ray   
+
+https://github.com/shiteThings/extractNodes  (chromego提取节点，支持clash/nekobox/karing)                    
+
 也可以在github搜索关键词 free v2r 按时间排序，找到其他人分享的公开节点                                  
 - 获取节点的电报群示例：     
  https://t.me/zhibeii    （下载导入txt内的所有链接）          
