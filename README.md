@@ -452,7 +452,7 @@ connectbot 或termux（需使用 pkg install openssh安装ssh工具后才可使�
 ---      
 #### 搭建教程                                 
 1. 如果想零基础自动搭建，可以使用github上面的一键部署部署脚本                            
-- 可以使用github开源项目甬哥一键部署脚本，[vPS一键四协议安装脚本](https://github.com/yonggekkk/argosbx)   ,根据项目的使用介绍，密码登陆ssh后可以输入  ` name="" sspt="" vlpt="" vmpt="" hypt="" tupt="" xhpt="" vxpt="" anpt="" arpt="" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosbx/main/argosbx.sh)   `   ，根据提示完成安装并复制出节点信息。   或者使用此项目   [VPS一键脚本工具箱](https://github.com/eooce/ssh_tool)    。也可以在github搜索其他一键部署项目。                              
+- 可以使用github开源项目甬哥一键部署脚本，[vPS一键四协议安装脚本](https://github.com/yonggekkk/argosbx)   ,根据项目的使用介绍，密码登陆ssh后可以输入  ` name="" sspt="" vlpt="" vmpt="" hypt="" tupt="" xhpt="" vxpt="" anpt="" arpt="" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosbx/main/argosbx.sh)  `   ，根据提示完成安装并复制出节点信息。   或者使用此项目   [VPS一键脚本工具箱](https://github.com/eooce/ssh_tool)    。也可以在github搜索其他一键部署项目。                              
 2. 如果有代码使用基础，最好是自行使用开源协议代码完全手动搭建，杜绝任何后门，比如要部署hy2协议节点，就去[hy2
 项目的官方网站](https://v2.hysteria.network/zh/)查看手动部署完整教程                                                                                                                     
  ---                 
@@ -500,7 +500,7 @@ connectbot 或termux（需使用 pkg install openssh安装ssh工具后才可使�
 
 1.  确保没用vps搭建过其他节点，如果搭建过请卸载，如果是接手别人的vps不知道有没有搭建过，或者不知道如何卸载之前搭建的节点，就需要重装vps系统（一般vps厂家提供的网页管理面板有此功能，重装系统应选择debian系统，或者使用一键重装vps脚本手动重装）
 ssh登陆vps后，用甬哥的sb脚本（   项目地址      https://github.com/yonggekkk/argosbx    ）建立hy2协议节点，后面的cloudns免费域名申请要用这个翻墙节点  
-输入指令` hypt="" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosbx/main/argosbx.sh)>    `
+输入指令` hypt="" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosbx/main/argosbx.sh)   `
 完成安装，如果提示没有curl,就输入`apt install curl`安装依赖然后重新输入节点安装指令进行安装复制节点信息导入到v2rayn，连接，连通即可            
 
 2. 建立自定义域名， 主域托管到cloudflare,参考 [最新免费域名ClouDNS申请教程 托管cloudflare 边缘证书，自定义域等演示教程 IP滥用率高以及双向解析注意事项的讲解](https://m.youtube.com/watch?v=zvRYOsi7ynk&pp=ygUeY2xvdWRuc-Wfn-WQjeaJmOeuoSBjbG91ZGZsYXJl)
@@ -534,7 +534,7 @@ ssh登陆vps后，用甬哥的sb脚本（   项目地址      https://github.com
 
 1.  确保没用vps搭建过其他节点，如果搭建过请卸载，如果是接手别人的vps不知道有没有搭建过，或者不知道如何卸载之前搭建的节点，就需要重装vps系统（一般vps厂家提供的网页管理面板有此功能，重装系统应选择debian系统，或者使用一键重装vps脚本手动重装）
 ssh登陆vps后，用甬哥https://github.com/yonggekkk/argosbx  项目 的脚本快速建立 三协议的三个节点   
-`name="" vxpt="80"  xhpt="" hypt="" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosbx/main/argosbx.sh)> `
+`name="" vxpt="80"  xhpt="" hypt="" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosbx/main/argosbx.sh) `        
 完成安装，如果提示没有curl,就输入`apt install curl`安装依赖然后重新输入节点安装指令进行安装复制节点信息导入到v2rayn，
 得到三个节点，一个协议为vless-xhttp-reality，一个vless-xhttp（无tls），一个hy2,测试三个协议的节点都可以连通，就可以进行下一步。        
 
