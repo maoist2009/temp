@@ -474,24 +474,26 @@ connectbot 或termux（需使用 pkg install openssh安装ssh工具后才可使�
 - 删除 部署节点的连接日志——不同协议的方法不同，可网上或者ai查询 比如关键词： Vless协议禁用日志           
 
 ---        
-#### 可选：使用clouldflare的warp进行中转提高ip纯净度，对访问网站隐藏原始vps代理地址，可以将仅  ipv6的ps中转为ipv4+ipv6双栈   
-- 视频教程[给纯ipv6的vps添加一个Cf原生ipv4出站地址，ip安全评分全面提升](https://www.youtube.com/watch?v=jlig1IvnIzU)        
-1. P3TERX  一键warp项目：https://github.com/P3TERX/warp.sh                        
-2. fscarmen 一键warp项目： https://gitlab.com/fscarmen/warp/      
-3. 【WGCF】连接CF WARP为服务器添加IPv4/IPv6网络 :   https://gitlab.com/ProjectWARP/warp-script     
-4. -CloudFlare WARP 一键管理脚本 :   https://gitlab.com/Misaka-blog/warp-script/         
-5.  yonggekkk-使用cloudfire的warp提高vps部署节点ip纯净度，warp多功能一键脚本，支持warp-go与wgcf切换 :  https://github.com/yonggekkk/warp-yg     (项目内有sh脚本源码，无开源申明)       
-6. warp+ 账户，使用warp+账户比普通账户连接更稳定，warp+账户 密钥key可以在电报上面获取 ：  @generatewarpplusbot                  
 
+---      
+==延伸==：      
 ---         
-#### 可选: 使用cloudlfire服务作为vps节点的前置节点转发，对防火墙隐藏 vps的ip地址减小ip封锁概率
+#### 可选： 重装vps的linux系统为开源可靠的纯官方版本               
+- 注意：部分Vps厂商提供的linux系统是修改版或内置监控程序，特别是腾讯/阿里等国产厂商的海外云服务器，为了安全，最好重装Vps为可靠的开源版本，参考此开源项目：一键DD/重装脚本(One-click reinstall OS on VPS) ： https://github.com/bin456789/reinstall                                     
+
+- 下载脚本：                     `curl -O https://raw.githubusercontent.com/bin456789/reinstall/main/reinstall.sh || wget -O reinstall.sh $_ `   ，   下载完成后输入`bash reinstall.sh ...`可查看可安装系统，以安装debian13 为例 指令为 ： `bash reinstall.sh debian 13`           ，输入新的密码（同ssh登陆密码） 并再次输入确认  ，最后输入`reboot`重启vps，断开ssh连接重新连接，这里密钥已经发生改变，需要删除原来的本地密钥所在目录（rm -R ./.ssh的目录）后再连接     ，然后就可以开始部署节点了。                   
+   
+---         
+
+
+#### 可选: 入口优化-使用cloudlfire服务作为vps节点的前置节点转发，对防火墙隐藏 vps的ip地址减小ip封锁概率        
     
 1. vless 和vmess都可以套cloudfire 的argo服务达到和cdn一样的效果，这种可以无需在cloiudfire绑定自定义域名，临时隧道，项目比如 
 [xray-argo无交互一键四协议安装脚本vless-grpc-reality | vless-xhttp-reality | vless-ws-tls(argo) | vmess-ws-tls(argo)](https://github.com/eooce/xray-2go)  ，如果使用临时隧道，重启/关闭Vps就会失效，重启vps又要进入脚本管理页面重新申请临时隧道。   
-2. vless+xhttp协议不加tls时可以套前置cloufire cdn服务进行加速和防止防火墙封禁vps的ip。xhttp目前安全性可能是最高的。 只不过需要在cloudfire上面托管绑定域名 ，搭建[需要使用3x-ui面板  ](https://github.com/MHSanaei/3x-ui)    ，建议绑定域名申请tls证书后使用3x-ui面板不然默认只有http网页会导致节点信息面板密码等泄露-，3x-ui部署完成看到http后台网页和账户密码，保存下来，vps终端 内输入 ’x-ui’ 进入3xui设置，找到ssl申请选项数字,通过输入设置根据提示完成域名绑定和https申请  。     
+2. vless+xhttp协议不加tls时可以套前置cloufire cdn服务进行加速和防止防火墙封禁vps的ip。xhttp目前安全性可能是最高的。 只不过需要在cloudfire上面托管绑定域名 ，搭建[需要使用3x-ui面板  ](https://github.com/MHSanaei/3x-ui)    ，建议绑定域名申请tls证书后使用3x-ui面板不然默认只有http网页会导致节点信息面板密码等泄露-，3x-ui部署完成看到http后台网页和账户密码，保存下来，vps终端 内输入 ’x-ui’ 进入3xui设置，找到ssl申请选项数字,通过输入设置根据提示完成域名绑定和https申请  。       
 
----      
-### ==延伸==：vless+xhttp+cloudflare cdn /vless+xhttp+reality/ hysteria2 三种最安全的协议组合搭建详细步骤                        
+
+###### 示例：           vless+xhttp+cloudflare cdn /vless+xhttp+reality/ hysteria2 三种最安全的协议组合搭建详细步骤                        
 
 &ensp;&ensp; 注意：xhttp协议支持的客户端相对较少，有v2rayn/v2rayng等               
 ##### 方法1 （方法2更简单）      
@@ -528,7 +530,7 @@ ssh登陆vps后，用甬哥的sb脚本（   项目地址      https://github.com
                     
 8. 重建hy2协议协议节点，可以将hy2协议节点用于高速文件下载和备用节点，hy2的速度更快，过程重复步骤1    ，这一套组合下离开，平时优先使用 vless+xhttp+cloudflare cdn 协议节点（对防火墙隐藏vps搭建节点的真实ip），其次 vless+xhttp+reeality（混淆性最好），再其次hy2协议节点（速度最快），大文件下载优先使用hy2协议节点，这个速度最快          。xhttp协议支持的客户端相对较少，有v2rayn/v2rayng等。           
 
-##### 方法2   （比方法1简单很多）                                  
+##### 方法2   （比方法1简单很多，同时支持vless新的抗量子加密-vless协议自带加密）                                              
 0. 打开ssh工具，输入 ssh root@xxxx （xxx为vps的ip地址）
 ，然后根据提示输入yes回车确认（第一次连接需要），然后输入密码并回车完成登陆                
 
@@ -553,14 +555,34 @@ ssh登陆vps后，用甬哥https://github.com/yonggekkk/argosbx  项目 的脚�
  cf cdn优选ip和cdn大厂域名参考 其他教程     
                     
 6. 平时优先使用 vless+xhttp+cloudflare cdn 协议节点（对防火墙隐藏vps搭建节点的真实ip），其次 vless+xhttp+reeality（混淆性最好），再其次hy2协议节点（速度最快），大文件下载优先使用hy2协议节点，这个速度最快          。xhttp协议支持的客户端相对较少，有v2rayn/v2rayng等。    
+
+--- 
+
+
+#### 可选：出口优化-vps部署的节点出口使用clouldflare的warp进行中转提高ip纯净度，对访问网站隐藏原始vps代理地址，可以将仅  ipv6的ps中转为ipv4+ipv6双栈        
+- 视频教程[给纯ipv6的vps添加一个Cf原生ipv4出站地址，ip安全评分全面提升](https://www.youtube.com/watch?v=jlig1IvnIzU)        
+1. P3TERX  一键warp项目：https://github.com/P3TERX/warp.sh                        
+2. fscarmen 一键warp项目： https://gitlab.com/fscarmen/warp/      
+3. 【WGCF】连接CF WARP为服务器添加IPv4/IPv6网络 :   https://gitlab.com/ProjectWARP/warp-script     
+4. -CloudFlare WARP 一键管理脚本 :   https://gitlab.com/Misaka-blog/warp-script/         
+5.  yonggekkk-使用cloudfire的warp提高vps部署节点ip纯净度，warp多功能一键脚本，支持warp-go与wgcf切换 :  https://github.com/yonggekkk/warp-yg     (项目内有sh脚本源码，无开源申明)       
+6. warp+ 账户，使用warp+账户比普通账户连接更稳定，warp+账户 密钥key可以在电报上面获取 ：  @generatewarpplusbot                     
+
    
----      
-#### 可选： 重装vps的linux系统为开源可靠的纯官方版本               
-- 注意：部分Vps厂商提供的linux系统是修改版或内置监控程序，特别是腾讯/阿里等国产厂商的海外云服务器，为了安全，最好重装Vps为可靠的开源版本，参考此开源项目：一键DD/重装脚本(One-click reinstall OS on VPS) ： https://github.com/bin456789/reinstall                                     
+---         
 
-- 下载脚本：                     `curl -O https://raw.githubusercontent.com/bin456789/reinstall/main/reinstall.sh || wget -O reinstall.sh $_ `   ，   下载完成后输入`bash reinstall.sh ...`可查看可安装系统，以安装debian13 为例 指令为 ： `bash reinstall.sh debian 13`           ，输入新的密码（同ssh登陆密码） 并再次输入确认  ，最后输入`reboot`重启vps，断开ssh连接重新连接，这里密钥已经发生改变，需要删除原来的本地密钥所在目录（rm -R ./.ssh的目录）后再连接     ，然后就可以开始部署节点了。               
+#### 可选-出口优化，给vps节点出口套上tor暗网洋葱提高隐私性 
+- [极致隐私-给你的节点加上暗网功能，被误解的tor网络，完全免费的三重"链式代理"，普通浏览器上暗网，前置代理+tor+后置代理的配置方法](https://bulianglin.com/archives/tor.html)    
 
-      
+
+- [视频教程](https://m.youtube.com/watch?v=lOLJ70bc-pA&feature=youtu.be)
+     
+
+
+---     
+
+
+
 
 </details>         
 
