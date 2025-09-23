@@ -463,7 +463,8 @@ connectbot 或termux（需使用 pkg install openssh安装ssh工具后才可使�
 /hiddify等开源代理工具内使用                    
 
 ##### vps部署脚本即说明：（选一个即可,最推荐1）       
-1. 甬哥ArgoSB一键无交互小钢炮脚本:    https://github.com/yonggekkk/argosbx                       
+1. 甬哥ArgoSB一键无交互小钢炮脚本:    https://github.com/yonggekkk/argosbx 
+- [甬哥自选协议和功能，一键生成部署脚本-Argosbx小钢炮💣一键SSH命令生成器](https://yonggekkk.github.io/argosbx/)                               
 2.  老王vPS一键四协议安装脚本： https://github.com/eooce/Sing-box           
 3. [老王xray-argo无交互一键四协议安装脚本:https://github.com/eooce/xray-2go              
 4. 3x-ui 或s-ui面板 ，默认面板无https加密，如果不是用于vless+xhttp+cloudflare cdn的节点组合待建，则不推荐，使用相对麻烦，需要手动申请tls证书绑定自定义域名才可启用https的面板管理ui                     
