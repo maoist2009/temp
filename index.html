@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no, viewport-fit=cover">
+   <meta name="description" content="">
+   <title>网安文档</title>
+
+   <!-- Themes (light + dark) -->
+   <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="https://gcore.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
+   <link rel="stylesheet" media="(prefers-color-scheme: light)" href="https://gcore.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+
+   <!-- Syntax Highlighting -->
+   <link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/prismjs@1/themes/prism-tomorrow.css">
+   <link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/prismjs@1/plugins/line-numbers/prism-line-numbers.css">
+
+   <!-- Custom Styles -->
+   <style>
+     :root {
+       /* --theme-hue: 325; */
+     }
+     
+     /* ==text== 高亮样式 */
+     mark {
+       background-color: #ffeb3b;
+       color: #212121;
+       padding: 0 2px;
+       border-radius: 2px;
+     }
+     
+     /* 代码行号样式 */
+     pre.line-numbers {
+       position: relative;
+       padding-left: 3.8em;
+       counter-reset: linenumber;
+     }
+     
+     pre.line-numbers > code {
+       position: relative;
+       white-space: inherit;
+     }
+     
+     .line-numbers .line-numbers-rows {
+       position: absolute;
+       pointer-events: none;
+       top: 0;
+       font-size: 100%;
+       left: -3.8em;
+       width: 3em;
+       letter-spacing: -1px;
+       border-right: 1px solid #999;
+       -webkit-user-select: none;
+       -moz-user-select: none;
+       -ms-user-select: none;
+       user-select: none;
+     }
+     
+     .line-numbers-rows > span {
+       display: block;
+       counter-increment: linenumber;
+     }
+     
+     .line-numbers-rows > span:before {
+       content: counter(linenumber);
+       color: #999;
+       display: block;
+       padding-right: 0.8em;
+       text-align: right;
+     }
+   </style>
+</head>
+<body>
+   <div id="app"> <font size="5em" text-align="center">加载中……<br/>Loading……</font> </div>
+
+   <script>
+     // Docsify Configuration
+     window.$docsify = {
+      name: 'mlm网安',
+      repo: '',
+      homepage: 'index.md',
+      loadNavbar: true,
+      loadSidebar: true,
+      subMaxLevel: 3,
+      auto2top: true,
+      coverpage: true,
+      routerMode: 'history',
+      relativePath: true,
+      executeScript: true,
+      
+      // 搜索配置
+      search: {
+        maxAge: 86400000,
+        paths: 'auto',
+        placeholder: '🔍 搜索文档...',
+        noData: '找不到相关文档',
+        depth: 6
+      },
+      
+      // 复制代码配置
+      copyCode: {
+        buttonText: '📋 复制',
+        successText: '✅ 已复制'
+      },
+      
+      // 进度条配置
+      progress: {
+        position: 'top',
+        height: '3px',
+        color: '#42b883'
+      },
+      
+      // Markdown 配置 - 支持 ==text== 语法
+      markdown: {
+        config: function(md) {
+          // 启用 mark 插件（==text== 语法）
+          md.use(window.markdownitMark);
+          
+          // 可选：启用其他 markdown-it 插件
+          // md.use(require('markdown-it-task-lists'));
+        }
+      }
+     };
+   </script>
+
+   <!-- Required Core -->
+   <script src="https://gcore.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+   <script src="https://gcore.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
+
+   <!-- Markdown Engine for ==text== support -->
+   <script src="https://gcore.jsdelivr.net/npm/markdown-it@13/dist/markdown-it.min.js"></script>
+   <script src="https://gcore.jsdelivr.net/npm/markdown-it-mark@3/dist/markdown-it-mark.min.js"></script>
+
+   <!-- Syntax Highlighting -->
+   <script src="https://gcore.jsdelivr.net/npm/prismjs@1/prism.min.js"></script>
+   <script src="https://gcore.jsdelivr.net/npm/prismjs@1/plugins/autoloader/prism-autoloader.min.js"></script>
+   <script src="https://gcore.jsdelivr.net/npm/prismjs@1/plugins/line-numbers/prism-line-numbers.min.js"></script>
+
+   <!-- Recommended Plugins -->
+   <script src="https://gcore.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+   <script src="https://gcore.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
+   <script src="https://gcore.jsdelivr.net/npm/docsify@4/lib/plugins/emoji.min.js"></script>
+   <script src="https://gcore.jsdelivr.net/npm/docsify@4/lib/plugins/external-script.min.js"></script>
+
+   <!-- Advanced Plugins -->
+   <script src="https://gcore.jsdelivr.net/npm/docsify-copy-code@2/dist/docsify-copy-code.min.js"></script>
+   <script src="https://gcore.jsdelivr.net/npm/docsify-progress@1/dist/progress.min.js"></script>
+   <script src="https://gcore.jsdelivr.net/npm/docsify-pagination@2/dist/docsify-pagination.min.js"></script>
+   <script src="https://gcore.jsdelivr.net/npm/docsify-tabs@1/dist/docsify-tabs.min.js"></script>
+
+   <!-- Optional: Mermaid Diagram Support -->
+   <script src="https://gcore.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+   <script>
+     if (typeof mermaid !== 'undefined') {
+       mermaid.initialize({
+         startOnLoad: true,
+         theme: 'default',
+         securityLevel: 'loose'
+       });
+     }
+   </script>
+</body>
+</html>

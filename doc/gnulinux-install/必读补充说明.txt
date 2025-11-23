@@ -1,0 +1,10 @@
+在gnulinux live cd 里面安装系统前，应先用磁盘工具擦除（随机数据覆盖而不是格式化）要安装的系统分区（GParted/GNOME Disks/KDE Partition Manager），防止旧文件的痕迹被暴力恢复。
+如果里面没有这些程序，可以在live cd 里面在线安装，
+对于archlinux分支  终端输入 sudo pacman -S gnome-disk-utility
+对于debian分支，终端输入 sudo apt install gnome-disk-utility
+
+
+
+
+
+
