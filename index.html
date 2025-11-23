@@ -59,7 +59,7 @@
 
    <script>
      window.$docsify = {
-      name: '网安',
+      name: '网安v1',
       homepage: 'index.md',
       
       // 正确的路由规则 - 只做路径重写，不修改扩展名
@@ -74,8 +74,8 @@
         '^/404$': '/404',
         
         // 侧边栏和导航栏
-        '^/(.*)/_sidebar$': '/_sidebar',
-        '^/(.*)/_navbar$': '/_navbar'
+        '^/(.*)/_sidebar.md$': '/_sidebar.md',
+        '^/(.*)/_navbar.md$': '/_navbar.md'
       },
       
       loadNavbar: true,
