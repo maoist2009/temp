@@ -1,11 +1,6 @@
-  - [_coverpage](/_coverpage.md)
-  - [_navbar](/_navbar.md)
+  - [](/404.md)
   - [book](/book.md)
   - doc
-    - Forensics
-      - [index](/doc/Forensics/index.md)
-    - Remove tracking
-      - [index](/doc/Remove-tracking/index.md)
     - android install
       - [index](/doc/android-install/index.md)
     - android to gnulinux
@@ -20,6 +15,8 @@
           - [index](/doc/fdroid-use/常用自由及开源软件/shiziku/index.md)
     - firefox use
       - [index](/doc/firefox-use/index.md)
+    - Forensics
+      - [index](/doc/Forensics/index.md)
     - git codeberg github sourceforgek cloudfire md html
       - [index](/doc/git-codeberg-github-sourceforgek-cloudfire-md-html/index.md)
       - md书写具体例子
@@ -43,7 +40,12 @@
       - [index](/doc/linux-app/index.md)
     - linux privacy security
       - [index](/doc/linux-privacy-security/index.md)
+    - Remove tracking
+      - [index](/doc/Remove-tracking/index.md)
   - [index](/index.md)
   - [internet security](/internet-security.md)
   - [main](/main.md)
+  - [mdcheetsheet](/mdcheetsheet.md)
   - [standard](/standard.md)
+  - [_coverpage](/_coverpage.md)
+  - [_navbar](/_navbar.md)

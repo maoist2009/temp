@@ -26,6 +26,12 @@
       border-radius: 2px;
     }
 
+    u {
+      text-decoration: underline solid #42b883 2px;
+      text-underline-offset: 2px;
+      text-decoration-skip-ink: none;
+    }
+
     pre.line-numbers {
       position: relative;
       padding-left: 3.8em;
@@ -66,23 +72,13 @@
     window.$docsify = {
       name: '网安v1',
       homepage: 'index.md',
-
-      // 正确的路由规则 - 只做路径重写，不修改扩展名
       alias: {
-        // 目录路径: /path/ → /path/index
         '^/(.+)/$': '/$1/index',
-
-        // 根路径 (可选，Docsify 默认处理)
         '^/$': '/index',
-
-        // 404页面
         '^/404$': '/404',
-
-        // 侧边栏和导航栏
         '^/(.*)/_sidebar.md$': '/_sidebar.md',
         '^/(.*)/_navbar.md$': '/_navbar.md'
       },
-
       loadNavbar: true,
       loadSidebar: true,
       subMaxLevel: 3,
@@ -92,46 +88,90 @@
       relativePath: true,
       executeScript: true,
       notFoundPage: '404',
-
       search: {
         placeholder: '🔍 搜索文档...',
         noData: '找不到相关文档',
         depth: 6
       },
-
       copyCode: {
         buttonText: '📋 复制',
         successText: '✅ 已复制'
       },
-
       progress: {
         color: '#42b883'
       },
+      // 兼容多种 marked 版本的可靠方案
       markdown: function (marked, oldRenderer) {
-        // 创建自定义扩展
-        const underlineExtension = {
-          renderer: {
-            text(text) {
-              // 只处理包含++的文本，避免不必要的正则匹配
-              if (!text.includes('++')) return text;
-              return text.replace(/\+\+(.*?)\+\+/g, '<u>$1</u>');
-            }
+        // 1. 首先检查 marked 版本并获取正确的 renderer
+        const renderer = oldRenderer || marked.renderer || {};
+
+        // 2. 保存原始渲染器方法
+        const originalCode = renderer.code || function (code, lang) {
+          return `<pre><code${lang ? ` class="language-${lang}"` : ''}>${code}</code></pre>`;
+        };
+
+        const originalCodespan = renderer.codespan || function (text) {
+          return `<code>${text}</code>`;
+        };
+
+        const originalText = renderer.text || function (text) {
+          return text;
+        };
+
+        const originalHtml = renderer.html || function (html) {
+          return html;
+        };
+
+        // 3. 状态管理 - 用于跟踪是否在代码块中
+        let inCodeBlock = false;
+
+        // 4. 重写代码块渲染器
+        renderer.code = function (code, lang, escaped) {
+          inCodeBlock = true;
+          try {
+            return originalCode.call(this, code, lang, escaped);
+          } finally {
+            inCodeBlock = false;
           }
         };
 
-        const highlightExtension = {
-          renderer: {
-            text(text) {
-              // 只处理包含==的文本，避免不必要的正则匹配
-              if (!text.includes('==')) return text;
-              return text.replace(/==(.*?)==/g, '<mark>$1</mark>');
-            }
-          }
+        // 5. 重写行内代码渲染器
+        renderer.codespan = function (text) {
+          return originalCodespan.call(this, text);
         };
 
-        // 使用 marked.use() 方法注册扩展
-        marked.use(underlineExtension);
-        marked.use(highlightExtension);
+        // 6. 重写文本渲染器 - 核心处理逻辑
+        renderer.text = function (text) {
+          // 在代码块中不处理语法
+          if (inCodeBlock) {
+            return text;
+          }
+
+          // 处理转义字符
+          text = text.replace(/\\([+=])/g, '$1');
+
+          // 处理下划线语法
+          text = text.replace(/\+\+([^+]+?)\+\+/g, '<u>$1</u>');
+
+          // 处理高亮语法
+          text = text.replace(/==([^=]+?)==/g, '<mark>$1</mark>');
+
+          return text;
+        };
+
+        // 7. 重写HTML渲染器 - 保护HTML内容
+        renderer.html = function (html) {
+          // 简单保护，不处理HTML标签内的内容
+          return originalHtml.call(this, html);
+        };
+
+        // 8. 设置 marked 选项
+        marked.setOptions({
+          renderer: renderer,
+          smartypants: true,
+          breaks: true
+        });
+
         return marked;
       }
     };
