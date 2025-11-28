@@ -1,51 +1,31 @@
-  - [](/404.md)
-  - [book](/book.md)
-  - doc
-    - android install
-      - [index](/doc/android-install/index.md)
-    - android to gnulinux
-      - [index](/doc/android-to-gnulinux/index.md)
-    - android virtual
-      - [index](/doc/android-virtual/index.md)
-    - fdroid use
-      - [index](/doc/fdroid-use/index.md)
-      - 常用自由及开源软件
-        - [index](/doc/fdroid-use/常用自由及开源软件/index.md)
-        - shiziku
-          - [index](/doc/fdroid-use/常用自由及开源软件/shiziku/index.md)
-    - firefox use
-      - [index](/doc/firefox-use/index.md)
-    - Forensics
-      - [index](/doc/Forensics/index.md)
-    - git codeberg github sourceforgek cloudfire md html
-      - [index](/doc/git-codeberg-github-sourceforgek-cloudfire-md-html/index.md)
-      - md书写具体例子
-        - [index](/doc/git-codeberg-github-sourceforgek-cloudfire-md-html/md书写具体例子/index.md)
-    - gnulinux install
-      - [index](/doc/gnulinux-install/index.md)
-      - [多系统引导](/doc/gnulinux-install/多系统引导.md)
-    - gnulinux shell
-      - [index](/doc/gnulinux-shell/index.md)
-    - gnulinux to android
-      - [index](/doc/gnulinux-to-android/index.md)
-    - gnulinux virtualbox
-      - [index](/doc/gnulinux-virtualbox/index.md)
-    - go to word
-      - [index](/doc/go-to-word/index.md)
-    - internet security
-      - [index](/doc/internet-security/index.md)
-      - [internet security](/doc/internet-security/internet-security.md)
-      - [standard](/doc/internet-security/standard.md)
-    - linux app
-      - [index](/doc/linux-app/index.md)
-    - linux privacy security
-      - [index](/doc/linux-privacy-security/index.md)
-    - Remove tracking
-      - [index](/doc/Remove-tracking/index.md)
-  - [index](/index.md)
-  - [internet security](/internet-security.md)
-  - [main](/main.md)
-  - [mdcheetsheet](/mdcheetsheet.md)
-  - [standard](/standard.md)
-  - [_coverpage](/_coverpage.md)
-  - [_navbar](/_navbar.md)
+<!-- 生成时间: 2025-11-28T16:44:11.830Z -->
+
+- [网站建设指南](/README)
+- [zlibrary](/book)
+- [网络安全](/internet-security)
+- [Maoism-马列毛主义自由开源图书资料库](/main)
+- [Markdown Cheat Sheet](/mdcheetsheet)
+- [Maoism-马列毛主义自由开源图书资料库](/standard)
+- Doc
+  - [取证及预防](/doc/Forensics)
+  - [链接/文件分享时跟踪移除](/doc/Remove-tracking)
+  - [二. 机型专用刷机包教程](/doc/android-install)
+  - [一](/doc/android-to-gnulinux)
+  - [国产安卓手机平板如何最大限度保护个人安全隐私-虚拟机使用和权限管理](/doc/android-virtual)
+  - [fdroid软件源使用说明](/doc/fdroid-use)
+    - [常用自由及开源软件](/doc/fdroid-use/常用自由及开源软件)
+      - [Shiziku](/doc/fdroid-use/常用自由及开源软件/shiziku)
+  - [使用隐私保护的自由及开源浏览器实现匿名和隐私保护 教程](/doc/firefox-use)
+  - [一.git/gitcode/github基础教程](/doc/git-codeberg-github-sourceforgek-cloudfire-md-html)
+    - [标题1 #空格](/doc/git-codeberg-github-sourceforgek-cloudfire-md-html/md书写具体例子)
+  - [Gnulinux Install](/doc/gnulinux-install)
+    - [多系统引导，可以在开机时用不同快捷键切换进入不同系统，达到隐藏linux系统启动的目的 #](/doc/gnulinux-install/多系统引导)
+  - [arhlinux 的 pacman指令](/doc/gnulinux-shell)
+  - [现成备份一键安装](/doc/gnulinux-to-android)
+  - [一. whonix虚拟机自建配置方案](/doc/gnulinux-virtualbox)
+  - [全平台自由开源免费连接国际互联网教程](/doc/go-to-word)
+  - [点击下面标题跳转，或点击上面文件列表里的md文件](/doc/internet-security)
+    - [<font color=red>Internet-Security](/doc/internet-security/internet-security)
+    - [互联网安全标准纲要](/doc/internet-security/standard)
+  - [Linux App](/doc/linux-app)
+  - [Disable history](/doc/linux-privacy-security)

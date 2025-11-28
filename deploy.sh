@@ -1,1 +1,1 @@
-docsify-auto-sidebar -d .
+node sidebar.js
