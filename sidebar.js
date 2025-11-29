@@ -182,7 +182,7 @@ async function processDirectory(dirPath, depth = 0) {
     
     if (indexFile) {
       indexTitle = await extractFileTitle(indexFile.path);
-      indexLink = normalizeLink(indexFile.path);
+      indexLink = normalizeLink(indexFile.path)+"/";
       
       // 从文件列表中移除 index.md
       const index = files.indexOf(indexFile);
