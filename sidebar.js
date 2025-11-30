@@ -15,7 +15,7 @@ const DEBUG_MODE = false; // 调试开关（生产环境设为 false）
 
 // 精确匹配的忽略规则（大小写敏感）
 const IGNORED_FILES = [
-  '_sidebar.md', '_navbar.md', '_coverpage.md', '404.md', 'LICENSE',
+  '_sidebar.md', '_navbar.md', '_coverpage.md', '404.md', '_footer.md', 'LICENSE',
   '.gitignore', 'package.json', 'package-lock.json', 'yarn.lock',
   '.DS_Store', 'Thumbs.db', 'deploy.sh', 'sidebar.js'
 ];
